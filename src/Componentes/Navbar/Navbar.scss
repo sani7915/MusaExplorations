@@ -1,0 +1,44 @@
+.navbar {
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.06);
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .nav-link {
+    font-weight: bold;
+    color: #404040;
+    &:hover {
+      color: black;
+    }
+  }
+
+ 
+
+  .w-logo {
+    width: 45px;
+  }
+
+  @media (min-width: 768px) {
+    .w-logo {
+      width: 63px;
+    }
+    .nav-item {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 2px;
+        width: 0px;
+        bottom: 0px;
+        left: 4%;
+        transition: 0.5s;
+      }
+  
+      &:hover::after {
+        width: 94%;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,23 @@
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .nav-link {
+  font-weight: bold;
+  color: #404040;
+}
+
+.navbar .nav-link:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .logo-pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

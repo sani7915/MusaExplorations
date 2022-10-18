@@ -1,0 +1,14 @@
+.insta-card {
+    width: 232px;
+    height: 232px;
+  img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1020px) {
+  .insta-card {
+    width: 400px;
+    height: 232px;
+  }
+}

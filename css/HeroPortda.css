@@ -1,0 +1,33 @@
+.back {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.marginal {
+  position: relative;
+  margin-top: -30px;
+}
+
+.mh-596 {
+  max-height: 596px;
+}
+
+@media (min-width: 320px) {
+  .min-h-400 {
+    max-height: 144px;
+  }
+}
+
+@media (min-width: 768px) {
+  .min-h-400 {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .min-h-400 {
+    min-height: 400px;
+    max-width: 320px;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=HeroPortda.css.map */

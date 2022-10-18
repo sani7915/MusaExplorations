@@ -1,0 +1,35 @@
+@import url("../SCSS/variables.scss");
+@import url("../Componentes/Navbar/Navbar.scss");
+@import url("../Componentes/Portada/HeroPortda.scss");
+@import url("../Componentes/Newsletter/newletter.scss");
+@import url("../Componentes/Instagram/instagram.scss");
+@import url("../Componentes/Footer/footer.scss");
+@import url("../Componentes/SobreMi/sobreMi.scss");
+
+
+
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.color1 {
+    background-color: #94b4d0;
+  }
+  
+  .color2 {
+    background-color: #c89e6f;
+  }
+  
+  .color3 {
+    background-color: #9cb48a;
+  }
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.arvo {
+  font-family: "Arvo", serif;
+}
