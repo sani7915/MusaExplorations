@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="col m-auto d-flex flex-column align-items-center col-lg-9 flex-lg-row">
                 <div className="col-11  m-md-0 p-md-4 col-lg-5 ">
                     {mostrarOcultar
-                        ? <div className="d-flex justify-content-center justify-content-md-start mb-3 ">
+                        ? <div className="d-flex justify-content-center justify-content-md-start my-3 ">
                             <img src={logoVertical} alt="" />
                         </div>
                         : <div className="d-flex justify-content-center mb-3 ">
