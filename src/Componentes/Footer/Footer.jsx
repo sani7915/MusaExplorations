@@ -16,16 +16,16 @@ const Footer = () => {
 
     return (
         <footer className="container-fluid p-0 bg-footer mt-5">
-            <div className="col m-auto d-flex flex-column align-items-center col-lg-9 flex-lg-row">
-                <div className="col-11  m-md-0 p-md-4 col-lg-5 ">
+            <div className="col m-auto d-flex flex-column align-items-center col-md-11 col-xl-8 flex-lg-row">
+                <div className="col-11 m-md-0 p-md-4 col-lg-5 ">
                     {mostrarOcultar
                         ? <div className="d-flex justify-content-center justify-content-md-start my-3 ">
                             <img src={logoVertical} alt="" />
                         </div>
-                        : <div className="d-flex justify-content-center mb-3 ">
+                        : <div className="d-flex justify-content-center justify-content-lg-start mb-3 ">
                             <img src={logoHorizontal} alt="" />
                         </div>}
-                    <p className="montserrat text-center text-lg-start ">
+                    <p className="montserrat text-center text-lg-start px-1 ">
                         Coger el pincel, humedecer la acuarela, fundir el pincel en la mezcla, ver como el agua se posa en el papel, como el pigmento de la acuarela se expande en el agua… disfrutar de cada paso.
                     </p>
                     <div className="col mt-4">

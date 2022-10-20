@@ -3,7 +3,7 @@ import React from "react";
 
 const Newsletter = () => {
     return (
-        <div className="bg-white d-flex flex-column align-items-center container my-5 py-5 p-md-5 col-md-9 m-auto">
+        <div className="bg-white d-flex flex-column align-items-center container my-5 py-5 p-md-5 col-md-11 col-xl-8 m-auto">
             <h3 className="arvo mb-4">¡APÚNTATE!</h3>
             <p className="montserrat m-0 text-center fs-5">
                 Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para

@@ -10,7 +10,7 @@ const Navbar = () => {
     console.log(mostrarOcultar);
 
     const mostrar_ocultar = () => {
-        if (window.scrollY >= 5 && window.innerWidth >= 768) {
+        if (window.scrollY && window.innerWidth >= 768 ){
             setMostrarOcultar(true)
         } else {
             setMostrarOcultar(false)
@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <nav className=" navbar navbar-expand-md p-0 montserrat bg-white sticky-top s">
-            <div className="container-fluid col-md-9 d-flex flex-md-column align-items-center p-0">
+            <div className="container-fluid col-md-11 col-lg-10 col-xl-8 d-flex flex-md-column align-items-center p-0">
                 <div className="col-5">
                     <button className="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <img src={hamburguesa} alt="" />
@@ -34,9 +34,9 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className='container-fluid  d-flex justify-content-md-center'>
+                <div className='container-fluid  d-flex justify-content-center'>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav d-flex col  justify-content-md-between bg-white align-items-md-center">
+                        <ul className="navbar-nav d-flex col  justify-content-md-center justify-content-md-between  bg-white align-items-md-center">
                             <li className={mostrarOcultar ? 'nav-item ' : 'visually-hidden'}>
                                 <Link to={'/'} className="nav-link " ><img src={logo} alt="" /></Link>
                             </li>
