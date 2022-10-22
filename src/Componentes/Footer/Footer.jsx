@@ -16,8 +16,8 @@ const Footer = () => {
 
     return (
         <footer className="container-fluid p-0 bg-footer mt-5">
-            <div className="col m-auto d-flex flex-column align-items-center col-md-11 col-xl-8 flex-lg-row">
-                <div className="col-11 m-md-0 p-md-4 col-lg-5 ">
+            <div className="col m-auto d-flex flex-column align-items-center  col-md-11 col-lg-10 col-xl-8 flex-lg-row">
+                <div className="col-11 m-md-0 py-md-4 col-lg-5 ">
                     {mostrarOcultar
                         ? <div className="d-flex justify-content-center justify-content-md-start my-3 ">
                             <img src={logoVertical} alt="" />
@@ -72,7 +72,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <p className="montserrat  text-center text-lg-end pe-md-4 fs-7">
+                    <p className="montserrat  text-center text-lg-end px-2 pe-md-4 p-lg-0 fs-7">
                         Copyright 2022. Todos los derechos reservados. Desarrollado por nombre del desarrollador.
                     </p>
                 </div>

@@ -1,6 +1,6 @@
 import "./SCSS/App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Portada from "./Componentes/Portada/Portada";
+import PortadaContenedor from "./Componentes/Portada/PortadaContenedor";
 import Navbar from "./Componentes/Navbar/Navbar";
 import Footer from "./Componentes/Footer/Footer";
 import GaleriaTrabajos from "./Componentes/GaleriaTrabajos/Galeria";
@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Portada />} />
+        <Route exact path="/" element={<PortadaContenedor />} />
         <Route exact path="/galeria" element={<GaleriaTrabajos />} />
         <Route exact path="/apuntate" element={<Apuntate />} />
         <Route exact path="/sobreMi" element={<SobreMi />} />

@@ -1,0 +1,28 @@
+.text-box {
+  margin-top: -90px;
+  border: 1px solid #E0C2B6;
+  z-index: 1010;
+  @media (min-width : 992px) {
+    margin-top: 0;
+    margin-right: -70px;
+  }
+  @media (min-width:992px) {
+    margin-right: -200px;
+  }
+  @media (min-width:1280px) {
+    margin-right: -175px;
+  }
+}
+
+.text-box-left{
+    @extend .text-box;
+    margin-right: 0px;
+    margin-left: -70px;
+
+}
+
+.img-class {
+    @media (min-width:1024px) {
+        // min-height: 500px;
+    }
+}

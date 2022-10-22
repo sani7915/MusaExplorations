@@ -5,15 +5,20 @@
 @import url("../Componentes/Instagram/instagram.scss");
 @import url("../Componentes/Footer/footer.scss");
 @import url("../Componentes/SobreMi/sobreMi.scss");
+@import url("../Componentes/Contacto/contacto.scss");
+@import url("../Componentes/SobreMi/sobreMi.scss");
+
 
 
 
 
 body {
- 
   margin: auto;
 }
 
+p{
+  font-family: "Montserrat", sans-serif; 
+}
 .color1 {
     background-color: #94b4d0;
   }
@@ -27,9 +32,37 @@ body {
   }
 
 .montserrat {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif; 
 }
 
 .arvo {
   font-family: "Arvo", serif;
+}
+
+.input-style {
+  background-color: #e9e7e7;
+  border: 1px solid #cfab82;
+  width: 100%;
+  padding: 5px;
+  height: 54px;
+}
+
+
+.form_button {
+  background-color:#cfab82; ;
+  border-radius: 25px;
+  height: 54px;
+  border: none;
+  width: 100%;
+  color: white;
+  font-family:"Arvo", serif; ;
+  &:hover{
+    background-color: #cfab82;
+  }
+  &::before {
+    background-color: #cfab82;
+  }
+  &:focus{
+  outline: none;
+  }
 }

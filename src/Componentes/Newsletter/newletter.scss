@@ -2,22 +2,4 @@
   background-image: url("../../images/probando\ paleta\ color\ acuarela.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  .input-style {
-    background-color: #e9e7e7;
-    border: 1px solid #cfab82;
-    width: 100%;
-    padding: 5px;
-    height: 54px;
-  }
-
-  button {
-    border-radius: 25px;
-    height: 54px;
-    &:hover{
-      background-color: #cfab82;
-    }
-    &::before {
-      background-color: #cfab82;
-    }
-  }
 }

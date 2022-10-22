@@ -3,15 +3,15 @@ import Instagram from "../Instagram/Instagram";
 import Newsletter from "../Newsletter/Newsletter";
 import HeroPortada from "./HeroPortada";
 
-const Portada = () => {
+const PortadaContenedor = () => {
     return (
         <div>
             <HeroPortada />
-            <div className="container-fluid p-4 mt-5 newsletter">
+            <div className="py-5 px-3  mt-5 d-flex justify-content-center newsletter">
                 <Newsletter />
             </div>
             <Instagram />
         </div>
     )
 }
-export default Portada;
+export default PortadaContenedor;

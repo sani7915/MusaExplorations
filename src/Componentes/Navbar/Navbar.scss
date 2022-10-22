@@ -5,14 +5,13 @@
   }
 
   .nav-link {
-    font-weight: bold;
     color: #404040;
+    padding-left: 12px ;
     &:hover {
       color: black;
     }
   }
 
- 
 
   .w-logo {
     width: 45px;
@@ -22,6 +21,7 @@
     .w-logo {
       width: 63px;
     }
+
     .nav-item {
       position: relative;
       &::after {

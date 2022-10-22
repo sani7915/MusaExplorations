@@ -7,7 +7,6 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [mostrarOcultar, setMostrarOcultar] = useState('');
-    console.log(mostrarOcultar);
 
     const mostrar_ocultar = () => {
         if (window.scrollY && window.innerWidth >= 768 ){
@@ -20,7 +19,7 @@ const Navbar = () => {
     window.addEventListener('scroll', mostrar_ocultar);
 
     return (
-        <nav className=" navbar navbar-expand-md p-0 montserrat bg-white sticky-top s">
+        <nav className=" navbar navbar-expand-md p-0 montserrat bg-white sticky-top">
             <div className="container-fluid col-md-11 col-lg-10 col-xl-8 d-flex flex-md-column align-items-center p-0">
                 <div className="col-5">
                     <button className="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +33,10 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className='container-fluid  d-flex justify-content-center'>
+                <div className='container-fluid  d-flex justify-content-center p-0'>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav d-flex col  justify-content-md-center justify-content-md-between  bg-white align-items-md-center">
-                            <li className={mostrarOcultar ? 'nav-item ' : 'visually-hidden'}>
+                        <ul className="navbar-nav d-flex col justify-content-md-center justify-content-md-between  bg-white align-items-md-center ">
+                            <li className={mostrarOcultar ? (window.innerWidth < 768  & 'nav-item' ) : 'visually-hidden'}>
                                 <Link to={'/'} className="nav-link " ><img src={logo} alt="" /></Link>
                             </li>
                             <li className="nav-item">
