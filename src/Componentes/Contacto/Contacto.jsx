@@ -27,7 +27,7 @@ const Contacto = () => {
         } if (mensaje > 0) {
             setMensajeInvalid(true)
         }
-    }, [{ nombre, email, mensaje }])
+    }, [nombre, email, mensaje ])
 
     const validarCampos = (e) => {
         e.preventDefault();
