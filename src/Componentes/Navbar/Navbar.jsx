@@ -27,7 +27,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className={mostrarOcultar ? 'visually-hidden' : 'd-flex justify-content-start justify-content-md-center col-7'}>
-                    <Link to={'/'} className="nav-link  mb-4 ms-3 d-flex flex-md-column align-items-center justify-content-center gap-2 ">
+                    <Link to={'/'} className="nav-link mb-4 d-flex flex-md-column align-items-center justify-content-center gap-2 ">
                         <img src={logo} alt=""  className='p-0 w-logo mt-3' />
                         <img src={logoMusa} alt="" width={199} className='d-none d-md-block' />
                     </Link>

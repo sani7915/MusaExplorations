@@ -1,49 +1,123 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import naranjas from '../../images/naranjas_mod.jpg'
 
 
 
 const Contacto = () => {
-
-    const [btnValue, setBtnValue] = useState('ENVIAR MENSAJE')
     const form = useRef();
+    const [btnValue, setBtnValue] = useState('ENVIAR MENSAJE')
+    const [nombre, setNombre] = useState(0);
+    const [nombreInvalid, setNombreInvalid] = useState(true);
+    const [email, setEmail] = useState(0);
+    const [emailInvalid, setEmailInvalid] = useState(true)
+    const [mensaje, setMensaje] = useState(0)
+    const [mensajeInvalid, setMensajeInvalid] = useState(true)
 
-    const sendEmail = (e) => {
+
+    console.log(nombre, email);
+
+    useEffect(() => {
+
+        if (nombre > 0) {
+            setNombreInvalid(true)
+        }
+        if (email > 0) {
+            setEmailInvalid(true)
+        } if (mensaje > 0) {
+            setMensajeInvalid(true)
+        }
+    }, [{ nombre, email, mensaje }])
+
+    const validarCampos = (e) => {
         e.preventDefault();
-        setBtnValue('ENVIANDO...')
+        if (nombre === 0) {
+            setNombreInvalid(false)
+            return false;
+        } else if (email === 0) {
+            setEmailInvalid(false)
+            return false
+        } else if (mensaje === 0) {
+            setMensajeInvalid(false)
+            return false
+        } else {
 
-        emailjs.sendForm('default_service', 'template_7kvhw4i', form.current, '8yPxOUus9ogutU2u8')
-            .then((result) => {
-                setBtnValue('ENVIAR MENSAJE')
-                console.log(result.text);
-                alert('registrado Correctamente')
-            }, (error) => {
-                setBtnValue('ENVIAR MENSAJE')
-                console.log(error.text);
-            });
-    };
+            setBtnValue('ENVIANDO...')
+
+            emailjs.sendForm('default_service', 'template_7kvhw4i', form.current, '8yPxOUus9ogutU2u8')
+                .then((result) => {
+                    setBtnValue('ENVIAR MENSAJE')
+                    console.log(result.text);
+                    alert('registrado Correctamente')
+                }, (error) => {
+                    setBtnValue('ENVIAR MENSAJE')
+                    console.log(error.text);
+                });
+        }
+    }
+
 
     return (
-        <div>
-            <div className="col-11 col-md-11 col-lg-10 col-xl-8 m-auto mt-5 ">
+        <div className='d-flex flex-column align-items-center justify-content-center p-0'>
+            <div className="d-none d-lg-block col-11 col-md-11 col-lg-10 col-xl-8 m-auto mt-5 ">
                 <h1 className="fs-3 arvo lh-sm ps-md-2">CONTACTO</h1>
             </div>
-            <div className='naranjas_back_img'></div>
-            <div className="back_form d-flex flex-column col-11 col-md-10 col-xl-8 m-auto position-relative">
-                <div className="col-11 col-md-10 col-xl-8 m-auto ">
-                    <p className="mt-5">
+            <div className='container-fluid px-0 '>
+                <img src={naranjas} alt="" className='w-100 naranjas img-fluid' />
+            </div>
+            <div className="form_contacto d-flex flex-column col-11 col-lg-10 col-xl-8  shadow ">
+                <div className='d-flex flex-column align-items-center'>
+                    <h1 className="fs-3 arvo lh-sm pt-3 d-lg-none">CONTACTO</h1>
+                    <p className="text-center text-md-start px-3 p-md-0 m-0 col-md-10 col-lg-11 col-xl-9 mt-lg-5 fw-bold ">
                         Puedes enviarme tu consulta a través del formulario o escribirme a hola@musadeacuarela.com
                     </p>
-                    <form ref={form} onSubmit={sendEmail} className="d-flex flex-column gap-3 mb-5">
-                        <input type="text" className="input-style" placeholder="Nombre" name='nombre' />
-                        <input type="email" className="input-style" placeholder="Email" name='email' />
-                        <input type="text" className="input-style" placeholder="Teléfono" name='telefono' />
-                        <textarea className="input-style" placeholder="Mensaje" name='mensaje' />
+                </div>
+                <div className="bg_form_contacto col-11 col-xl-9 m-auto p-4 p-lg-0 mt-3 mt-md-0 mb-4 mb-md-5 mt-lg-4">
+                    <form ref={form} onSubmit={validarCampos} className="d-flex flex-column gap-3">
+                        <div className='input-group'>
+                            <div className={
+                                nombreInvalid
+                                    ? 'form-floating' : 'form-floating is-invalid  '}>
+                                <input type="text" onInput={(e) => setNombre(parseInt(e.target.value.length))} className={nombreInvalid ? 'form-control input-style' : 'form-control input-style is-invalid'} placeholder="" name='nombre'/>
+                                <label>Nombre *</label>
+                            </div>
+                            <div className="invalid-feedback">
+                                *Este campo es obligatorio
+                            </div>
+                        </div>
+                        <div className='input-group'>
+                            <div className={emailInvalid ? 'form-floating' : 'form-floating is-invalid  '}>
+                                <input type="email" onInput={(e) => setEmail(parseInt(e.target.value.length))} className={emailInvalid ? 'form-control input-style' : 'form-control input-style is-invalid'} placeholder="" name='email'/>
+                                <label>Email *</label>
+                            </div>
+                            <div className="invalid-feedback">
+                                *Este campo es obligatorio
+                            </div>
+                        </div>
+                        <div className='input-group'>
+                            <div className='form-floating'>
+                                <input type="text" className='form-control input-style' placeholder="" name='telefono' />
+                                <label>Telefono</label>
+                            </div>
+                        </div>
+                        <div className='input-group'>
+                            <div className={mensajeInvalid ? 'form-floating' : 'form-floating is-invalid  '}>
+                                <textarea type="text" onInput={(e) => setMensaje(parseInt(e.target.value.length))} className={mensajeInvalid ? 'form-control input-style' : 'form-control input-style is-invalid'} placeholder="" name='mensaje' />
+                                <label>Mensaje *</label>
+                            </div>
+                            <div className="invalid-feedback">
+                                *Este campo es obligatorio
+                            </div>
+                        </div>
+
+
+
                         <div className="col col-md-5">
                             <input type='submit' value={btnValue} className="form_button" />
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
     )

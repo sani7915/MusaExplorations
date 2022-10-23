@@ -1,14 +1,16 @@
-.naranjas_back_img {
-    background-image: url('../../images/naranjas_mod.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 263px;
+.naranjas{
+    min-height: 265px;
+    object-fit: cover;
 }
-
-.back_form {
-    background-color: #FAFAFA ;
-    position: absolute;
-    bottom: 150px;
-
+.bg_form_contacto{
+    background-color:#F3F3F3; 
+    
+}
+.form_contacto {
+    background-color: white;
+    margin-top:-150px;
+    @media(min-width:768px) {
+        background-color:#F3F3F3; 
+    }
 }
 
