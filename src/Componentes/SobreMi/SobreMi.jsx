@@ -1,57 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
 import campoDeGirasoles from '../../images/girasoles.png';
 import pintandoBouquet from '../../images/pintando bouquet de flores acuarela_mod.jpg'
 
 const SobreMi = () => {
+    const [show_hidde, setShowHidde] = useState('');
+
+    const showHidde = () => {
+        if (window.innerWidth < 768) {
+            setShowHidde(true)
+        } else {
+            setShowHidde(false)
+        }
+    }
+    window.addEventListener('resize', showHidde)
+
     return (
-        <div className=" container-fluid p-0 ">
-            <h1 className="fs-3 arvo mt-5 mb-3 ps-2 d-flex flex-column col-md-11 col-lg-10 col-xl-8 m-auto">
+        <div>
+            <h1 className={
+                !show_hidde
+                    ? "d-flex m-auto col-md-11 col-lg-10 col-xl-8 col-xxl-7 fs-3 mt-5 mb-3 ps-2 arvo"
+                    : "visually-hidden"}>
                 SOBRE MÍ
             </h1>
-            <div className="d-flex flex-column-reverse flex-lg-row justify-content-end mb-5">
-                <div className="d-flex justify-content-center justify-content-lg-end align-items-center mb-5 mb-lg-0 col-lg-6 col-xl-6">
-                    <div className=" col-11 col-md-9 col-lg-11  p-4 bg-white text-box">
+            <div className="d-flex flex-column flex-lg-row-reverse justify-content-start mb-lg-5">
+                <div className="col-lg-7 col-xxl-6">
+                    <img src={campoDeGirasoles} alt="campo de girasoles" className="w-100 girasoles-img" />
+                </div>
+                <div className="d-flex justify-content-center align-items-center mb-5 mb-lg-0 col-lg-5 col-xl-4 col-xxl-2 ">
+                    <div className="col-11 col-md-10 col-lg-11 p-4 text-box">
+                        <h1 className={show_hidde
+                            ? "fs-3 mb-3 arvo"
+                            : 'visually-hidden'
+                        }>
+                            SOBRE MÍ
+                        </h1>
                         <h6 className="fw-bold mb-3 mt-2 arvo" >
                             ¡HOLA!
                         </h6>
-                        <p >
+                        <p className="lh-md">
                             Soy Sandra, y mi historia empieza el día que la acuarela llegó a mi vida y mi mundo cambió.
                             Es una técnica que cada día me enamora más, y con la que disfruto mucho.
                         </p>
                         <h6 className="fw-bold mb-3 arvo">
                             Lo que me inspira
                         </h6>
-                        <p className="mb-2">
+                        <p className="mb-2 lh-md">
                             Definitivamente mi mayor inspiración la encuentro en la naturaleza: flores, paisajes, un cielo bonito,  el mar, los animallillos...
                             Me gusta transmitir delicadeza y minimalismo en mis acuarelas.
                         </p>
                     </div>
                 </div>
-                <div className="col-lg-8 col-xl-6">
-                    <img src={campoDeGirasoles} alt="" className="w-100 img-class " />
-                </div>
             </div>
-            <div className="d-flex flex-column-reverse flex-lg-row-reverse justify-content-end mb-5">
-                <div className="d-flex justify-content-center justify-content-lg-start align-items-center mb-5 mb-lg-0 col-xl-6">
-                    <div className=" col-11 col-md-9 p-4 bg-white text-box">
+            <div className="d-flex flex-column flex-lg-row justify-content-start pb-lg-5">
+                <div className="col-lg-6 col-xl-6 col-xxl-6">
+                    <img src={pintandoBouquet} alt="campo de girasoles" className="w-100 bouquet-img" />
+                </div>
+                <div className="d-flex justify-content-center align-items-center col-lg-6 col-xl-6 col-xxl-5">
+                    <div className="col-11 col-md-10 col-lg-11 p-4 text-box-left ">
                         <h6 className="fw-bold mb-3 mt-2 arvo" >
                             ¿Qué medios utilizo?
                         </h6>
-                        <p >
+                        <p className="lh-md">
                             El principal es la acuarela sobre papel de algodón. A menudo lo  complemento con gouache, tinta, ceras, lápices, grafito, pan de oro…
                         </p>
                         <h6 className="fw-bold mb-3 arvo">
                             Lo que más disfruto de la acuarela
                         </h6>
-                        <p className="mb-2">
+                        <p className="mb-2 lh-md">
+                            Lo que más disfruto de la acuarela
                             Coger la pintura, humedecer la acuarela, fundir el pincel en la mezcla, ver como el agua se posa en el papel, como el pigmento de la acuarela se expande en el agua… cada paso del proceso es un disfrute para mi.
                             Este arte lo aplico a obras tanto originales como reproducciones que pueden utilizarse para un print, estampar una tela, decorar una vajilla bonita….
                             Compartir mi conocimiento con gente que disfruta y se enriquece con su creatividad es otra faceta que también me llena.
                         </p>
                     </div>
-                </div>
-                <div className="col-lg-8 col-xl-6">
-                    <img src={pintandoBouquet} alt="" className="w-100 img-class " />
                 </div>
             </div>
 

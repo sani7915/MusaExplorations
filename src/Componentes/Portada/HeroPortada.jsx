@@ -7,8 +7,8 @@ import CardPortada from "./CardPortada";
 const HeroPortada = () => {
     return (
         <div className="container-fluid p-0" >
-            <img src={Jarron} alt="jarron de flores acuarela" className="img-fluid w-100 mh-596 " />
-            <div className="container col-11 col-md-10  marginal bg-white  ">
+            <img src={Jarron} alt="jarron de flores acuarela" className="img-fluid w-100 Mh-596 " />
+            <div className="container col-11 col-md-10 col-xl-8 col-xxl-7 text-hero bg-white">
                 <h1 className="text-center arvo mt-lg-5 p-3 fs-3">
                     ARTE EN ACUARELA
                 </h1>
@@ -21,7 +21,7 @@ const HeroPortada = () => {
                     </p>
                 </div>
             </div>
-            <div className="col col-md-11 col-lg-10 col-xl-8  m-auto">
+            <div className="col col-md-11 col-lg-10 col-xl-8 col-xxl-7 m-auto">
                 <CardPortada />
             </div>
         </div>

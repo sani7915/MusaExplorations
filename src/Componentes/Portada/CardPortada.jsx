@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const array = [
     { category1: 'Arte original', category2: 'Prints', color: 'color1' },
     { category1: 'Colecciones', category2: 'Patterns', color: 'color2' },

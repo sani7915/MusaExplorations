@@ -1,24 +1,25 @@
 import React, { useState } from "react";
 import logoVertical from '../../images/logo vertical.svg';
 import logoHorizontal from '../../images/logo horizontal.svg';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-    const [mostrarOcultar, setMostrarOcultar] = useState('');
+    const [show_hidde, setShowHidde] = useState('');
 
-    const aver = () => {
+    const showHidde = () => {
         if (window.innerWidth < 768) {
-            setMostrarOcultar(true)
+            setShowHidde(true)
         } else {
-            setMostrarOcultar(false)
+            setShowHidde(false)
         }
     }
-    window.addEventListener('resize', aver)
+    window.addEventListener('resize', showHidde)
 
     return (
-        <footer className="container-fluid p-0 bg-footer mt-5">
-            <div className="col m-auto d-flex flex-column align-items-center  col-md-11 col-lg-10 col-xl-8 flex-lg-row">
+        <footer className="container-fluid  bg-footer p-0 mt-5">
+            <div className="col m-auto d-flex flex-column align-items-center  col-md-11 col-lg-10 col-xl-8 col-xxl-7 flex-lg-row">
                 <div className="col-11 m-md-0 py-md-4 col-lg-5 ">
-                    {mostrarOcultar
+                    {show_hidde
                         ? <div className="d-flex justify-content-center justify-content-md-start my-3 ">
                             <img src={logoVertical} alt="" />
                         </div>
@@ -57,7 +58,11 @@ const Footer = () => {
                     <div className="d-flex mb-4">
                         <div className="col-6 p-4 text-end d-none d-lg-block">
                             <ul className="list-unstyled">
-                                <li>Tienda Etsy</li>
+                                <li className="nav-item">
+                                    <Link to={'/'} className="nav-link">
+                                        Tienda Etsy
+                                    </Link>
+                                </li>
                                 <li>Galeria de trabajos</li>
                                 <li> Pedidos personalizados</li>
                                 <li>Prints y tarjetas </li>

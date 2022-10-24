@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import naranjas from '../../images/naranjas_mod.jpg'
+// import Translate from './TextArea';
 
 
 
@@ -14,11 +15,7 @@ const Contacto = () => {
     const [mensaje, setMensaje] = useState(0)
     const [mensajeInvalid, setMensajeInvalid] = useState(true)
 
-
-    console.log(nombre, email);
-
     useEffect(() => {
-
         if (nombre > 0) {
             setNombreInvalid(true)
         }
@@ -27,7 +24,7 @@ const Contacto = () => {
         } if (mensaje > 0) {
             setMensajeInvalid(true)
         }
-    }, [nombre, email, mensaje ])
+    }, [nombre, email, mensaje])
 
     const validarCampos = (e) => {
         e.preventDefault();
@@ -59,13 +56,13 @@ const Contacto = () => {
 
     return (
         <div className='d-flex flex-column align-items-center justify-content-center p-0'>
-            <div className="d-none d-lg-block col-11 col-md-11 col-lg-10 col-xl-8 m-auto mt-5 ">
+            <div className="d-none d-lg-block col-11 col-md-11 col-lg-10 col-xl-8 col-xxl-7 m-auto mt-5 ">
                 <h1 className="fs-3 arvo lh-sm ps-md-2">CONTACTO</h1>
             </div>
             <div className='container-fluid px-0 '>
                 <img src={naranjas} alt="" className='w-100 naranjas img-fluid' />
             </div>
-            <div className="form_contacto d-flex flex-column col-11 col-lg-10 col-xl-8  shadow ">
+            <div className="form_contacto d-flex flex-column col-11 col-lg-10 col-xl-8 col-xxl-7 shadow ">
                 <div className='d-flex flex-column align-items-center'>
                     <h1 className="fs-3 arvo lh-sm pt-3 d-lg-none">CONTACTO</h1>
                     <p className="text-center text-md-start px-3 p-md-0 m-0 col-md-10 col-lg-11 col-xl-9 mt-lg-5 fw-bold ">
@@ -78,7 +75,7 @@ const Contacto = () => {
                             <div className={
                                 nombreInvalid
                                     ? 'form-floating' : 'form-floating is-invalid  '}>
-                                <input type="text" onInput={(e) => setNombre(parseInt(e.target.value.length))} className={nombreInvalid ? 'form-control input-style' : 'form-control input-style is-invalid'} placeholder="" name='nombre'/>
+                                <input type="text" onInput={(e) => setNombre(parseInt(e.target.value.length))} className={nombreInvalid ? 'form-control input-style' : 'form-control input-style is-invalid'} placeholder="" name='nombre' />
                                 <label>Nombre *</label>
                             </div>
                             <div className="invalid-feedback">
@@ -87,7 +84,7 @@ const Contacto = () => {
                         </div>
                         <div className='input-group'>
                             <div className={emailInvalid ? 'form-floating' : 'form-floating is-invalid  '}>
-                                <input type="email" onInput={(e) => setEmail(parseInt(e.target.value.length))} className={emailInvalid ? 'form-control input-style' : 'form-control input-style is-invalid'} placeholder="" name='email'/>
+                                <input type="email" onInput={(e) => setEmail(parseInt(e.target.value.length))} className={emailInvalid ? 'form-control input-style' : 'form-control input-style is-invalid'} placeholder="" name='email' />
                                 <label>Email *</label>
                             </div>
                             <div className="invalid-feedback">
@@ -117,7 +114,7 @@ const Contacto = () => {
                         </div>
                     </form>
                 </div>
-
+                {/* <Translate /> */}
             </div>
         </div>
     )

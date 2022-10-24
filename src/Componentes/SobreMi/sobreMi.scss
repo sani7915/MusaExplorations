@@ -1,28 +1,59 @@
-.text-box {
-  margin-top: -90px;
-  border: 1px solid #E0C2B6;
-  z-index: 1010;
-  @media (min-width : 992px) {
+@media (min-width: 320px) {
+  .text-box {
+    margin-top: -90px;
+    border: 1px solid #e0c2b6;
+    background-color: #ffffff;
+    z-index: 1010;
+  }
+  .text-box-left {
+    margin-top: -90px;
+    border: 1px solid #404040;
+    background-color: #ffffff;
+    z-index: 1010;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-box {
+    margin-right: -150px;
     margin-top: 0;
-    margin-right: -70px;
   }
-  @media (min-width:992px) {
-    margin-right: -200px;
+  .text-box-left {
+    margin-top: 0;
+    margin-left: -100px;
   }
-  @media (min-width:1280px) {
-    margin-right: -175px;
+  .bouquet-img {
+    min-height: 510px;
+  }
+  .girasoles-img {
+    min-height: 410px;
   }
 }
 
-.text-box-left{
-    @extend .text-box;
+@media (min-width: 1280px) {
+  .text-box {
+    margin-right: -195px;
+  }
+
+  .bouquet-img {
+    min-height: 0px;
+    max-height: 450px;
+  }
+
+}
+@media (min-width: 1440px) {
+  .text-box {
     margin-right: 0px;
-    margin-left: -70px;
+    margin-left: -130px;
+    min-width: 450px;
+  }
+  .bouquet-img {
+    min-height: 500px;
+  }
 
 }
-
-.img-class {
-    @media (min-width:1024px) {
-        // min-height: 500px;
-    }
+@media (min-width: 1920px) {
+  .text-box {
+    margin-right: -100px;
+  }
 }

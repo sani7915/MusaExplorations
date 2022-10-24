@@ -6,19 +6,18 @@
 
   .nav-link {
     color: #404040;
-    padding-left: 12px ;
+    padding-left: 12px;
     &:hover {
       color: black;
     }
   }
-
 
   .w-logo {
     width: 45px;
   }
 
   @media (min-width: 768px) {
-    .w-logo {
+    .w-logo-md {
       width: 63px;
     }
 
@@ -34,11 +33,10 @@
         left: 4%;
         transition: 0.5s;
       }
-  
+
       &:hover::after {
         width: 94%;
       }
     }
-
   }
 }

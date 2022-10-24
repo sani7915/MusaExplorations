@@ -7,9 +7,9 @@ const PortadaContenedor = () => {
     return (
         <div>
             <HeroPortada />
-            <div className="py-5 px-3  mt-5 d-flex justify-content-center newsletter">
-                <Newsletter />
-            </div>
+            {/* <div className="py-5 px-3  mt-5 d-flex justify-content-center newsletter"> */}
+            <Newsletter />
+            {/* </div> */}
             <Instagram />
         </div>
     )
