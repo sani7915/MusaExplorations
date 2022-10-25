@@ -23,16 +23,15 @@ const Navbar = () => {
             setShowHidde(false)
         }
     }
-
     window.addEventListener('scroll', showHidde);
 
-  
+
 
     return (
         <nav className="navbar navbar-expand-md p-0 montserrat bg-white sticky-top">
             <div className="container-fluid col-md-11 col-lg-10 col-xl-8 col-xxl-7 d-flex flex-md-column align-items-center p-0">
                 <div className="col-5">
-                    <button className="navbar-toggler border-0 " type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <button className="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <img src={hamburguesa} alt="" />
                     </button>
                 </div>

@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import naranjas from '../../images/naranjas_mod.jpg'
-// import Translate from './TextArea';
-
-
 
 const Contacto = () => {
     const form = useRef();
@@ -30,13 +27,10 @@ const Contacto = () => {
         e.preventDefault();
         if (nombre === 0) {
             setNombreInvalid(false)
-            return false;
         } else if (email === 0) {
             setEmailInvalid(false)
-            return false
         } else if (mensaje === 0) {
             setMensajeInvalid(false)
-            return false
         } else {
 
             setBtnValue('ENVIANDO...')
@@ -44,6 +38,7 @@ const Contacto = () => {
             emailjs.sendForm('default_service', 'template_7kvhw4i', form.current, '8yPxOUus9ogutU2u8')
                 .then((result) => {
                     setBtnValue('ENVIAR MENSAJE')
+                    form.current.reset()
                     console.log(result.text);
                     alert('registrado Correctamente')
                 }, (error) => {
@@ -62,7 +57,7 @@ const Contacto = () => {
             <div className='container-fluid px-0 '>
                 <img src={naranjas} alt="" className='w-100 naranjas img-fluid' />
             </div>
-            <div className="form_contacto d-flex flex-column col-11 col-lg-10 col-xl-8 col-xxl-7 shadow ">
+            <div className="form_contacto d-flex flex-column col-11 col-lg-10 col-xl-8 col-xxl-7">
                 <div className='d-flex flex-column align-items-center'>
                     <h1 className="fs-3 arvo lh-sm pt-3 d-lg-none">CONTACTO</h1>
                     <p className="text-center text-md-start px-3 p-md-0 m-0 col-md-10 col-lg-11 col-xl-9 mt-lg-5 fw-bold ">
@@ -107,14 +102,11 @@ const Contacto = () => {
                             </div>
                         </div>
 
-
-
                         <div className="col col-md-5">
                             <input type='submit' value={btnValue} className="form_button" />
                         </div>
                     </form>
                 </div>
-                {/* <Translate /> */}
             </div>
         </div>
     )

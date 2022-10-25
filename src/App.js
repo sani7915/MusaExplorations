@@ -1,5 +1,5 @@
-import "./SCSS/App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./SCSS/App.scss";
 import PortadaContenedor from "./Componentes/Portada/PortadaContenedor";
 import Navbar from "./Componentes/Navbar/Navbar";
 import Footer from "./Componentes/Footer/Footer";

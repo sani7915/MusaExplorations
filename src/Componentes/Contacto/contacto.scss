@@ -1,16 +1,15 @@
-.naranjas{
-    min-height: 265px;
-    object-fit: cover;
+.naranjas {
+  min-height: 265px;
+  object-fit: cover;
 }
-.bg_form_contacto{
-    background-color:#F3F3F3; 
-    
+.bg_form_contacto {
+  background-color: #f3f3f3;
 }
 .form_contacto {
-    background-color: white;
-    margin-top:-150px;
-    @media(min-width:768px) {
-        background-color:#F3F3F3; 
-    }
+  background-color: white;
+  margin-top: -150px;
+  @media (min-width: 768px) {
+    background-color: #f3f3f3;
+  }
 }
 
