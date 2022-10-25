@@ -26,7 +26,6 @@
       &::after {
         content: "";
         position: absolute;
-        background-color: black;
         height: 2px;
         width: 0px;
         bottom: 0px;
@@ -36,7 +35,9 @@
 
       &:hover::after {
         width: 94%;
+        background-color:#404040;
       }
+    
     }
   }
 }

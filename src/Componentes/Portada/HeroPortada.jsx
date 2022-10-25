@@ -7,7 +7,7 @@ import CardPortada from "./CardPortada";
 const HeroPortada = () => {
     return (
         <div className="container-fluid p-0" >
-            <img src={Jarron} alt="jarron de flores acuarela" className="img-fluid w-100 Mh-596 " />
+            <img src={Jarron} alt="jarron de flores acuarela" className="w-100 jarron-img" />
             <div className="container col-11 col-md-10 col-xl-8 col-xxl-7 text-hero bg-white">
                 <h1 className="text-center arvo mt-lg-5 p-3 fs-3">
                     ARTE EN ACUARELA

@@ -8,10 +8,10 @@ import { useState } from "react";
 const links = [
     { to: '/', nombre: 'Portada' },
     { to: '/galeria', nombre: 'Galeria de trabajos' },
+    { to: '/tienda', nombre: 'Tienda' },
     { to: '/apuntate', nombre: 'Apúntate' },
     { to: '/sobreMi', nombre: 'Sobre mí' },
     { to: '/contacto', nombre: 'Contacto' },
-    { to: '', nombre: 'Tienda' }
 ]
 
 const Navbar = () => {

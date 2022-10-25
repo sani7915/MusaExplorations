@@ -21,7 +21,7 @@ const CardPortada = () => {
                         </p>
                     </div>
                     <div className="d-flex justify-content-start align-items-end arrow_card_portada ">
-                        <Link to={lamina.url} className='text-white back '>
+                        <Link to={lamina.url} className='text-white bg-arrow'>
                             <i className="fa solid fa-arrow-right fs-5 px-3 align-middle "> </i>
                         </Link>
                     </div>
