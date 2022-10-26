@@ -1,13 +1,8 @@
 @media (min-width: 320px) {
-  .text-box {
-    margin-top: -90px;
-    border: 1px solid #e0c2b6;
-    background-color: #ffffff;
-    z-index: 1010;
-  }
+  .text-box,
   .text-box-left {
     margin-top: -90px;
-    border: 1px solid #404040;
+    border: 1px solid #e0c2b6;
     background-color: #ffffff;
     z-index: 1010;
   }
@@ -60,9 +55,9 @@
   .text-box-left {
     margin-left: -460px;
     min-height: 430px;
-  }
-  p {
-    font-size: 18px;
+    p {
+      font-size: 18px;
+    }
   }
   .bouquet-img {
     max-height: 580px;

@@ -1,0 +1,27 @@
+{
+  "inicio": {
+    "h1": "WATER COLOR ART",
+    "p1": "Creation of beautiful and unique pieces, with organic and delicate lines, that will make you ",
+    "p2": " smile every day when contemplating it, and that helps you to be happier today than yesterday"
+  },
+  "footer": {
+    "lirica": "Take the brush, moisten the watercolor, melt the brush in the mixture, see how the water settles on the paper, how the watercolor pigment expands in the water... enjoy every step.",
+    "ul1": {
+      "tienda": "Store",
+      "galeria": "Work Gallery",
+      "pedidos": "Custom orders",
+      "prints": "Prints And Cards"
+    },
+    "ul2": {
+      "acuarelas": "Original watercolors",
+      "patterns": "Patterns",
+      "SobreMi": "About me",
+      "contacto": "Contact"
+    },
+    "copy": "Copyright 2022. All rights reserved. Developed by developer name",
+    "language": {
+      "p": "Cambiar idioma :",
+      "span": "ES"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "inicio": {
+    "h1": "ARTE EN ACUARELA",
+    "p1": "Creación de piezas bonitas y únicas, de líneas orgánicas y delicadas, que te sacan una",
+    "p2": "sonrisa cada día al contemplarla, y que ayudan a que hoy seas más feliz que ayer."
+  },
+  "footer": {
+    "lirica": "Coger el pincel, humedecer la acuarela, fundir el pincel en la mezcla, ver como el agua se posa en el papel, como el pigmento de la acuarela se expande en el agua… disfrutar de cada paso.",
+    "ul1": {
+      "tienda": "Tienda",
+      "galeria": "Galeria de trabajos",
+      "pedidos": "Pedidos personalizados",
+      "prints": "Prints y Tarjetas"
+    },
+    "ul2": {
+      "acuarelas": "Acuarelas originales",
+      "patterns": "Patterns",
+      "SobreMi": "Sobre mí",
+      "contacto": "Contacto"
+    },
+    "copy": "Copoyright 2022. Todos los derechos reservados. Desarrollado por nombre del desarrollador",
+    "language": {
+      "p": "Change language: ",
+      "span": "ENG"
+    }
+  }
+}

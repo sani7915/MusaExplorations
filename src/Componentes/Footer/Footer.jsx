@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import logoVertical from '../../images/logo vertical.svg';
 import logoHorizontal from '../../images/logo horizontal.svg';
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next'
+
 
 const Footer = () => {
     const [show_hidde, setShowHidde] = useState('');
+    const [t, i18n] = useTranslation("global")
 
     const showHidde = () => {
         if (window.innerWidth < 768) {
@@ -27,7 +30,7 @@ const Footer = () => {
                             <img src={logoHorizontal} alt="" />
                         </div>}
                     <p className="montserrat text-center text-lg-start px-1 ">
-                        Coger el pincel, humedecer la acuarela, fundir el pincel en la mezcla, ver como el agua se posa en el papel, como el pigmento de la acuarela se expande en el agua… disfrutar de cada paso.
+                        {t("footer.lirica")}
                     </p>
                     <div className="col mt-4">
                         <ul className="d-flex list-unstyled justify-content-evenly">
@@ -60,26 +63,34 @@ const Footer = () => {
                             <ul className="list-unstyled">
                                 <li className="nav-item">
                                     <Link to={'/'} className="nav-link">
-                                        Tienda Etsy
+                                        {t("footer.ul1.tienda")}
                                     </Link>
                                 </li>
-                                <li>Galeria de trabajos</li>
-                                <li> Pedidos personalizados</li>
-                                <li>Prints y tarjetas </li>
+                                <li> {t("footer.ul1.galeria")}</li>
+                                <li>{t("footer.ul1.pedidos")}</li>
+                                <li>{t("footer.ul1.prints")}</li>
                             </ul>
                         </div>
                         <div className="col-6 p-4 text-end d-none d-lg-block" >
                             <ul className="list-unstyled">
-                                <li>Acuarelas originales</li>
-                                <li>Patterns</li>
-                                <li>Sobre mi</li>
-                                <li>Contacto</li>
+                                <li>{t("footer.ul2.acuarelas")}</li>
+                                <li>{t("footer.ul2.patterns")}</li>
+                                <li>{t("footer.ul2.SobreMi")}</li>
+                                <li>{t("footer.ul2.contacto")}</li>
                             </ul>
                         </div>
                     </div>
-                    <p className="montserrat  text-center text-lg-end px-2 pe-md-4 p-lg-0 fs-7">
-                        Copyright 2022. Todos los derechos reservados. Desarrollado por nombre del desarrollador.
-                    </p>
+                    <div className="d-flex flex-column ">
+                        <p className="change-language m-0 text-center text-lg-end" onClick={() => i18n.changeLanguage("en")}>
+                            {t("footer.language.p")}
+                            <u className="text-decoration-underinde">
+                                {t("footer.language.span")}
+                            </u>
+                        </p>
+                        <p className="montserrat text-center text-lg-end px-2 pe-md-4 p-lg-0 fs-7">
+                            {t("footer.copy")}
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
