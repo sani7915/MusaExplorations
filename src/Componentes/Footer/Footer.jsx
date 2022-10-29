@@ -7,7 +7,19 @@ import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
     const [show_hidde, setShowHidde] = useState('');
-    const [t, i18n] = useTranslation("global")
+    const [t, i18n] = useTranslation("global");
+    const [lenguaje, setLenguaje] = useState('es');
+
+    const cambiarIdioma = () => {
+        if (lenguaje === 'es') {
+            setLenguaje('en');
+            i18n.changeLanguage('en')
+        }
+        else {
+            setLenguaje('es')
+            i18n.changeLanguage('es')
+        }
+    }
 
     const showHidde = () => {
         if (window.innerWidth < 768) {
@@ -19,7 +31,7 @@ const Footer = () => {
     window.addEventListener('resize', showHidde)
 
     return (
-        <footer className="container-fluid  bg-footer p-0 mt-5">
+        <footer className="container-fluid bg-footer p-0 mt-5">
             <div className="col m-auto d-flex flex-column align-items-center  col-md-11 col-lg-10 col-xl-8 col-xxl-7 flex-lg-row">
                 <div className="col-11 m-md-0 py-md-4 col-lg-5 ">
                     {show_hidde
@@ -81,10 +93,12 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="d-flex flex-column ">
-                        <p className="change-language m-0 text-center text-lg-end" onClick={() => i18n.changeLanguage("en")}>
+                        <p className="change-language m-0 text-center text-lg-end" onClick={cambiarIdioma}>
                             {t("footer.language.p")}
-                            <u className="text-decoration-underinde">
-                                {t("footer.language.span")}
+                            <u className="pointer">
+                                <span type="button">
+                                    {t("footer.language.span")}
+                                </span>
                             </u>
                         </p>
                         <p className="montserrat text-center text-lg-end px-2 pe-md-4 p-lg-0 fs-7">

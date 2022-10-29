@@ -23,5 +23,23 @@
       "p": "Change language: ",
       "span": "ENG"
     }
+  },
+  "newsletterPortada": {
+    "titulo": "¡APUNTATE!",
+    "p1": "Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para",
+    "p2": "mejorar tu técnica, novedades y descuentos exclusivos en la tienda...",
+    "btnValueStatic": "¡ME APUNTO!",
+    "btnValueSend": "ENVIANDO"
+  },
+  "newsletterApuntate": {
+    "p1": "Si sientes que te hace tilín, estaré encantada de que te unas. Recuerda que es gratis y",
+    "p2": "puedes darte de baja cuando quieras."
+  },
+  "input": {
+    "AlertText": "* Este campo es obligatorio",
+    "LabelNombre": "Nombre",
+    "LabelEmail": "Email",
+    "LabelTelefono": "Telefono",
+    "LabelMensaje": "Mensaje"
   }
 }
