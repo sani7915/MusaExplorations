@@ -24,12 +24,14 @@
       "span": "ES"
     }
   },
+    "newsletterFormBtnValue" : {
+      "Static": "I'M IN",
+      "Send": "SENDING..."
+    },
   "newsletterPortada": {
     "titulo": "SIGN UP!",
     "p1": " Sign up for free and periodically receive sheets to download and paint, tips for",
-    "p2": "improve your technique, news and exclusive discounts in the store...",
-    "btnValueStatic": "I'M IN!",
-    "btnValueSend": "SENDING"
+    "p2": "improve your technique, news and exclusive discounts in the store..."
   },
   "newsletterApuntate": {
     "p1": "If you feel that it makes you tick, I will be delighted if you join.",

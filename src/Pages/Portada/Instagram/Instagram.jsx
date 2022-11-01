@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from '../../images/naranjas en acuarela.jpg'
-import img2 from '../../images/pintando bouquet de flores acuarela_.jpg';
+import img1 from '../../../images/naranjas en acuarela.jpg'
+import img2 from '../../../images/pintando bouquet de flores acuarela_.jpg';
 const Instagram = () => {
     return (
         <div className="container mt-5">

@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./SCSS/App.scss";
-import PortadaContenedor from "./Componentes/Portada/PortadaContenedor";
-import Navbar from "./Componentes/Navbar/Navbar";
+import PortadaContenedor from "../src/Pages/Portada/PortadaContenedor";
+import Navbar from "../src/Componentes/Navbar/Navbar";
 import Footer from "./Componentes/Footer/Footer";
-import GaleriaTrabajos from "./Componentes/GaleriaTrabajos/Galeria";
-import Apuntate from "./Componentes/Apuntate/Apuntate";
-import SobreMi from "./Componentes/SobreMi/SobreMi";
-import Contacto from "./Componentes/Contacto/Contacto";
+import GaleriaTrabajos from "../src/Pages/GaleriaTrabajos/Galeria";
+import Apuntate from "../src/Pages/Apuntate/Apuntate";
+import SobreMi from "../src/Pages/SobreMi/SobreMi";
+import Contacto from "../src/Pages/Contacto/Contacto"
+import Tienda from "./Pages/Tienda/Tienda";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route exact path="/galeria" element={<GaleriaTrabajos />} />
           <Route exact path="/apuntate" element={<Apuntate />} />
           <Route exact path="/sobreMi" element={<SobreMi />} />
-          <Route exact path="/contacto" element={<Contacto/>} />
+          <Route exact path="/contacto" element={<Contacto/>}/>
+          <Route exact path="/tienda" element={<Tienda/>}/>
         </Routes>
       <Footer />
     </BrowserRouter>

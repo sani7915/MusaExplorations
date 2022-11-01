@@ -1,0 +1,75 @@
+@media (min-width: 320px) {
+  .text-box,
+.text-box-left {
+    margin-top: -90px;
+    border: 1px solid #e0c2b6;
+    background-color: #ffffff;
+    z-index: 1010;
+  }
+}
+@media (min-width: 1024px) {
+  .text-box {
+    margin-right: -150px;
+    margin-top: 0;
+  }
+  .text-box p {
+    font-size: 14px;
+  }
+  .text-box-left {
+    margin-top: 0;
+    margin-left: -130px;
+  }
+  .text-box-left p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1280px) {
+  .text-box {
+    margin-right: -195px;
+    max-height: 385px;
+  }
+  .text-box p {
+    font-size: 17px;
+  }
+  .text-box-left {
+    margin-left: -250px;
+    max-width: 450px;
+  }
+  .text-box-left p {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1440px) {
+  .text-box {
+    margin-left: -325px;
+    min-width: 450px;
+    min-height: 350px;
+  }
+  .text-box p {
+    font-size: 18px;
+  }
+  .text-box-left {
+    margin-left: -460px;
+    min-height: 430px;
+  }
+  .text-box-left p {
+    font-size: 18px;
+  }
+  .bouquet-img {
+    max-height: 580px;
+    max-width: 800px;
+  }
+}
+@media (min-width: 1920px) {
+  .text-box {
+    margin-right: -300px;
+  }
+  .text-box-left {
+    max-width: 450px;
+    margin-left: -700px;
+  }
+  .bouquet-img {
+    max-height: 660px;
+    max-width: 1000px;
+  }
+}/*# sourceMappingURL=sobreMi.css.map */

@@ -1,0 +1,22 @@
+.insta-card img {
+  object-fit: cover;
+}
+
+@media (min-width: 320px) {
+  .insta-card {
+    width: 300px;
+    height: 300px;
+  }
+  .insta-card img {
+    object-fit: cover;
+  }
+}
+@media (min-width: 768px) {
+  .insta-card {
+    width: 232px;
+    height: 232px;
+  }
+  .insta-card img {
+    object-fit: cover;
+  }
+}/*# sourceMappingURL=instagram.css.map */

@@ -1,18 +1,25 @@
-.newsletter {
+.newsletter-portada {
   background-image: url("../../images/probando\ paleta\ color\ acuarela.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   // position: relative;
-  input{
-    background-color: #E9E7E7;;
+  input {
+    background-color: #e9e7e7;
   }
 }
 
-.bg-newsletter {
+.bg-newsletter-portada {
   background: rgba(255, 255, 255, 0.9);
 }
 
 .bg-newsletter-apuntate {
-  background: #F3F3F3;
+  background: #f3f3f3;
 }
 
+.flechita {
+  margin-bottom: -40px;
+  margin-top: -40px;
+  z-index:1200;
+}
+
+ 

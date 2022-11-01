@@ -1,25 +1,29 @@
 import React, { useEffect, useRef, useState } from 'react';
 import naranjas from '../../images/naranjas_mod.jpg'
 import emailjs from '@emailjs/browser';
-import PopUp from '../PopUp/PopUp';
-import Input from '../Input'
-import Textarea from '../Textarea';
+import PopUp from '../../Componentes/PopUp/PopUp';
+import Input from '../../Componentes/FormComponent/Input';
+
+import Textarea from '../../Componentes/FormComponent/Textarea';
 import { useTranslation } from 'react-i18next';
+import FormButton from '../../Componentes/FormComponent/FormButton';
 
 const Contacto = () => {
-    const [t] = useTranslation("global")
+    const [t] = useTranslation("global");
     const form = useRef();
-    const [btnValue, setBtnValue] = useState('ENVIAR MENSAJE')
-    const [nombre, setNombre] = useState()
-    const [nombreInvalid, setNombreInvalid] = useState(true)
-    const [email, setEmail] = useState()
-    const [emailInvalid, setEmailInvalid] = useState(true)
-    const [mensaje, setMensaje] = useState()
-    const [mensajeInvalid, setMensajeInvalid] = useState(true)
-    const [showHide, setShowHide] = useState(false)
+    const [name, setName] = useState();
+    const [invalidName, setInvalidName] = useState(true);
+    const [email, setEmail] = useState();
+    const [invalidEmail, setInvalidEmail] = useState(true);
+    const [message, setMensaje] = useState();
+    const [messageInvalid, setInvalidMessage] = useState(true);
+    const [showHidePopUp, setShowHidePopUp] = useState(false);
+    const [changeBtnValue, setChangeBtnValuue] = useState(true);
+    const [resolveRejectPopUp, setResolveRejectPopUp] = useState()
+
 
     const getNombre = (e) => {
-        setNombre(e.target.value)
+        setName(e.target.value)
     }
     const getEmail = (e) => {
         setEmail(e.target.value)
@@ -27,50 +31,54 @@ const Contacto = () => {
     const getMensaje = (e) => {
         setMensaje(e.target.value)
     }
-    const ocultarPopUp = () => {
-        setShowHide(false)
+    const closePopUp = () => {
+        setShowHidePopUp(false)
     }
 
     useEffect(() => {
-        if (nombre !== undefined && nombre.length === 0) {
-            setNombreInvalid(false)
-        } else { setNombreInvalid(true) }
-        if (email !== undefined && email.length === 0) {
-            setEmailInvalid(false)
-        } else { setEmailInvalid(true) }
-        if (mensaje !== undefined && mensaje.length === 0) {
-            setMensajeInvalid(false)
-        } else { setMensajeInvalid(true) }
+        if (name !== undefined && name.length === 0) {
+            setInvalidName(false)
+        } else { setInvalidName(true) }
 
-    }, [nombre, email, mensaje])
+        if (email !== undefined && email.length === 0) {
+            setInvalidEmail(false)
+        } else { setInvalidEmail(true) }
+
+        if (message !== undefined && message.length === 0) {
+            setInvalidMessage(false)
+        } else { setInvalidMessage(true) }
+
+    }, [name, email, message])
 
     const validarCampos = (e) => {
         e.preventDefault();
-        if (!nombre) {
-            setNombreInvalid(false)
+        if (!name) {
+            setInvalidName(false)
         } else if (!email) {
-            setEmailInvalid(false)
-        } else if (!mensaje) {
-            setMensajeInvalid(false)
+            setInvalidEmail(false)
+        } else if (!message) {
+            setInvalidMessage(false)
         }
         else {
-            setBtnValue('ENVIANDO...')
-
-            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQ') //B
+            setChangeBtnValuue(false)
+            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQB')
                 .then(() => {
-                    setBtnValue('ENVIAR MENSAJE')
                     form.current.reset()
-                    setNombre(!nombre)
+                    setName(!name)
                     setEmail(!email)
-                    setMensaje(!mensaje)
-                    setShowHide(true)
+                    setMensaje(!message)
+                    setShowHidePopUp(true)
+                    setChangeBtnValuue(true)
+                    setResolveRejectPopUp(true)
                 }, () => {
-                    setBtnValue('ENVIAR MENSAJE')
+
                     form.current.reset()
-                    setNombre(!nombre)
+                    setName(!name)
                     setEmail(!email)
-                    setMensaje(!mensaje)
-                    setShowHide(true)
+                    setMensaje(!message)
+                    setShowHidePopUp(true)
+                    setChangeBtnValuue(true)
+                    setResolveRejectPopUp(false)
                 });
         }
     }
@@ -82,7 +90,7 @@ const Contacto = () => {
                 <h1 className="fs-3 arvo lh-sm ps-md-2">CONTACTO</h1>
             </div>
             <div className='container-fluid px-0 '>
-                <img src={naranjas} alt="" className='w-100 naranjas img-fluid' />
+                <img src={naranjas} alt={naranjas} className='w-100 naranjas img-fluid' />
             </div>
             <div className="form_contacto d-flex flex-column col-11 col-lg-10 col-xl-8 col-xxl-7">
                 <div className='d-flex flex-column align-items-center'>
@@ -94,12 +102,12 @@ const Contacto = () => {
                 <div className="bg_form_contacto col-11 col-xl-9 m-auto p-4 p-lg-0 mt-3 mt-md-0 mb-4 mb-md-5 mt-lg-4">
                     <form ref={form} onSubmit={validarCampos} className="d-flex flex-column gap-3">
                         <Input
-                            campoInvalido={nombreInvalid}
+                            campoInvalido={invalidName}
                             valorInput={getNombre}
                             name={'nombre'} type={'text'}
                             label={t("input.LabelNombre")} />
                         <Input
-                            campoInvalido={emailInvalid}
+                            campoInvalido={invalidEmail}
                             valorInput={getEmail}
                             name={'email'}
                             type={'email'}
@@ -110,24 +118,25 @@ const Contacto = () => {
                             type={'text'}
                             label={t("input.LabelTelefono")} />
                         <Textarea
-                            campoInvalido={mensajeInvalid}
+                            campoInvalido={messageInvalid}
                             valorInput={getMensaje}
                             name={'mensaje'}
                             type={'textarea'}
                             label={t("input.LabelMensaje")} />
-                        <div className="col col-md-5">
-                            <input type='submit' value={btnValue} className="form_button" />
-                        </div>
+                        <FormButton changeBtnValue={changeBtnValue} />
                     </form>
                 </div>
 
             </div>
-            <div className='position-absolute d-flex justify-content-center col-12 '>
-                {showHide
-                    ? <PopUp valor={showHide} ocultar={ocultarPopUp} />
+            <div className='position-absolute d-flex justify-content-center col-12'>
+                {showHidePopUp
+                    ? <PopUp
+                        showHidePopUp={showHidePopUp}
+                        closePopUp={closePopUp}
+                        resolveReject={resolveRejectPopUp} />
                     : ''}
             </div>
-            <div className={showHide
+            <div className={showHidePopUp
                 ? "div-negro"
                 : 'd-none'
             }>

@@ -1,0 +1,60 @@
+@media (min-width: 320px) {
+  .text-box-apuntate {
+    margin-top: -90px;
+    background-color: #ffffff;
+    z-index: 1010;
+    .fa-circle {
+      font-size: 10px;
+      color: red;
+    }
+    li {
+      color: #cfab82;
+      p {
+        color: black;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .text-box-apuntate {
+    border: 1px solid #e0c2b6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-box-apuntate {
+    margin-right: -460px;
+    margin-top: 0;
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-box-apuntate {
+    margin-right: -585px;
+    max-height: 385px;
+    p {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .text-box-apuntate {
+    margin-left: -270px;
+    min-height: 350px;
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .text-box-apuntate {
+    margin-right: -690px;
+    min-height: 450px;
+  }
+}

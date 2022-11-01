@@ -3,21 +3,21 @@ import campoDeGirasoles from '../../images/girasoles.jpg';
 import pintandoBouquet from '../../images/pintando bouquet de flores acuarela_mod.jpg'
 
 const SobreMi = () => {
-    const [show_hidde, setShowHidde] = useState('');
+    const [showHide, setShowHide] = useState('');
 
-    const showHidde = () => {
+    const onResize = () => {
         if (window.innerWidth < 768) {
-            setShowHidde(true)
+            setShowHide(true)
         } else {
-            setShowHidde(false)
+            setShowHide(false)
         }
     }
-    window.addEventListener('resize', showHidde)
+    window.addEventListener('resize', onResize)
 
     return (
         <div>
             <h1 className={
-                !show_hidde
+                !showHide
                     ? "d-flex m-auto col-md-11 col-lg-10 col-xl-8 col-xxl-7 fs-3 mt-5 mb-3 ps-2 arvo"
                     : "visually-hidden"}>
                 SOBRE MÍ
@@ -29,7 +29,7 @@ const SobreMi = () => {
                 </div>
                 <div className="d-flex justify-content-center align-items-center mb-5 mb-lg-0 col-lg-5 col-xl-4 col-xxl-2 ">
                     <div className="col-11 col-md-10 col-lg-11 p-3 text-box">
-                        <h1 className={show_hidde
+                        <h1 className={showHide
                             ? "fs-3 mb-3 arvo"
                             : 'visually-hidden'
                         }>

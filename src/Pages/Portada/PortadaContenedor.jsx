@@ -1,14 +1,14 @@
 import React from "react";
-import Instagram from "../Instagram/Instagram";
-import NewsletterPortada from "../Portada/NewsletterPortada";
+import Instagram from "../Portada/Instagram/Instagram"
 import HeroPortada from "./HeroPortada";
-
+import NewsletterPortada from '../Portada/NewsletterPortada'
 
 const PortadaContenedor = () => {
     return (
         <div>
             <HeroPortada />
-            <NewsletterPortada/>
+            {/* <NewsletterPortada /> */}
+            <NewsletterPortada />
             <Instagram />
         </div>
     )

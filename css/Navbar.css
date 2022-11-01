@@ -1,23 +1,38 @@
+.navbar {
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.06);
+  z-index: 15000;
+}
 .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
-
 .navbar .nav-link {
-  font-weight: bold;
   color: #404040;
+  padding-left: 12px;
 }
-
 .navbar .nav-link:hover {
   color: black;
 }
-
-@media (max-width: 768px) {
-  .logo-pos {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+.navbar .w-logo {
+  width: 45px;
 }
-/*# sourceMappingURL=Navbar.css.map */
+@media (min-width: 768px) {
+  .navbar .w-logo-md {
+    width: 63px;
+  }
+  .navbar .nav-item {
+    position: relative;
+  }
+  .navbar .nav-item::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    bottom: 0px;
+    left: 4%;
+    transition: 0.5s;
+  }
+  .navbar .nav-item:hover::after {
+    width: 94%;
+    background-color: #404040;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

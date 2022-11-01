@@ -1,11 +1,13 @@
-@import url("../Componentes/Navbar/Navbar.scss");
-@import url("../Componentes/Portada/HeroPortda.scss");
-@import url("../Componentes/Newsletter/newletter.scss");
-@import url("../Componentes/Instagram/instagram.scss");
-@import url("../Componentes/Footer/footer.scss");
-@import url("../Componentes/SobreMi/sobreMi.scss");
-@import url("../Componentes/Contacto/contacto.scss");
+@import url("../../src/Componentes/Navbar/Navbar.scss");
+@import url("../../src/Pages/Portada/HeroPortda.scss");
+@import url("../Componentes/newsletterForm/newsletter.scss");
+@import url("../Pages/Portada/Instagram/instagram.scss");
+@import url("../../src/Componentes/Footer/footer.scss");
+@import url("../../src/Pages/SobreMi/sobreMi.scss");
+@import url("../../src/Pages/Contacto/contacto.scss");
 @import url("../Componentes/PopUp/poUp.scss");
+@import url("../Pages/Apuntate/apuntate.scss");
+
 
 
 body {
@@ -56,11 +58,11 @@ p {
 }
 
 .form_button {
-  background-color: #c89e6f;
-  border-radius: 25px;
-  height: 54px;
-  border: none;
-  width: 100%;
-  color: white;
-  font-family: "Arvo", serif;
+    background-color: #c89e6f;
+    border-radius: 25px;
+    height: 54px;
+    border: none;
+    width: 100%;
+    color: white;
+    font-family: "Arvo", serif;
 }

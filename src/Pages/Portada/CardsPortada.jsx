@@ -11,7 +11,7 @@ const CardsPortada = () => {
     return (
             array.map(lamina => {
                 return (
-                    <div key={lamina.category1} className={`${lamina.color} d-flex flex-column justify-content-center position-relative col-11 col-md-4 text-white text-center fs-3 card_portada-heigth`}>
+                    <div key={lamina.category1} className={`${lamina.color} d-flex flex-column justify-content-center position-relative col-11 col-md-4 text-white text-center fs-3  card_portada-heigth`}>
                         <div className="px-2 mt-3 d-flex flex-column justify-content-center fs-4 ">
                             <p className="m-0">
                                 {lamina.category1}

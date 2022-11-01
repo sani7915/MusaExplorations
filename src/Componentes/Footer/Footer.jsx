@@ -48,7 +48,7 @@ const Footer = () => {
                         <ul className="d-flex list-unstyled justify-content-evenly">
                             <li>
                                 <a href="https://www.instagram.com" target='_blank' rel="noreferrer" >
-                                    <i className="fa-brands fa-instagram fs-1 text-black opacity-75"></i>
+                                    <i className="fa-brands fa-square-instagram fs-1 text-black opacity-75"></i>
                                 </a>
                             </li>
                             <li>
