@@ -11,9 +11,9 @@ const GaleriaTrabajos = () => {
         { btn: 'Naturaleza' }
 
     ]
-    const botones3 = [,
+    const botones3 = [
         { btn: 'Mujer' },
-        { btn: 'Abstracto' },
+        { btn: 'Abstracto' }
     ]
     return (
         <div className=" m-auto col-10 col-md-11 col-xl-8 col-xxl-7">
@@ -31,7 +31,7 @@ const GaleriaTrabajos = () => {
                     })
                     }
                 </div>
-                <div  className="d-flex flex-column flex-md-row gap-md-3  gap-2">
+                <div className="d-flex flex-column flex-md-row gap-md-3  gap-2">
                     {botones2.map((btn) => {
                         return (
                             <button className="btn-tienda" key={btn.btn}>
@@ -41,7 +41,7 @@ const GaleriaTrabajos = () => {
                     })
                     }
                 </div>
-                <div  className="d-flex flex-column flex-md-row  gap-md-3  gap-2">
+                <div className="d-flex flex-column flex-md-row  gap-md-3  gap-2">
                     {botones3.map((btn) => {
                         return (
                             <button className="btn-tienda" key={btn.btn}>
