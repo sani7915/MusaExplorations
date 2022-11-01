@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import NewsletterForm from "../../Componentes/newsletterForm/NewsletterForm";
 import PopUp from '../../Componentes/PopUp/PopUp';
 import flechita from '../../images/flechita.png'
@@ -8,7 +8,7 @@ import flechita from '../../images/flechita.png'
 
 
 function NewsletterApuntate() {
-    // const [t] = useTranslation("global")
+    const [t] = useTranslation("global")
     const [showHidePopUp, setshowHidePopUp] = useState()
     const [resolveReject, setResolveReject] = useState()
 
@@ -33,13 +33,14 @@ function NewsletterApuntate() {
             <div className="d-flex flex-column  align-items-md-start col-md-11 col-lg-10 col-xl-8 col-xxl-7 mb-5 m-md-0 p-4 bg-newsletter-apuntate">
                 <p className="mb-0 fs-5 text-center text-md-start ">
                     <b>
-                        Si sientes que te hace tilín
+                       {t("newsletterApuntate.b")}
                     </b>
-                        , estaré encantada de que te unas. Recuerda que es gratis y
+                    {t("newsletterApuntate.p1")}
+
 
                 </p>
                 <p className="fs-5 text-center text-md-start ">
-                    puedes darte de baja cuando quieras.
+                {t("newsletterApuntate.p2")}
                 </p>
                 <NewsletterForm showPopUp={showPopUp} resolveRej={resolveRej} />
             </div>

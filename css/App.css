@@ -5,8 +5,9 @@
 @import url("../../src/Componentes/Footer/footer.scss");
 @import url("../../src/Pages/SobreMi/sobreMi.scss");
 @import url("../../src/Pages/Contacto/contacto.scss");
-@import url("../Componentes/PopUp/poUp.scss");
+@import url("../Componentes/PopUp/popUp.scss");
 @import url("../Pages/Apuntate/apuntate.scss");
+@import url("../Pages/Tienda/tienda.scss");
 body {
   margin: auto;
 }

@@ -1,9 +1,90 @@
 {
+  "navBar": {
+    "portada": "Portada",
+    "galeria": "Galeria de trabajos",
+    "tienda": "Tienda",
+    "apuntate": "Apúntate",
+    "sobreMi": "Sobre mí",
+    "contacto": "Contacto"
+  },
+
   "inicio": {
     "h1": "ARTE EN ACUARELA",
     "p1": "Creación de piezas bonitas y únicas, de líneas orgánicas y delicadas, que te sacan una",
     "p2": "sonrisa cada día al contemplarla, y que ayudan a que hoy seas más feliz que ayer."
   },
+
+  "cardPortada": {
+    "arte": {
+      "p1": "Arte original",
+      "p2": "& Prints"
+    },
+    "colecciones": {
+      "p1": "Coleccionesa",
+      "p2": "& Patterns"
+    },
+    "pedidos": {
+      "p1": "Pedidos",
+      "p2": "Personalizados"
+    }
+  },
+
+  "newsletterPortada": {
+    "titulo": "¡APUNTATE!",
+    "p1": "Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para",
+    "p2": "mejorar tu técnica, novedades y descuentos exclusivos en la tienda..."
+  },
+  "tienda": {
+    "titulo": "TIENDA",
+    "subtitulo": "Puedes encontrar algunos de mis artículos en mi tienda de Etsy o Spoonflower :",
+    "etsy": {
+      "p1": "Láminas en la tienda",
+      "p2": "MUSA DE ACUARELA de Etsy"
+    },
+    "spoonflower": {
+      "p1": "Telas y papel pintado en la tienda",
+      "p2": "MUSA DE ACUARELA de Spoonflower"
+    }
+  },
+  "apuntate": {
+    "titulo": "APÚNTATE",
+    "li1": "Recibir láminas bonitas para poder descargarlas y pintarlas con tu técnica favorita",
+    "li2": "Descubrir tips fáciles de implementar para adentrarte y mejorar en el mundo de la acuarela",
+    "li3": "Formar parte de un grupo que comparte tu pasión por lo natural, orgánico, delicado...",
+    "li4": "Enterarte antes que nadie de lanzamientos y ediciones limitadas de láminas y colecciones"
+  },
+  "newsletterApuntate": {
+    "b": "Si sientes que te hace tilín, ",
+    "p1": "estaré encantada de que te unas. Recuerda que es gratis y",
+    "p2": "puedes darte de baja cuando quieras."
+  },
+  "sobreMi": {
+    "titulo": "SOBRE MÍ",
+    "h61": "¡HOLA!",
+    "p1": "Soy Sandra, y mi historia empieza el día que la acuarela llegó a mi vida y mi mundo cambió. Es una técnica que cada día me enamora más, y con la que disfruto mucho.",
+    "h62": "Lo que me inspira",
+    "p2": "Definitivamente mi mayor inspiración la encuentro en la naturaleza: flores, paisajes, un cielo bonito, el mar, los animallillos... Me gusta transmitir delicadeza y minimalismo en mis acuarelas.",
+    "h63": "¿Qué medios utilizo?",
+    "p3": "El principal es la acuarela sobre papel de algodón. A menudo lo complemento con gouache, tinta, ceras, lápices, grafito, pan de oro…",
+    "h64": "Lo que más disfruto de la acuarela",
+    "p4": "Coger la pintura, humedecer la acuarela, fundir el pincel en la mezcla, ver como el agua se posa en el papel, como el pigmento de la acuarela se expande en el agua… cada paso del proceso es un disfrute para mi. Este arte lo aplico a obras tanto originales como reproducciones que pueden utilizarse para un print, estampar una tela, decorar una vajilla bonita…. Compartir mi conocimiento con gente que disfruta y se enriquece con su creatividad es otra faceta que también me llena."
+  },
+  "contacto": {
+    "titulo": "CONTACTO",
+    "p1": "Puedes enviarme tu consulta a través del formulario o escribirme a hola@musadeacuarela.com"
+  },
+  "newsletterFormBtnValue": {
+    "Static": "¡ME APUNTO!",
+    "Send": "ENVIANDO..."
+  },
+  "input": {
+    "AlertText": "* Este campo es obligatorio",
+    "LabelNombre": "Nombre",
+    "LabelEmail": "Email",
+    "LabelTelefono": "Telefono",
+    "LabelMensaje": "Mensaje"
+  },
+
   "footer": {
     "lirica": "Coger el pincel, humedecer la acuarela, fundir el pincel en la mezcla, ver como el agua se posa en el papel, como el pigmento de la acuarela se expande en el agua… disfrutar de cada paso.",
     "ul1": {
@@ -23,26 +104,5 @@
       "p": "Change language: ",
       "span": "ENG"
     }
-  },
-  "newsletterFormBtnValue" : {
-    "Static": "¡ME APUNTO!",
-    "Send": "ENVIANDO..."
-  },
-  "newsletterPortada": {
-    "titulo": "¡APUNTATE!",
-    "p1": "Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para",
-    "p2": "mejorar tu técnica, novedades y descuentos exclusivos en la tienda..."
-  },
-  "newsletterApuntate": {
-    "p1": "Si sientes que te hace tilín, estaré encantada de que te unas. Recuerda que es gratis y",
-    "p2": "puedes darte de baja cuando quieras."
-  },
-
-  "input": {
-    "AlertText": "* Este campo es obligatorio",
-    "LabelNombre": "Nombre",
-    "LabelEmail": "Email",
-    "LabelTelefono": "Telefono",
-    "LabelMensaje": "Mensaje"
   }
 }

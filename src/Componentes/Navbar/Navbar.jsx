@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useState }  from "react";
 import logo from '../../images/logo peq sin texto.svg';
 import logoMusa from '../../images/Musa.svg';
 import hamburguesa from '../../images/hamburguesa.png';
 import { Link } from 'react-router-dom'
-import { useState } from "react";
+import {useTranslation} from 'react-i18next'
 
-const links = [
-    { to: '/', nombre: 'Portada' },
-    { to: '/galeria', nombre: 'Galeria de trabajos' },
-    { to: '/tienda', nombre: 'Tienda' },
-    { to: '/apuntate', nombre: 'Apúntate' },
-    { to: '/sobreMi', nombre: 'Sobre mí' },
-    { to: '/contacto', nombre: 'Contacto' },
-]
 
 const Navbar = () => {
+    const [t] = useTranslation("global")
+    const links = [
+        { to: '/', nombre: t("navBar.portada") },
+        { to: '/galeria', nombre:  t("navBar.galeria") },
+        { to: '/tienda', nombre:  t("navBar.tienda") },
+        { to: '/apuntate', nombre:  t("navBar.apuntate") },
+        { to: '/sobreMi', nombre:  t("navBar.sobreMi") },
+        { to: '/contacto', nombre: t("navBar.contacto") },
+    ]
     const [show_hidde, setShowHidde] = useState('');
     const showHidde = () => {
         if (window.scrollY && window.innerWidth >= 768) {

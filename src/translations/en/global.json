@@ -1,8 +1,85 @@
 {
+  "navBar": {
+    "portada": "Home",
+    "galeria": "Work Gallery",
+    "tienda": "Store",
+    "apuntate": "Sign up",
+    "sobreMi": "About me",
+    "contacto": "Contact"
+  },
   "inicio": {
     "h1": "WATER COLOR ART",
     "p1": "Creation of beautiful and unique pieces, with organic and delicate lines, that will make you ",
     "p2": " smile every day when contemplating it, and that helps you to be happier today than yesterday"
+  },
+  "cardPortada": {
+    "arte": {
+      "p1": "Original art",
+      "p2": "& Prints"
+    },
+    "colecciones": {
+      "p1": "Collections",
+      "p2": "& Patterns"
+    },
+    "pedidos": {
+      "p1": "Custom ",
+      "p2": "Orders"
+    }
+  },
+  "newsletterPortada": {
+    "titulo": "SIGN UP!",
+    "p1": " Sign up for free and periodically receive sheets to download and paint, tips for",
+    "p2": "improve your technique, news and exclusive discounts in the store..."
+  },
+  "tienda": {
+    "titulo": "STORE",
+    "subtitulo": "You can find some of my items in my Etsy shop or Spoonflower:",
+    "etsy": {
+      "p1": "Prints in the store",
+      "p2": "MUSA DE ACUARELA by Etsy"
+    },
+    "spoonflower": {
+      "p1": "Fabrics and wallpaper in the store",
+      "p2": "MUSA DE ACUARELA by Spoonflower"
+    }
+  },
+  "apuntate": {
+    "titulo": "SIGN UP",
+    "li1": "Receive beautiful sheets to be able to download them and paint them with your favorite technique",
+    "li2": "Discover easy-to-implement tips to enter and improve in the world of watercolor",
+    "li3": "Being part of a group that shares your passion for the natural, organic, delicate...",
+    "li4": "Find out before anyone else about releases and limited editions of prints and collections"
+  },
+  "newsletterApuntate": {
+    "b": "If you feel that it makes you tick, ",
+    "p1": "I will be delighted if you join.",
+    "p2": "Remember it's free and you can unsubscribe whenever you want"
+  },
+  "sobreMi": {
+    "titulo": "ABOUT ME",
+    "h61": "HELLO!",
+    "p1": "I am Sandra, and my story begins the day watercolor came into my life and my world changed. It is a technique that I fall in love with more every day, and with which I enjoy a lot.",
+    "h62": "My inspiration",
+    "p2": "I definitely find my greatest inspiration in nature: flowers, landscapes, a beautiful sky, the sea, little animals... I like to convey delicacy and minimalism in my watercolors.",
+    "h63": "What methods do I use?",
+    "p3": "The main one is watercolor on cotton paper. I often complement it with gouache, ink, crayons, pencils, graphite, gold leaf...",
+    "h64": "What I enjoy most about watercolor",
+    "p4": "Taking the paint, moistening the watercolor, melting the brush in the mixture, seeing how the water settles on the paper, how the watercolor pigment expands in the water... each step of the process is a joy for me. I apply this art to both original works and reproductions that can be used for a print, to stamp a fabric, to decorate beautiful tableware... Sharing my knowledge with people who enjoy and are enriched by their creativity is another facet that also fills me."
+  },
+  "contacto" : {
+    "titulo" : "CONTACT",
+    "p1": "You can send me your query through the form or write to me at hola@musadeacuarela.com"
+  },
+  "newsletterFormBtnValue": {
+    "Static": "I'M IN",
+    "Send": "SENDING..."
+  },
+  "input": {
+    "AlertText": "* This field is required",
+    "LabelNombre": "Name",
+    "LabelEmail": "Email",
+    "LabelTelefono": "Phone Number",
+    "LabelMensaje": "Message"
   },
   "footer": {
     "lirica": "Take the brush, moisten the watercolor, melt the brush in the mixture, see how the water settles on the paper, how the watercolor pigment expands in the water... enjoy every step.",
@@ -23,25 +100,5 @@
       "p": "Cambiar idioma :",
       "span": "ES"
     }
-  },
-    "newsletterFormBtnValue" : {
-      "Static": "I'M IN",
-      "Send": "SENDING..."
-    },
-  "newsletterPortada": {
-    "titulo": "SIGN UP!",
-    "p1": " Sign up for free and periodically receive sheets to download and paint, tips for",
-    "p2": "improve your technique, news and exclusive discounts in the store..."
-  },
-  "newsletterApuntate": {
-    "p1": "If you feel that it makes you tick, I will be delighted if you join.",
-    "p2": "Remember it's free and you can unsubscribe whenever you want"
-  },
-  "input": {
-    "AlertText": "* This field is required",
-    "LabelNombre": "Name",
-    "LabelEmail": "Email",
-    "LabelTelefono": "Phone Number",
-    "LabelMensaje": "Message"
   }
 }

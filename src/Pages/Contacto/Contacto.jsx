@@ -87,7 +87,7 @@ const Contacto = () => {
     return (
         <div className='d-flex flex-column align-items-center justify-content-center p-0' >
             <div className="d-none d-lg-block col-11 col-md-11 col-lg-10 col-xl-8 col-xxl-7 m-auto mt-5 ">
-                <h1 className="fs-3 arvo lh-sm ps-md-2">CONTACTO</h1>
+                <h1 className="fs-3 arvo lh-sm ps-md-2">{t("contacto.titulo")}</h1>
             </div>
             <div className='container-fluid px-0 '>
                 <img src={naranjas} alt={naranjas} className='w-100 naranjas img-fluid' />
@@ -96,7 +96,7 @@ const Contacto = () => {
                 <div className='d-flex flex-column align-items-center'>
                     <h1 className="fs-3 arvo lh-sm pt-3 d-lg-none">CONTACTO</h1>
                     <p className="text-center text-md-start px-3 p-md-0 m-0 col-md-10 col-lg-11 col-xl-9 mt-lg-5 fw-bold ">
-                        Puedes enviarme tu consulta a través del formulario o escribirme a hola@musadeacuarela.com
+                        {t("contacto.p1")}
                     </p>
                 </div>
                 <div className="bg_form_contacto col-11 col-xl-9 m-auto p-4 p-lg-0 mt-3 mt-md-0 mb-4 mb-md-5 mt-lg-4">
