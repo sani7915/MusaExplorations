@@ -5,27 +5,26 @@
 //   .navbar-toggler:focus {
 //     box-shadow: none;
 //   }
-//   .nav-link {
-//     color: #404040;
-//     padding-left: 12px;
-//     &:hover {
-//       color: black;
-//     }
-//   }
 
 //   .w-logo {
-//     width: 45px;
-//   }
-
-.modall {
+  //     width: 45px;
+  //   }
+  
+    .nav-link {
+      color: #404040;
+      padding-left: 12px;
+      &:hover {
+        color: black;
+      }
+    }
+  .modall {
   list-style: none;
   padding-left: 15px;
   z-index: 1200;
   position: absolute;
   background-color: white;
   width: 100%;
-  box-shadow: 0px 1px 2px grey;
-  // animation-name: scrollUp;
+
 }
 
 .nav-bar {
@@ -71,13 +70,7 @@
   }
 }
 
-.logo-small {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding-left: 5px;
-  cursor: pointer;
-}
+
 
 @media (min-width: 768px) {
   .w-logo-md {

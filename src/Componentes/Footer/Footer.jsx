@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next'
 
 
 const Footer = () => {
-    const [show_hidde, setShowHidde] = useState('');
     const [t, i18n] = useTranslation("global");
     const [lenguaje, setLenguaje] = useState('es');
 
@@ -21,26 +20,17 @@ const Footer = () => {
         }
     }
 
-    const showHidde = () => {
-        if (window.innerWidth < 768) {
-            setShowHidde(true)
-        } else {
-            setShowHidde(false)
-        }
-    }
-    window.addEventListener('resize', showHidde)
 
     return (
         <footer className="container-fluid bg-footer p-0 mt-5">
             <div className="col m-auto d-flex flex-column align-items-center  col-md-11 col-lg-10 col-xl-8 col-xxl-7 flex-lg-row">
                 <div className="col-11 m-md-0 py-md-4 col-lg-5 ">
-                    {show_hidde
-                        ? <div className="d-flex justify-content-center justify-content-md-start my-3 ">
-                            <img src={logoVertical} alt="" />
-                        </div>
-                        : <div className="d-flex justify-content-center justify-content-lg-start mb-3 ">
-                            <img src={logoHorizontal} alt="" />
-                        </div>}
+                    <div className=" d-md-none d-flex justify-content-center my-3 ">
+                        <img src={logoVertical} alt="" />
+                    </div>
+                    <div className=" d-none d-md-flex justify-content-md-center justify-content-lg-start mb-3 ">
+                        <img src={logoHorizontal} alt="" />
+                    </div>
                     <p className="montserrat text-center text-lg-start px-1 ">
                         {t("footer.lirica")}
                     </p>
@@ -93,10 +83,10 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="d-flex flex-column ">
-                        <p className="change-language m-0 text-center text-lg-end" onClick={cambiarIdioma}>
+                        <p className="change-language m-0 text-center text-lg-end" >
                             {t("footer.language.p")}
                             <u className="pointer">
-                                <span type="button">
+                                <span type="button" onClick={cambiarIdioma}>
                                     {t("footer.language.span")}
                                 </span>
                             </u>

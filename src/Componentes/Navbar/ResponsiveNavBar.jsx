@@ -3,6 +3,7 @@ import logo from '../../images/logo peq sin texto.svg';
 import hamburguesa from '../../images/hamburguesa.png';
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { useEffect } from "react";
 
 const ResponsiveNavbar = () => {
     const [t] = useTranslation("global")
@@ -17,7 +18,11 @@ const ResponsiveNavbar = () => {
     const [collapse, setCollapse] = useState();
     const [noCollapse, setNoCollapse] = useState('d-none')
 
-
+    useEffect(() => {
+        setTimeout(() => {
+            setNoCollapse('d-none')
+        }, 5000);
+    }, [collapse])
 
     const chanageBrand = () => {
         if (window.scrollY > 100 && window.innerWidth >= 768) {
@@ -32,23 +37,23 @@ const ResponsiveNavbar = () => {
 
 
     return (
-        <div>
-            <div className='container-fluid d-flex justify-content-center align-items-center d-md-none  py-3 sticky-top'>
-                <div className="logo-small" onClick={() => {
+        <div >
+            <div className='container-fluid d-flex  align-items-center d-md-none  py-3 sticky-top'>
+                <div className="position-absolute" onClick={() => {
                     setCollapse(!collapse)
                     setNoCollapse('')
                 }}>
                     <img src={hamburguesa} alt="" width={45} className='ps-2' />
                 </div>
-                <Link to={'/'} className='' >
+                <Link to={'/'} className='m-auto' >
                     <img src={logo} alt="logo" width={45} />
                 </Link>
             </div>
-            <ul onClick={() => setCollapse(false)} className={collapse ? ` modall animate__animated  animate__fadeInDown d-md-none` : ` modall animate__animated  animate__fadeOutLeft d-md-none ${noCollapse}`}>
+            <ul onClick={() => { setCollapse(!collapse) }} className={collapse ? ` modall animate__animated  animate__fadeIn d-md-none ` : ` modall animate__animated  animate__fadeOut ${noCollapse} d-md-none`}>
                 {
                     links.map(link => {
                         return (
-                            <li className="nav-item" key={link.nombre}>
+                            <li className="nav-item" key={link.nombre} >
                                 <Link to={link.to} className="nav-link mb-2">
                                     {link.nombre}
                                 </Link>

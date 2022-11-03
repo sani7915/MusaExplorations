@@ -1,28 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import probandoPaleta from '../../images/probando paleta color acuarela.jpg'
 import NewsletterApuntate from "./NewsletterApuntate";
 
 const Apuntate = () => {
-    const [showHideTitle, setShowHide] = useState()
     const [t] = useTranslation("global");
-
-
-    const onResize = () => {
-        if (window.innerWidth < 768) {
-            setShowHide(true)
-        } else {
-            setShowHide(false)
-        }
-    }
-    window.addEventListener('resize', onResize)
 
     return (
         <div>
             <h1 className={
-                !showHideTitle
-                    ? "d-flex m-auto col-md-11 col-lg-10 col-xl-8 col-xxl-7 fs-3 mt-5  mb-3 arvo"
-                    : "visually-hidden"}>
+                "d-none d-md-flex m-auto col-md-11 col-lg-10 col-xl-8 col-xxl-7 fs-3 mt-5  mb-3 arvo "}>
                 {t("apuntate.titulo")}
             </h1>
             <div className="d-flex flex-column flex-lg-row-reverse align-items-center overflow-hidden">
@@ -31,9 +18,8 @@ const Apuntate = () => {
                 </div>
                 <div className="d-flex justify-content-center align-items-center col-lg-7 col-xl-6 col-xxl-5">
                     <ul className=" d-flex flex-column justify-content-evenly mb-0 col-11  col-lg-11 p-4 text-box-apuntate">
-                        <h1 className={showHideTitle
-                            ? "fs-3 mb-3 arvo text-center"
-                            : 'visually-hidden'
+                        <h1 className={
+                            "d-md-none fs-3 mb-3 arvo text-center"
                         }>
                             {t("apuntate.titulo")}
                         </h1>
