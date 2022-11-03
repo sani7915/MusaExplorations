@@ -1,44 +1,104 @@
-.navbar {
-  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.06);
+// .navbar {
+//   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.06);
+//   z-index: 15000;
+//   height: 100px;
+//   .navbar-toggler:focus {
+//     box-shadow: none;
+//   }
+//   .nav-link {
+//     color: #404040;
+//     padding-left: 12px;
+//     &:hover {
+//       color: black;
+//     }
+//   }
+
+//   .w-logo {
+//     width: 45px;
+//   }
+
+.modall {
+  list-style: none;
+  padding-left: 15px;
+  z-index: 1200;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 1px 2px grey;
+  // animation-name: scrollUp;
+}
+
+.nav-bar {
   z-index: 15000;
-  .navbar-toggler:focus {
-    box-shadow: none;
+}
+
+.animation {
+  z-index: 1200;
+  background-color: white;
+  animation-name: scrollUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.animation-down {
+  z-index: 1200;
+  background-color: white;
+  animation-name: scrollDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
+    position: sticky;
+  }
+}
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-80px);
+    position: sticky;
+  }
+}
+
+.logo-small {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .w-logo-md {
+    width: 63px;
   }
 
-  .nav-link {
-    color: #404040;
-    padding-left: 12px;
-    &:hover {
-      color: black;
+  .nav-item {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 0px;
+      bottom: 0px;
+      left: 4%;
+      transition: 0.5s;
     }
-  }
 
-  .w-logo {
-    width: 45px;
-  }
-
-  @media (min-width: 768px) {
-    .w-logo-md {
-      width: 63px;
-    }
-
-    .nav-item {
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        height: 2px;
-        width: 0px;
-        bottom: 0px;
-        left: 4%;
-        transition: 0.5s;
-      }
-
-      &:hover::after {
-        width: 94%;
-        background-color:#404040;
-      }
-    
+    &:hover::after {
+      width: 94%;
+      background-color: #404040;
     }
   }
 }

@@ -1,5 +1,16 @@
 import React from "react";
 
+// const objeto = [{id : 101, 
+//     categoría :  '',
+//     nombre: '',
+//     descripción: '',
+//     técnica_soporte: '',
+//     etsy: '',
+//    spoonflower: '',
+//     society : '',
+//     fecha: '',
+//     imagen: '',}]
+
 const GaleriaTrabajos = () => {
     const botones1 = [
         { btn: 'Todos' },

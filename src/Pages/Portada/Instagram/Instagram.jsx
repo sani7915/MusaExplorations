@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from '../../../images/naranjas en acuarela.jpg'
-import img2 from '../../../images/pintando bouquet de flores acuarela_.jpg';
 const Instagram = () => {
     return (
-        <div className="container mt-5">
-            <div className="col-10  m-auto p-4">
+        <div className="container col-10 mt-5">
+      
+
+            {/* <div className="col-10  m-auto p-4">
                 <h3 className="arvo text-center text-lg-start mb-3">LO ÚLTIMO EN INSTAGRAM</h3>
                 <p className="fs-5 montserrat text-center text-lg-start">
                     @musadeacuarela
@@ -23,7 +23,7 @@ const Instagram = () => {
                         <img src={img2} alt="" className="insta-card " />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
         </div>
