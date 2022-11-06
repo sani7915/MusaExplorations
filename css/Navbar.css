@@ -1,11 +1,3 @@
-.nav-link {
-  color: #404040;
-  padding-left: 12px;
-}
-.nav-link:hover {
-  color: black;
-}
-
 .modall {
   list-style: none;
   padding-left: 15px;
@@ -17,31 +9,55 @@
 
 .nav-bar {
   z-index: 15000;
+  background-color: white;
 }
 
-.animation {
+.animation-navbar, .animation-Up, .animation-down {
   z-index: 1200;
   background-color: white;
-  animation-name: scrollUp;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: 1;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 
 .animation-down {
-  z-index: 1200;
-  background-color: white;
   animation-name: scrollDown;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
+.animation-Up {
+  animation-name: scrollUp;
+  animation-duration: 1.5s;
+}
+
+.animate__fadeIn {
+  animation-delay: 0.3s;
+}
+
+.nav-item {
+  position: relative;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.5s;
+}
+.nav-item:hover::after {
+  width: 100%;
+  background-color: #404040;
+}
+
+@media (min-width: 768px) {
+  .w-logo-md {
+    width: 63px;
+  }
+}
 @keyframes scrollDown {
   0% {
-    transform: translateY(-80px);
+    transform: translateY(-100px);
   }
   100% {
     transform: translateY(0px);
@@ -53,28 +69,6 @@
     transform: translateY(0px);
   }
   100% {
-    transform: translateY(-80px);
-    position: sticky;
-  }
-}
-@media (min-width: 768px) {
-  .w-logo-md {
-    width: 63px;
-  }
-  .nav-item {
-    position: relative;
-  }
-  .nav-item::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0px;
-    bottom: 0px;
-    left: 4%;
-    transition: 0.5s;
-  }
-  .nav-item:hover::after {
-    width: 94%;
-    background-color: #404040;
+    transform: translateY(-100px);
   }
 }/*# sourceMappingURL=Navbar.css.map */

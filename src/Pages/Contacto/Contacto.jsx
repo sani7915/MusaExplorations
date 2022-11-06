@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import naranjas from '../../images/naranjas_mod.jpg'
+import naranjas from '../../images/diseño/naranjas_mod.jpg'
 import emailjs from '@emailjs/browser';
 import PopUp from '../../Componentes/PopUp/PopUp';
 import Input from '../../Componentes/FormComponent/Input';

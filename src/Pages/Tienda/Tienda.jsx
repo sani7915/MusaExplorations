@@ -1,6 +1,6 @@
 import React from 'react'
-import etsy from '../../images/etsyBanner.jpg'
-import spoonflower from '../../images/spoonBanner.jpg'
+import etsy from '../../images/diseño/etsyBanner.jpg'
+import spoonflower from '../../images/diseño/spoonBanner.jpg'
 import { useTranslation } from 'react-i18next'
 
 const Tienda = () => {

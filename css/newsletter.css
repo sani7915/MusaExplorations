@@ -1,5 +1,6 @@
+@charset "UTF-8";
 .newsletter-portada {
-  background-image: url("../../images/probando paleta color acuarela.jpg");
+  background-image: url("../../images/diseño/probando paleta color acuarela.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -19,13 +20,13 @@
   .flechita {
     margin-bottom: -30px;
     margin-top: -40px;
-    z-index: 1200;
+    z-index: 1020;
   }
 }
 @media (min-width: 1280px) {
   .flechita {
     margin-bottom: -10px;
     margin-top: -70px;
-    z-index: 1200;
+    z-index: 1020;
   }
 }/*# sourceMappingURL=newsletter.css.map */

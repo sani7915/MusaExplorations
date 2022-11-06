@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logoVertical from '../../images/logo vertical.svg';
-import logoHorizontal from '../../images/logo horizontal.svg';
+import logoVertical from '../../images/diseño/logo vertical.svg';
+import logoHorizontal from '../../images/diseño/logo horizontal.svg';
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next'
 
@@ -22,8 +22,8 @@ const Footer = () => {
 
 
     return (
-        <footer className="container-fluid bg-footer p-0 mt-5">
-            <div className="col m-auto d-flex flex-column align-items-center  col-md-11 col-lg-10 col-xl-8 col-xxl-7 flex-lg-row">
+        <footer className="container-fluid p-0 mt-5 footer">
+            <div className="col m-auto d-flex flex-column align-items-center col-md-11 col-lg-10 col-xl-8 col-xxl-7 flex-lg-row">
                 <div className="col-11 m-md-0 py-md-4 col-lg-5 ">
                     <div className=" d-md-none d-flex justify-content-center my-3 ">
                         <img src={logoVertical} alt="" />
@@ -37,22 +37,22 @@ const Footer = () => {
                     <div className="col mt-4">
                         <ul className="d-flex list-unstyled justify-content-evenly">
                             <li>
-                                <a href="https://www.instagram.com" target='_blank' rel="noreferrer" >
+                                <a href="https://www.instagram.com/musadeacuarela" target='_blank' rel="noreferrer" >
                                     <i className="fa-brands fa-square-instagram fs-1 text-black opacity-75"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com" target='_blank' rel="noreferrer" >
+                                <a href="https://www.facebook.com/musadeacuarela" target='_blank' rel="noreferrer" >
                                     <i className="fa-brands fa-facebook fs-1 text-black opacity-75"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com" target='_blank' rel="noreferrer" >
+                                <a href="https://www.youtube.com/channel/UCQP-0PT5kxDZgpj1AUu0_tQ" target='_blank' rel="noreferrer" >
                                     <i className="fa-brands fa-youtube fs-1 text-black opacity-75"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.pinterest.com" target='_blank' rel="noreferrer" >
+                                <a href="https://www.pinterest.es/musadeacuarela" target='_blank' rel="noreferrer" >
                                     <i className="fa-brands fa-pinterest fs-1 text-black opacity-75"></i>
                                 </a>
                             </li>
@@ -63,22 +63,36 @@ const Footer = () => {
                     <div className="d-flex mb-4">
                         <div className="col-6 p-4 text-end d-none d-lg-block">
                             <ul className="list-unstyled">
-                                <li className="nav-item">
-                                    <Link to={'/'} className="nav-link">
+                                <li>
+                                    <Link to={'/tienda'} className="nav-link">
                                         {t("footer.ul1.tienda")}
                                     </Link>
                                 </li>
-                                <li> {t("footer.ul1.galeria")}</li>
-                                <li>{t("footer.ul1.pedidos")}</li>
-                                <li>{t("footer.ul1.prints")}</li>
+                                <Link to={'/galeria'} className='nav-link'>
+                                    <li> {t("footer.ul1.galeria")}</li>
+                                </Link>
+                                <Link to={'/contacto'} className='nav-link'>
+                                    <li>{t("footer.ul1.pedidos")}</li>
+                                </Link>
+                                <Link to={'/'} className='nav-link'>
+                                    <li>{t("footer.ul1.prints")}</li>
+                                </Link>
                             </ul>
                         </div>
                         <div className="col-6 p-4 text-end d-none d-lg-block" >
                             <ul className="list-unstyled">
-                                <li>{t("footer.ul2.acuarelas")}</li>
-                                <li>{t("footer.ul2.patterns")}</li>
-                                <li>{t("footer.ul2.SobreMi")}</li>
-                                <li>{t("footer.ul2.contacto")}</li>
+                                <Link to={'/'} className='nav-link'>
+                                    <li>{t("footer.ul2.acuarelas")}</li>
+                                </Link>
+                                <Link to={'/'} className='nav-link'>
+                                    <li>{t("footer.ul2.patterns")}</li>
+                                </Link>
+                                <Link to={'/sobreMi'} className='nav-link'>
+                                    <li>{t("footer.ul2.SobreMi")}</li>
+                                </Link>
+                                <Link to={'/contacto'} className='nav-link'>
+                                    <li>{t("footer.ul2.contacto")}</li>
+                                </Link>
                             </ul>
                         </div>
                     </div>

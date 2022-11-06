@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import probandoPaleta from '../../images/probando paleta color acuarela.jpg'
+import probandoPaleta from '../../images/diseño/probando paleta color acuarela.jpg'
 import NewsletterApuntate from "./NewsletterApuntate";
 
 const Apuntate = () => {

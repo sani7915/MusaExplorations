@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from '../../images/logo peq sin texto.svg';
-import hamburguesa from '../../images/hamburguesa.png';
+import logo from '../../images/diseño/logo peq sin texto.svg';
+import hamburguesa from '../../images/diseño/hamburguesa.png';
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useEffect } from "react";
@@ -25,7 +25,7 @@ const ResponsiveNavbar = () => {
     }, [collapse])
 
     const chanageBrand = () => {
-        if (window.scrollY > 100 && window.innerWidth >= 768) {
+        if (window.scrollY && window.innerWidth >= 768) {
             setCollapse(true)
         } else {
             setCollapse(false)
@@ -38,7 +38,7 @@ const ResponsiveNavbar = () => {
 
     return (
         <div >
-            <div className='container-fluid d-flex  align-items-center d-md-none  py-3 sticky-top'>
+            <div className='container-fluid d-flex align-items-center d-md-none py-3 sticky-top'>
                 <div className="position-absolute" onClick={() => {
                     setCollapse(!collapse)
                     setNoCollapse('')
@@ -53,8 +53,8 @@ const ResponsiveNavbar = () => {
                 {
                     links.map(link => {
                         return (
-                            <li className="nav-item" key={link.nombre} >
-                                <Link to={link.to} className="nav-link mb-2">
+                            <li key={link.nombre} >
+                                <Link to={link.to} className=" mb-2 nav-link">
                                     {link.nombre}
                                 </Link>
                             </li>

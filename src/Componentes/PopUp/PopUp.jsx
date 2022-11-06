@@ -1,5 +1,5 @@
 import React from 'react'
-import broken_pot from '../../images/broken pot.svg';
+import broken_pot from '../../images/diseño/broken pot.svg';
 
 const PopUp = ({ closePopUp, showHidePopUp, resolveReject }) => {
     return (

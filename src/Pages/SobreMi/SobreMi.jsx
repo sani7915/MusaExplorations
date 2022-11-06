@@ -1,6 +1,6 @@
 import React from "react";
-import campoDeGirasoles from '../../images/girasoles.jpg';
-import pintandoBouquet from '../../images/pintando bouquet de flores acuarela_mod.jpg'
+import campoDeGirasoles from '../../images/diseño/girasoles.jpg';
+import pintandoBouquet from '../../images/diseño/pintando bouquet de flores acuarela_mod.jpg'
 import { useTranslation } from "react-i18next";
 
 const SobreMi = () => {

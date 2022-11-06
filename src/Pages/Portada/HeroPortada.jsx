@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Jarron from '../../images/jarron de flores acuarela.jpg'
+import Jarron from '../../images/diseño/jarron de flores acuarela.jpg'
 import CardsPortada from "./CardsPortada";
 import { useTranslation } from 'react-i18next'
 

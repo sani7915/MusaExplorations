@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bg-arrow {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -14,7 +15,7 @@
 }
 
 .bg-jarron {
-  background-image: url("../../images/jarron de flores acuarela.jpg");
+  background-image: url("../../images/diseño/jarron de flores acuarela.jpg");
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +37,7 @@
     min-height: 300px;
   }
   .bg-jarron {
-    background-image: url("../../images/jarron de flores acuarela.jpg");
+    background-image: url("../../images/diseño/jarron de flores acuarela.jpg");
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +48,7 @@
     min-height: 400px;
   }
   .bg-jarron {
-    background-image: url("../../images/jarron de flores acuarela.jpg");
+    background-image: url("../../images/diseño/jarron de flores acuarela.jpg");
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;

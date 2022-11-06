@@ -1,17 +1,14 @@
-.bg-footer {
-  background-color: #FAFAFA;
+.footer .bg-footer {
+  background-color: #fafafa;
 }
-
-.fs-7 {
+.footer .fs-7 {
   font-size: 12px;
 }
-
-.change-language {
-  color: #C89E6F;
+.footer .change-language {
+  color: #c89e6f;
   font-size: 13px;
   font-weight: 500;
 }
-
-.pointer {
+.footer .pointer {
   cursor: pointer;
 }/*# sourceMappingURL=footer.css.map */

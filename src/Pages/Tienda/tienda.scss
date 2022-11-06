@@ -4,20 +4,3 @@
   }
 }
 
-@media (min-width: 320px) {
-  .btn-tienda {
-    background: #ffffff;
-    border: 1px solid #cfab82;
-    border-radius: 20px;
-    height: 36px;
-    color: #cfab82;
-    padding: 0px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-      background-color: #cfab82;
-      color: #ffffff;
-    }
-  }
-}

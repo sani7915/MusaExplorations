@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import NewsletterForm from "../../Componentes/newsletterForm/NewsletterForm";
 import PopUp from '../../Componentes/PopUp/PopUp';
-import flechita from '../../images/flechita.png'
+import flechita from '../../images/diseño/flechita.png'
 
 
 

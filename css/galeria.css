@@ -1,0 +1,41 @@
+.gallery-card {
+  width: 32%;
+}
+.gallery-card img {
+  width: 100%;
+}
+
+@media (min-width: 320px) {
+  .gallery-card {
+    width: 100%;
+    padding: 0px 5%;
+    position: relative;
+  }
+  .gallery-card-icons {
+    position: absolute;
+    bottom: 40px;
+    right: 8%;
+  }
+  .gallery-card-description {
+    position: absolute;
+    width: 50%;
+    bottom: 10px;
+    user-select: none;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-card {
+    width: 47%;
+    padding: 0px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery-card {
+    width: 32%;
+    padding: 0%;
+  }
+}/*# sourceMappingURL=galeria.css.map */
