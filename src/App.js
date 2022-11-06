@@ -8,7 +8,6 @@ import Apuntate from "../src/Pages/Apuntate/Apuntate";
 import SobreMi from "../src/Pages/SobreMi/SobreMi";
 import Contacto from "../src/Pages/Contacto/Contacto"
 import Tienda from "./Pages/Tienda/Tienda";
-import GaleriaImagenes from "./Pages/GaleriaTrabajos/GaleriaImagenes";
 
 function App() {
   return (
