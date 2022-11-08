@@ -1,0 +1,16 @@
+.form_button {
+    background-color: #c89e6f;
+    border-radius: 25px;
+    height: 54px;
+    border: none;
+    width: 100%;
+    color: white;
+    font-family: "Arvo", serif;
+    &:disabled {
+    background-color: hsla(32, 45%, 61%, 0.70);
+    }
+    &:hover{
+        background-color: hsla(32, 45%, 61%, 0.85);
+
+    }
+}

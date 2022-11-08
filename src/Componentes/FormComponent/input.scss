@@ -1,0 +1,33 @@
+@media (min-width: 320px) {
+  .form-control {
+    border: none;
+    &:focus {
+      box-shadow: 0px 0px 0.5px 1px #cfab82;
+      border: 1px solid #c89e6f;
+    }
+  }
+
+  .input-style {
+    border: 1px solid #cfab82;
+    width: 100%;
+    padding: 5px;
+    height: 54px;
+    border-radius: 0;
+  }
+  .input-style-alert {
+    width: 100%;
+    padding: 5px;
+    height: 54px;
+    border-radius: 0;
+    border: 1px solid red;
+    &:focus {
+      border: 1px solid red;
+    }
+  }
+  .text-alert {
+    position: absolute;
+    bottom: -20px;
+    color: red;
+    font-size: 14px;
+  }
+}

@@ -61,7 +61,7 @@ const Contacto = () => {
         }
         else {
             setChangeBtnValuue(false)
-            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQB')
+            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQ')//B
                 .then(() => {
                     form.current.reset()
                     setName(!name)
@@ -100,7 +100,7 @@ const Contacto = () => {
                     </p>
                 </div>
                 <div className="bg_form_contacto col-11 col-xl-9 m-auto p-4 p-lg-0 mt-3 mt-md-0 mb-4 mb-md-5 mt-lg-4">
-                    <form ref={form} onSubmit={validarCampos} className="d-flex flex-column gap-3">
+                    <form ref={form} onSubmit={validarCampos} className="d-flex flex-column gap-4">
                         <Input
                             campoInvalido={invalidName}
                             valorInput={getNombre}
@@ -123,7 +123,9 @@ const Contacto = () => {
                             name={'mensaje'}
                             type={'textarea'}
                             label={t("input.LabelMensaje")} />
-                        <FormButton changeBtnValue={changeBtnValue} />
+                        <div className='col-md-5'>
+                            <FormButton changeBtnValue={changeBtnValue} />
+                        </div>
                     </form>
                 </div>
 

@@ -25,7 +25,7 @@ function NewsletterPortada() {
     }
 
     return (
-        <div className="d-flex justify-content-center py-5 px-3 px-md-0 align-items-center newsletter-portada mt-5 ">
+        <div className="d-flex justify-content-center py-5 px-3 px-md-0 align-items-center newsletter-portada my-5 ">
             <div className="d-flex flex-column align-items-center col-md-11 col-lg-10 col-xl-8 col-xxl-7 my-5 m-md-0 px-4 py-5 p-md-4 bg-newsletter-portada">
                 <h3 className="mb-4 arvo ">{t("newsletterPortada.titulo")}</h3>
                 <p className="text-center m-0 fs-5  ">

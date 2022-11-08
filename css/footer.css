@@ -1,4 +1,5 @@
-.footer .bg-footer {
+.footer {
+  margin-top: 70px;
   background-color: #fafafa;
 }
 .footer .fs-7 {
@@ -11,4 +12,8 @@
 }
 .footer .pointer {
   cursor: pointer;
+}
+
+.footer-li li {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=footer.css.map */

@@ -1,7 +1,6 @@
 .footer {
-  .bg-footer {
+  margin-top: 70px;
     background-color: #fafafa;
-  }
 
   .fs-7 {
     font-size: 12px;
@@ -14,5 +13,10 @@
   }
   .pointer {
     cursor: pointer;
+  }
+}
+.footer-li {
+  li{
+    margin-bottom: 10px;
   }
 }

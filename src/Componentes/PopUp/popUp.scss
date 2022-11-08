@@ -1,25 +1,30 @@
 .popUp {
-    position: absolute;
-    background-color: white;
-    border: 1px solid #CFAB82;
-    z-index: 9999;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #cfab82;
+  z-index: 9999;
+}
+.fa-close {
+  cursor: pointer;
+}
+.form_button_popUp {
+  background-color: #c89e6f;
+  border-radius: 70px;
+  height: 40px;
+  border: none;
+  min-width: 200px;
+  color: white;
+  font-family: "Arvo", serif;
+  &:hover{
+  background-color: rgba(200, 158, 111, 0.90);
+
+  }
 }
 
-.form_button_popUp {
-    background-color: #c89e6f;
-    border-radius: 70px;
-    height: 40px;
-    border: none;
-    min-width: 200px;
-    color: white;
-    font-family: "Arvo", serif;
-  }
-
-  .div-negro {
-    position: absolute;
-    z-index: 9000;
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height:400vh;
-  }
-
+.div-negro {
+  position: absolute;
+  z-index: 9000;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 400vh;
+}

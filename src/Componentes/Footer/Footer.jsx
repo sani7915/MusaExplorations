@@ -22,20 +22,20 @@ const Footer = () => {
 
 
     return (
-        <footer className="container-fluid p-0 mt-5 footer">
-            <div className="col m-auto d-flex flex-column align-items-center col-md-11 col-lg-10 col-xl-8 col-xxl-7 flex-lg-row">
+        <footer className="container-fluid pt-lg-3 footer">
+            <div className="col m-auto d-flex flex-column align-items-center flex-lg-row justify-content-between col-md-11 col-lg-10 col-xl-8 col-xxl-7">
                 <div className="col-11 m-md-0 py-md-4 col-lg-5 ">
                     <div className=" d-md-none d-flex justify-content-center my-3 ">
                         <img src={logoVertical} alt="" />
                     </div>
                     <div className=" d-none d-md-flex justify-content-md-center justify-content-lg-start mb-3 ">
-                        <img src={logoHorizontal} alt="" />
+                        <img src={logoHorizontal} alt={logoHorizontal} width={350} />
                     </div>
-                    <p className="montserrat text-center text-lg-start px-1 ">
+                    <p className="montserrat text-center text-lg-start lh-md">
                         {t("footer.lirica")}
                     </p>
-                    <div className="col mt-4">
-                        <ul className="d-flex list-unstyled justify-content-evenly">
+                    <div className="col col-lg-9 mt-4 mb-2">
+                        <ul className="d-flex col-md-8 col-lg-12 m-auto list-unstyled justify-content-evenly justify-content-lg-between ">
                             <li>
                                 <a href="https://www.instagram.com/musadeacuarela" target='_blank' rel="noreferrer" >
                                     <i className="fa-brands fa-square-instagram fs-1 text-black opacity-75"></i>
@@ -59,10 +59,10 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="col d-flex flex-lg-column  montserrat">
-                    <div className="d-flex mb-4">
-                        <div className="col-6 p-4 text-end d-none d-lg-block">
-                            <ul className="list-unstyled">
+                <div className="col-lg-6 d-flex flex-lg-column  montserrat-500">
+                    <div className="d-flex justify-content-between mb-4 footer-li">
+                        <div className="text-end d-none d-lg-block">
+                            <ul className="list-unstyled d-flex flex-column align-items-end">
                                 <li>
                                     <Link to={'/tienda'} className="nav-link">
                                         {t("footer.ul1.tienda")}
@@ -79,7 +79,7 @@ const Footer = () => {
                                 </Link>
                             </ul>
                         </div>
-                        <div className="col-6 p-4 text-end d-none d-lg-block" >
+                        <div className=" text-end d-none d-lg-block" >
                             <ul className="list-unstyled">
                                 <Link to={'/'} className='nav-link'>
                                     <li>{t("footer.ul2.acuarelas")}</li>
@@ -105,7 +105,7 @@ const Footer = () => {
                                 </span>
                             </u>
                         </p>
-                        <p className="montserrat text-center text-lg-end px-2 pe-md-4 p-lg-0 fs-7">
+                        <p className="montserrat text-center text-lg-end px-2 mt-2 pe-md-4 p-lg-0 fs-7">
                             {t("footer.copy")}
                         </p>
                     </div>

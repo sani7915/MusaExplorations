@@ -11,7 +11,7 @@ const Navbar = () => {
     const [t] = useTranslation("global")
     const links = [
         { to: '/', nombre: t("navBar.portada") },
-        { to: '/galeria', nombre: t("navBar.galeria") },
+        { to: '/galeria/todos', nombre: t("navBar.galeria") },
         { to: '/tienda', nombre: t("navBar.tienda") },
         { to: '/apuntate', nombre: t("navBar.apuntate") },
         { to: '/sobreMi', nombre: t("navBar.sobreMi") },
@@ -40,9 +40,6 @@ const Navbar = () => {
 
     }
     window.addEventListener('scroll', changeBrand);
-
-
-
 
     return (
         <nav className={initial
@@ -76,8 +73,9 @@ const Navbar = () => {
                             {
                                 links.map(link => {
                                     return (
-                                        <li className="nav-item" key={link.nombre}>
-                                            <Link to={link.to} className="nav-link">
+                                        <li key={link.nombre} >
+                                        
+                                            <Link to={link.to} className='nav-link nav-item'>
                                                 {link.nombre}
                                             </Link>
                                         </li>

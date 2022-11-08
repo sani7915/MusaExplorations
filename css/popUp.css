@@ -1,8 +1,12 @@
 .popUp {
   position: absolute;
   background-color: white;
-  border: 1px solid #CFAB82;
+  border: 1px solid #cfab82;
   z-index: 9999;
+}
+
+.fa-close {
+  cursor: pointer;
 }
 
 .form_button_popUp {
@@ -13,6 +17,9 @@
   min-width: 200px;
   color: white;
   font-family: "Arvo", serif;
+}
+.form_button_popUp:hover {
+  background-color: rgba(200, 158, 111, 0.9);
 }
 
 .div-negro {

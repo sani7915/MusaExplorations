@@ -1,0 +1,15 @@
+.form_button {
+  background-color: #c89e6f;
+  border-radius: 25px;
+  height: 54px;
+  border: none;
+  width: 100%;
+  color: white;
+  font-family: "Arvo", serif;
+}
+.form_button:disabled {
+  background-color: hsla(32deg, 45%, 61%, 0.7);
+}
+.form_button:hover {
+  background-color: hsla(32deg, 45%, 61%, 0.85);
+}/*# sourceMappingURL=formButton.css.map */

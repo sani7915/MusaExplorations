@@ -25,7 +25,7 @@ const HeroPortada = () => {
                 : <div className="bg-jarron"></div>
             }
             <div className="container col-11 col-md-10 col-xl-8 col-xxl-7 text-hero bg-white">
-                <h1 className="text-center arvo mt-lg-5 p-3 fs-3">
+                <h1 className="text-center arvo mt-lg-5 p-3 fs-3 m-0">
                     {t("inicio.h1")}
                 </h1>
                 <div className="mb-5 montserrat ">

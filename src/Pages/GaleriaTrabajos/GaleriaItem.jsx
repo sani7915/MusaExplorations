@@ -1,31 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 
-const GaleriaItem = ({ imagen, spoon, etsy, nombre, categoria }) => {
-    const [hover, setHover] = useState('d-none')
+const GaleriaItem = ({ imagen, spoon, etsy, nombre, categoria, tienda }) => {
+    const [hover, setHover] = useState('d-none');
+    const [selectTienda, setSelectTienda] = useState();
+
+    useEffect(() => {
+        let ets = tienda.some((element) => element.etsy === true)
+        let spn = tienda.some((element) => element.spoon === true)
+        if (ets) {
+            setSelectTienda(etsy);
+        } else if (spn) {
+            setSelectTienda(spoon)
+        }
+    }, [etsy, spoon, tienda.etsy, tienda.spoon, tienda])
 
     return (
-        <div className="gallery-card" >
-            <div className='d-flex flex-column col-1 col-md-2 align-items-end gap-2 gallery-card-icons'   >
-                <div>
-                    <a href="https://www.etsy.com/shop/musadeacuarela">
-                        <img src={spoon} alt="" width={30}/>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.spoonflower.com/profiles/musadeacuarela?sub_action=designs" target={'_blank'} rel="noreferrer">
-                        <img src={require('../../images/laminas/' + etsy)} alt="" />
-                    </a>
-                </div>
+        <div className="gallery-card" onMouseOver={() => setHover('')} onMouseOut={() => setHover('d-none')}>
+            <div>
+                <img src={require('../../images/laminas/' + imagen + '.jpg')} alt={imagen} />
             </div>
-            <div className={`col-12 m-auto gallery-card-description ${hover}`}>
+            <div className={`col-11 m-auto gallery-card-description ${hover}`} >
                 <p className={`m-0 text-white`}>
                     {nombre} - {categoria}
                 </p>
-            </div>
-            <div onMouseOver={() => setHover('')
-            } onMouseOut={() => setHover('d-none')}>
-                <img src={require('../../images/laminas/' + imagen + '.jpg')} alt={imagen} />
+                <a href={`${selectTienda}`} target={'_blank'} rel={"noreferrer"}>
+                    <span>
+                        <i className="fa-solid fa-shop"></i>
+                    </span>
+                </a>
             </div>
         </div>
     )

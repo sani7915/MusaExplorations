@@ -11,45 +11,34 @@
     padding: 0px 5%;
     position: relative;
   }
-  .gallery-card-icons {
-    position: absolute;
-    bottom: 20px;
-    right: 8%;
-  }
   .gallery-card-description {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     user-select: none;
-    left: 0px;
-    right: 0px;
     display: flex;
     justify-content: center;
+    background: linear-gradient(
+      180deg,
+      rgba(58, 44, 40, 0) 5.15%,
+      #1d1d1d 81.96%
+    );
+    padding: 20px 0px;
+    width: 90%;
+    span {
+      position: absolute;
+      font-size: 30px;
+      right: 10px;
+      bottom: 15px;
+      color: white;
+    }
   }
-}
-@media (min-width: 768px) {
-  .gallery-card {
-    width: 47%;
-    padding: 0px 0px;
-  }
-  .gallery-card-icons {
-right: 4%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .gallery-card {
-    width: 32%;
-    padding: 0%;
-  }
-}
-@media (min-width: 320px) {
   .btn-galeria {
     background: #ffffff;
     border: 1px solid #cfab82;
     border-radius: 20px;
     height: 36px;
     color: #cfab82;
-    padding: 0px 15px;
+    padding: 0px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,6 +46,58 @@ right: 4%;
     &:hover {
       background-color: #cfab82;
       color: #ffffff;
+    }
+    &:focus {
+      background-color: #cfab82;
+      color: #ffffff;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .gallery-card {
+    width: 48.2%;
+    padding: 0px 0px;
+  }
+  .gallery-card-icons {
+    right: 4%;
+  }
+  .gallery-card-description {
+    width: 100%;
+  }
+  .btn-galeria {
+    padding: 0px 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-card {
+    width: 32%;
+    padding: 0%;
+    img{
+      width: 100%;
+    }
+  }
+  .gallery-card-description {
+    span{
+      font-size: 20px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .gallery-card {
+    width: 32.3%;
+    padding: 0%;
+  }
+  .gallery-card-description {
+    span{
+      font-size: 30px;
+    }
+    p{
+      font-size: 18px;
     }
   }
 }

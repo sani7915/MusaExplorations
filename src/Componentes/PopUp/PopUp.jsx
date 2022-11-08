@@ -17,11 +17,12 @@ const PopUp = ({ closePopUp, showHidePopUp, resolveReject }) => {
                     </p>
                     : <div className='d-flex  flex-column align-items-center mt-3'>
                         <img src={broken_pot} alt="broken_pot" width={200} />
-                        <p className='mt-3 text-center fw-bold'>
+                        <p className='mt-3 mb-0 text-center fw-bold'>
                             ¡Ups! Algo ha salido mal
                         </p>
                     </div>
-                }                <div className='col-8 m-3 d-flex align justify-content-center pt-0 p-3'>
+                }
+                <div className='col-8 m-3 d-flex align justify-content-center pt-0 p-3'>
                     <button className='form_button_popUp' onClick={closePopUp} >
                         CERRAR
                     </button>

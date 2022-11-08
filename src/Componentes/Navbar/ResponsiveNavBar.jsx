@@ -9,7 +9,7 @@ const ResponsiveNavbar = () => {
     const [t] = useTranslation("global")
     const links = [
         { to: '/', nombre: t("navBar.portada") },
-        { to: '/galeria', nombre: t("navBar.galeria") },
+        { to: '/galeria/todos', nombre: t("navBar.galeria") },
         { to: '/tienda', nombre: t("navBar.tienda") },
         { to: '/apuntate', nombre: t("navBar.apuntate") },
         { to: '/sobreMi', nombre: t("navBar.sobreMi") },
