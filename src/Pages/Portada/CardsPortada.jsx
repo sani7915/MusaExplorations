@@ -13,21 +13,17 @@ const CardsPortada = () => {
     return (
         cardCategory.map(card => {
             return (
-                <Link to={card.url} key={card.p1} className={`${card.bg} nav-link d-flex flex-column justify-content-center position-relative col-11 col-md-4 text-white text-center fs-3  card_portada-heigth`}>
-                
-                   
-                    <div className="px-2 mt-3 d-flex flex-column justify-content-center fs-4 ">
-                        <p className="m-0">
+                <Link to={card.url} key={card.p1} className={`${card.bg} nav-link d-flex flex-column justify-content-center col-11 portada_card`}>
+                    <div className=" d-flex flex-column justify-content-center">
+                        <h2>
                             {card.p1}
-                        </p>
-                        <p>
+                        </h2>
+                        <h2>
                             {card.p2}
-                        </p>
+                        </h2>
                     </div>
-                    <div className="d-flex justify-content-start align-items-end arrow_card_portada ">
-                        <div className='text-white bg-arrow'>
-                            <i className="fa solid fa-arrow-right fs-5 px-3 align-middle "> </i>
-                        </div>
+                    <div className="d-flex justify-content-center align-items-center portada_card-arrow">
+                        <i className="fa-solid fa-arrow-right"></i>
                     </div>
                 </Link>
             )

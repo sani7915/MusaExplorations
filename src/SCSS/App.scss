@@ -9,38 +9,37 @@
 @import url("../Pages/Apuntate/apuntate.scss");
 @import url("../Pages/Tienda/tienda.scss");
 @import url("../Pages/GaleriaTrabajos/galeria.scss");
-@import url('../Componentes/FormComponent/input.scss');
-@import url('../Componentes/FormComponent/formButton.scss');
+@import url("../Componentes/FormComponent/input.scss");
+@import url("../Componentes/FormComponent/formButton.scss");
 
-
-  
 body {
   margin: auto;
 }
 p {
   font-family: "Montserrat", sans-serif;
 }
-
+h1 {
+  font-family: "Arvo", serif;
+}
 .color1 {
   background-color: #94b4d0;
   &:hover {
-  background-color: hsla(208, 39%, 70%, 0.85);
+    background-color: hsla(208, 39%, 70%, 0.85);
   }
 }
 
 .color2 {
   background-color: #cfab82;
   &:hover {
-  background-color: hsla(32, 45%, 66%, 0.85);
-    }
+    background-color: hsla(32, 45%, 66%, 0.85);
+  }
 }
 
 .color3 {
   background-color: #9cb48a;
   &:hover {
     background-color: hsla(94, 22%, 62%, 0.85);
-
-      }
+  }
 }
 
 .montserrat {
@@ -52,6 +51,8 @@ p {
   font-weight: 500;
 }
 
-.arvo {
-  font-family: "Arvo", serif;
-}
+// .nav-link {
+//   &:hover {
+//     color:#c89e6f
+//   }
+// }

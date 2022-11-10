@@ -54,10 +54,6 @@
   width: 100%;
   background-color: #404040;
 }
-.nav-item:checked {
-  width: 100%;
-  background-color: #404040;
-}
 
 @media (min-width: 768px) {
   .w-logo-md {

@@ -9,7 +9,7 @@ const Input = ({ valorInput, campoInvalido, name,type,label }) => {
         campoInvalido
           ? 'form-floating' : 'form-floating is-invalid'}>
         <input type={type} onInput={valorInput} className={campoInvalido ? 'form-control input-style' : 'form-control input-style-alert'} placeholder="" name={name} />
-        <label className='text-capitalize'> {label} *</label>
+        <label className='text-capitalize'> {label} </label>
       </div>
       <div className={campoInvalido 
       ? 'd-none'

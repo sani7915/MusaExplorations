@@ -1,19 +1,4 @@
 @charset "UTF-8";
-.bg-arrow {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.arrow_card_portada {
-  position: absolute;
-  align-self: end;
-  bottom: 0;
-}
-
-.text-hero {
-  position: relative;
-  margin-top: -30px;
-}
-
 .bg-jarron {
   background-image: url("../../images/diseño/jarron de flores acuarela.jpg");
   height: 600px;
@@ -22,19 +7,90 @@
 }
 
 @media (min-width: 320px) {
-  .card_portada-heigth {
+  .portada_contenedor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 20px 0px;
+  }
+  .portada_presentacion {
+    margin-top: -30px;
+    margin-bottom: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portada_presentacion h1 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+  }
+  .portada_presentacion p {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0px 10px 20px 10px;
+  }
+  .portada_card {
     min-height: 150px;
+    position: relative;
+  }
+  .portada_card h2 {
+    font-family: "Arvo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+  }
+  .portada_card-arrow {
+    position: absolute;
+    align-self: end;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 45px;
+    height: 26px;
+  }
+  .portada_card-arrow i {
+    width: 20px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
   }
 }
 @media (min-width: 768px) {
-  .card_portada-heigth {
-    min-height: 250px;
-    width: 30%;
+  .portada_presentacion {
+    margin-top: 0px;
+  }
+  .portada_presentacion h1 {
+    margin: 35px 10px 14px 10px;
+  }
+  .portada_presentacion p {
+    font-size: 20px;
+  }
+  .portada_contenedor-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 0px 0px;
+    margin: auto;
+  }
+  .portada_card {
+    min-height: 300px;
+    max-width: 32%;
   }
 }
 @media (min-width: 1024px) {
-  .card_portada-heigth {
-    min-height: 300px;
+  .portada_card {
+    min-height: 350px;
   }
   .bg-jarron {
     background-image: url("../../images/diseño/jarron de flores acuarela.jpg");
@@ -43,14 +99,17 @@
     background-size: cover;
   }
 }
-@media (min-width: 1920px) {
-  .card_portada-heigth {
+@media (min-width: 1280px) {
+  .portada_card {
     min-height: 400px;
   }
+}
+@media (min-width: 1920px) {
+  .portada_card {
+    min-height: 450px;
+    width: 30%;
+  }
   .bg-jarron {
-    background-image: url("../../images/diseño/jarron de flores acuarela.jpg");
     height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }/*# sourceMappingURL=HeroPortda.css.map */

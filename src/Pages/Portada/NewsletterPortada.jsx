@@ -30,8 +30,6 @@ function NewsletterPortada() {
                 <h3 className="mb-4 arvo ">{t("newsletterPortada.titulo")}</h3>
                 <p className="text-center m-0 fs-5  ">
                     {t("newsletterPortada.p1")}
-                </p>
-                <p className="text-center fs-5 ">
                     {t("newsletterPortada.p2")}
                 </p>
                 <NewsletterForm showPopUp={showPopUp} resolveRej={resolveRej} />

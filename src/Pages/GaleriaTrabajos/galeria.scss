@@ -22,13 +22,14 @@
       rgba(58, 44, 40, 0) 5.15%,
       #1d1d1d 81.96%
     );
+    height: 90px;
     padding: 20px 0px;
     width: 90%;
     span {
       position: absolute;
       font-size: 30px;
       right: 10px;
-      bottom: 15px;
+      bottom: 5px;
       color: white;
     }
   }
@@ -38,11 +39,12 @@
     border-radius: 20px;
     height: 36px;
     color: #cfab82;
-    padding: 0px 16px;
+    padding: 0px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: capitalize;
+    min-width: 110px;
     &:hover {
       background-color: #cfab82;
       color: #ffffff;
@@ -65,7 +67,7 @@
     width: 100%;
   }
   .btn-galeria {
-    padding: 0px 25px;
+    padding: 0px px;
   }
 }
 

@@ -2,10 +2,13 @@ export const laminas = [
   {
     id: 101,
     categoria: "abstracto",
+    categoria2: "patterns",
     nombre: "jarron",
     descripción: "",
     técnica_soporte: "",
-    tienda: [{ etsy: false }, { spoon: true }],
+    tienda: [
+      { etsy: false },
+      { spoon: true }],
     etsy: "https://www.etsy.com/shop/musadeacuarela",
     spoon: "https://www.spoonflower.com/profiles/musadeacuarela",
     society: "",

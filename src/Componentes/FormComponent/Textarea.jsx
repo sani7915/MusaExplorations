@@ -9,7 +9,7 @@ const Textarea = ({ valorInput, campoInvalido, name, type, label }) => {
           campoInvalido
             ? 'form-floating' : 'form-floating is-invalid'}>
           <textarea type={type} onInput={valorInput} className={campoInvalido ? 'form-control input-style' : 'form-control input-style-alert'} placeholder="" name={name} />
-          <label className='text-capitalize'> {label} *</label>
+          <label className='text-capitalize'> {label} </label>
         </div>
         <div className={campoInvalido 
         ? 'd-none'
@@ -17,17 +17,6 @@ const Textarea = ({ valorInput, campoInvalido, name, type, label }) => {
           {t("input.AlertText")}
         </div>
       </div>
-        // <div className='input-group'>
-        //     <div className={
-        //         campoInvalido
-        //             ? 'form-floating' : 'form-floating is-invalid'}>
-        //         <textarea type={type} onInput={valorInput} className={campoInvalido ? 'form-control input-style' : 'form-control input-style is-invalid'} placeholder="" name={name} />
-        //         <label className='text-capitalize'> {label} *</label>
-        //     </div>
-        //     <div className="invalid-feedback">
-        //         {t("input.AlertText")}
-        //     </div>
-        // </div>
     )
 }
 export default Textarea;

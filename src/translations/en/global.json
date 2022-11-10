@@ -28,7 +28,7 @@
   },
   "newsletterPortada": {
     "titulo": "SIGN UP!",
-    "p1": " Sign up for free and periodically receive sheets to download and paint, tips for",
+    "p1": " Sign up for free and periodically receive sheets to download and paint, tips for ",
     "p2": "improve your technique, news and exclusive discounts in the store..."
   },
   "tienda": {
@@ -76,10 +76,10 @@
   },
   "input": {
     "AlertText": "* This field is required",
-    "LabelNombre": "Name",
-    "LabelEmail": "Email",
+    "LabelNombre": "Name *",
+    "LabelEmail": "Email *",
     "LabelTelefono": "Phone Number",
-    "LabelMensaje": "Message"
+    "LabelMensaje": "Message *"
   },
   "footer": {
     "lirica": "Take the brush, moisten the watercolor, melt the brush in the mixture, see how the water settles on the paper, how the watercolor pigment expands in the water... enjoy every step.",

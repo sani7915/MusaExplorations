@@ -20,7 +20,7 @@
       "p2": "& Prints"
     },
     "colecciones": {
-      "p1": "Coleccionesa",
+      "p1": "Colecciones",
       "p2": "& Patterns"
     },
     "pedidos": {
@@ -55,7 +55,7 @@
   },
   "newsletterApuntate": {
     "b": "Si sientes que te hace tilín, ",
-    "p1": "estaré encantada de que te unas. Recuerda que es gratis y",
+    "p1": "estaré encantada de que te unas. Recuerda que es gratis y ",
     "p2": "puedes darte de baja cuando quieras."
   },
   "sobreMi": {
@@ -79,10 +79,10 @@
   },
   "input": {
     "AlertText": "* Este campo es obligatorio",
-    "LabelNombre": "Nombre",
-    "LabelEmail": "Email",
+    "LabelNombre": "Nombre *",
+    "LabelEmail": "Email *",
     "LabelTelefono": "Telefono",
-    "LabelMensaje": "Mensaje"
+    "LabelMensaje": "Mensaje *"
   },
 
   "footer": {

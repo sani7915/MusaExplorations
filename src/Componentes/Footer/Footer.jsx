@@ -22,13 +22,13 @@ const Footer = () => {
 
 
     return (
-        <footer className="container-fluid pt-lg-3 footer">
-            <div className="col m-auto d-flex flex-column align-items-center flex-lg-row justify-content-between col-md-11 col-lg-10 col-xl-8 col-xxl-7">
-                <div className="col-11 m-md-0 py-md-4 col-lg-5 ">
+        <footer className="container-fluid pt-lg-5 footer">
+            <div className="col m-auto d-flex flex-column align-items-center flex-lg-row justify-content-between  col-md-11 col-lg-10 col-xl-9 col-xxl-8 ">
+                <div className="col-11 m-md-0 col-lg-5 ">
                     <div className=" d-md-none d-flex justify-content-center my-3 ">
                         <img src={logoVertical} alt="" />
                     </div>
-                    <div className=" d-none d-md-flex justify-content-md-center justify-content-lg-start mb-3 ">
+                    <div className=" d-none d-md-flex justify-content-md-center justify-content-lg-start  pb-4 ">
                         <img src={logoHorizontal} alt={logoHorizontal} width={350} />
                     </div>
                     <p className="montserrat text-center text-lg-start lh-md">
@@ -59,8 +59,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="col-lg-6 d-flex flex-lg-column  montserrat-500">
-                    <div className="d-flex justify-content-between mb-4 footer-li">
+                <div className="col-lg-6 d-flex flex-lg-column montserrat-500">
+                    <div className="d-flex justify-content-between footer-li">
                         <div className="text-end d-none d-lg-block">
                             <ul className="list-unstyled d-flex flex-column align-items-end">
                                 <li>

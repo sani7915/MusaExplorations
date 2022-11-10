@@ -18,15 +18,15 @@
     padding: 5px;
     height: 54px;
     border-radius: 0;
-    border: 1px solid red;
+    border: 1px solid #FF006B;
   }
   .input-style-alert:focus {
-    border: 1px solid red;
+    border: 1px solid #FF006B;
   }
   .text-alert {
     position: absolute;
     bottom: -20px;
-    color: red;
+    color: #FF006B;
     font-size: 14px;
   }
 }/*# sourceMappingURL=input.css.map */

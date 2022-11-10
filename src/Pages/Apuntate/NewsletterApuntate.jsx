@@ -37,9 +37,6 @@ function NewsletterApuntate() {
                     </b>
                     {t("newsletterApuntate.p1")}
 
-
-                </p>
-                <p className="fs-5 text-center text-md-start ">
                 {t("newsletterApuntate.p2")}
                 </p>
                 <NewsletterForm showPopUp={showPopUp} resolveRej={resolveRej} />
