@@ -26,7 +26,7 @@ const GaleriaItem = ({ imagen, spoon, etsy, nombre, categoria, tienda }) => {
                 </p>
                 <a href={`${selectTienda}`} target={'_blank'} rel={"noreferrer"}>
                     <span>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i className="fa-solid fa-cart-shopping"></i>
                     
                     </span>
                 </a>

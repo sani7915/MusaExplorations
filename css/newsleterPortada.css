@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.newsletter-portada {
+  background-image: url("../../images/diseño/probando paleta color acuarela.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newsletter-portada input {
+  background-color: #e9e7e7;
+}
+
+.bg-newsletter-portada {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.bg-newsletter-apuntate {
+  background: #f3f3f3;
+}/*# sourceMappingURL=newsleterPortada.css.map */

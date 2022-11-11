@@ -11,12 +11,15 @@
 @import url("../Pages/GaleriaTrabajos/galeria.scss");
 @import url("../Componentes/FormComponent/input.scss");
 @import url("../Componentes/FormComponent/formButton.scss");
+@import url("../Pages/Portada/newslleterPortada.scss");
+
 
 body {
   margin: auto;
 }
 p {
   font-family: "Montserrat", sans-serif;
+  color: #404040;
 }
 h1 {
   font-family: "Arvo", serif;
@@ -51,8 +54,3 @@ h1 {
   font-weight: 500;
 }
 
-// .nav-link {
-//   &:hover {
-//     color:#c89e6f
-//   }
-// }

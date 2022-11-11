@@ -10,7 +10,7 @@ const HeroPortada = () => {
     const [t] = useTranslation("global");
     const [showHide, setShowHide] = useState()
     const [widthScreen] = useState(window.innerWidth)
-   
+
     useEffect(() => {
         if (widthScreen > 1024) {
             setShowHide(false)
@@ -20,7 +20,7 @@ const HeroPortada = () => {
     }, [widthScreen]);
 
     return (
-        <div className="container-fluid d-flex flex-column p-0">
+        <section className="container-fluid d-flex flex-column p-0">
             <div className="">
                 {showHide
                     ? <img src={Jarron} alt="jarron de flores acuarela" className="w-100 jarron-img" />
@@ -28,21 +28,20 @@ const HeroPortada = () => {
                 }
             </div>
             <div className="d-flex justify-content-center">
-                <div className="d-flex flex-column col-11 col-md-10 col-lg-10 col-xl-8 col-xxl-7 col- portada_presentacion">
+                <div className="d-flex flex-column col-11 col-md-10 col-lg-10 col-xl-8 col-xxl-7  portada_presentacion">
                     <h1>
                         {t("inicio.h1")}
                     </h1>
-                    <p>
+                    <h2>
                         {t("inicio.p1")}
                         {t("inicio.p2")}
-                    </p>
+                    </h2>
                 </div>
             </div>
-
             <div className=" col-md-11 col-lg-10 col-xl-9 col-xxl-8 portada_contenedor-card">
                 <CardsPortada />
             </div>
-        </div>
+        </section>
     )
 }
 

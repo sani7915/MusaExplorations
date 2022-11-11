@@ -16,8 +16,8 @@
 
   "cardPortada": {
     "arte": {
-      "p1": "Arte original",
-      "p2": "& Prints"
+      "p1": "Diseños con",
+      "p2": "temática Botánica"
     },
     "colecciones": {
       "p1": "Colecciones",
@@ -28,11 +28,18 @@
       "p2": "Personalizados"
     }
   },
-
+  "popUpText" :{
+  "newsOk":  "¡Te apuntaste correctamente!",
+  "error": "¡Ups! Algo salio mal",
+  "contactoOk" : "¡Tu mensaje fue enviado correctamente!",
+  "button": "CERRAR"
+  },
+    
   "newsletterPortada": {
-    "titulo": "¡APUNTATE!",
+    "titulo": "¡APÚNTATE!",
     "p1": "Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para",
     "p2": "mejorar tu técnica, novedades y descuentos exclusivos en la tienda..."
+   
   },
   "tienda": {
     "titulo": "TIENDA",
@@ -99,10 +106,11 @@
       "SobreMi": "Sobre mí",
       "contacto": "Contacto"
     },
-    "copy": "Copoyright 2022. Todos los derechos reservados. Desarrollado por nombre del desarrollador",
+    "copy": "Copoyright 2022. Todos los derechos reservados. Desarrollado por Daniel Lorenzo",
     "language": {
       "p": "Change language: ",
       "span": "ENG"
     }
+    
   }
 }

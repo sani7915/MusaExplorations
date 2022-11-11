@@ -5,12 +5,11 @@ import NewsletterPortada from '../Portada/NewsletterPortada'
 
 const PortadaContenedor = () => {
     return (
-        <div>
+        <main>
             <HeroPortada />
-            {/* <NewsletterPortada /> */}
             <NewsletterPortada />
             <Instagram />
-        </div>
+        </main>
     )
 }
 export default PortadaContenedor;

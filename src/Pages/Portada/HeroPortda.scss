@@ -26,8 +26,9 @@
       line-height: 34px;
       text-align: center;
       margin: 20px 10px 10px 10px;
+      color: #404040;
     }
-    p {
+    h2 {
       font-family: "Montserrat";
       font-weight: 300;
       font-size: 18px;
@@ -40,7 +41,7 @@
   .portada_card {
     min-height: 150px;
     position: relative;
-    h2 {
+    h3 {
       font-family: "Arvo";
       font-style: normal;
       font-weight: 400;
@@ -57,13 +58,7 @@
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.2);
     width: 45px;
-    height: 26px;
-    i {
-      width: 20px;
-      font-size: 16px;
-      color: white;
-      text-align: center;
-    }
+    height: 45px;
   }
 }
 
@@ -73,7 +68,7 @@
     h1 {
       margin: 35px 10px 14px 10px;
     }
-    p {
+    h2 {
       font-size: 20px;
     }
   }

@@ -61,7 +61,7 @@ function NewsletterForm({ showPopUp, resolveRej }) {
     }
 
     return (
-        <form ref={form} onSubmit={validarCampos} className="d-flex flex-column flex-md-row justify-content-md-between gap-4 gap-md-2 pb-4 mt-2 w-100">
+        <form ref={form} onSubmit={validarCampos} className="d-flex flex-column flex-md-row justify-content-center gap-4 "> 
             <div className="col-md-4">
                 <Input campoInvalido={invalidName} valorInput={getNombre} name={'nombre'} type={'text'} label={t("input.LabelNombre")} />
             </div>

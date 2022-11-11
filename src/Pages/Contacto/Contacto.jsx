@@ -61,7 +61,7 @@ const Contacto = () => {
         }
         else {
             setChangeBtnValuue(false)
-            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQ')//B
+            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQB')//B
                 .then(() => {
                     form.current.reset()
                     setName(!name)
@@ -131,12 +131,16 @@ const Contacto = () => {
 
             </div>
             <div className='position-absolute d-flex justify-content-center col-12'>
-                {showHidePopUp
-                    ? <PopUp
-                        showHidePopUp={showHidePopUp}
+            {showHidePopUp
+              &&
+                    <PopUp showHidePopUp={showHidePopUp}
                         closePopUp={closePopUp}
-                        resolveReject={resolveRejectPopUp} />
-                    : ''}
+                        resolveReject={resolveRejectPopUp} 
+                        textOk={t("popUpText.newsOk")} 
+                        textWrong={t("popUpText.error")}
+                        buttonText={t("popUpText.button")}/>
+                
+            }
             </div>
             <div className={showHidePopUp
                 ? "div-negro"

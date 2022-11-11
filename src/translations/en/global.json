@@ -14,8 +14,8 @@
   },
   "cardPortada": {
     "arte": {
-      "p1": "Original art",
-      "p2": "& Prints"
+      "p1": "Botanical themed",
+      "p2": "Designs"
     },
     "colecciones": {
       "p1": "Collections",
@@ -26,10 +26,17 @@
       "p2": "Orders"
     }
   },
+  "popUpText" :{
+    "newsOk":  "You signed up correctly!",
+    "error": "Oops! something went wrong!",
+    "contactoOk" : "Your message was sent successfully!",
+    "button": "CLOSE"
+    },
   "newsletterPortada": {
     "titulo": "SIGN UP!",
     "p1": " Sign up for free and periodically receive sheets to download and paint, tips for ",
-    "p2": "improve your technique, news and exclusive discounts in the store..."
+    "p2": "improve your technique, news and exclusive discounts in the store...",
+    "modalForm" : "You signed up correctly"
   },
   "tienda": {
     "titulo": "STORE",
@@ -95,7 +102,7 @@
       "SobreMi": "About me",
       "contacto": "Contact"
     },
-    "copy": "Copyright 2022. All rights reserved. Developed by developer name",
+    "copy": "Copyright 2022. All rights reserved. Developed by Daniel Lorenzo",
     "language": {
       "p": "Cambiar idioma :",
       "span": "ES"

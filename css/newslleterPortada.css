@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@media (min-width: 320px) {
+  .newsletter-portada {
+    background-image: url("../../images/diseño/probando paleta color acuarela.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+    margin-top: 50px;
+  }
+  .newsletter-portada h3 {
+    font-family: "Arvo";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: #404040;
+    margin: 40px 0px 10px 0px;
+  }
+  .newsletter-portada p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0px 20px 20px 20px;
+  }
+  .newsletter-portada input {
+    background-color: #e9e7e7;
+  }
+  .newsletter-portada button {
+    margin-bottom: 40px;
+  }
+  .bg-newsletter-portada {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+@media (min-width: 768px) {
+  .newsletter-portada {
+    height: 520px;
+  }
+  .newsletter-portada p {
+    margin: 0px 50px 30px 50px;
+  }
+  .newsletter-portada button {
+    margin-bottom: 50px;
+  }
+}
+.bg-newsletter-apuntate {
+  background: #f3f3f3;
+  padding: 20px 0px;
+}/*# sourceMappingURL=newslleterPortada.css.map */
