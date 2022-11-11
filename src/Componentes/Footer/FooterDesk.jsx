@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function FooterDesk({ cambiarIdioma, t}) {
 
     return (
-        <div className='d-flex flex-column align-items-center'>
+        <div className='d-none d-lg-flex flex-column align-items-center'>
             <div className='col-lg-10 col-xl-9 col-xxl-8  '>
                 <div className="d-flex justify-content-between cont-1">
                     <div className="col-lg-5">

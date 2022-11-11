@@ -4,7 +4,7 @@ import logoVertical from '../../images/diseño/logo vertical.svg';
 function FooterRes({cambiarIdioma,t}) {
 
     return (
-        <div className='d-flex justify-content-center footer'>
+        <div className='d-flex justify-content-center d-lg-none footer'>
             <div className="col-11 d-flex flex-column align-items-center">
                 <div className="footer_logo-vertical">
                     <img src={logoVertical} alt={logoVertical} />

@@ -6,28 +6,6 @@ import FooterDesk from "./FooterDesk";
 const Footer = () => {
     const [t, i18n] = useTranslation("global");
     const [lenguaje, setLenguaje] = useState('es');
-    const [footer, setFooter] = useState();
-
-    let width = window.innerWidth
-    useEffect(() => {
-        if (width < 992) {
-            setFooter(true);
-        } else {
-            setFooter(false)
-        }
-    }, [width])
-
-    const algo = () => {
-        if (width < 992) {
-            setFooter(true);
-        } else {
-            setFooter(false)
-        }
-    }
-
-
-    window.addEventListener('resize', algo)
-
 
 
     const cambiarIdioma = () => {
@@ -44,10 +22,10 @@ const Footer = () => {
 
     return (
         <footer className="container-fluid p-0 footer">
-            {footer
-                ? <FooterRes cambiarIdioma={cambiarIdioma} t={t} />
-                : <FooterDesk cambiarIdioma={cambiarIdioma} t={t} />
-            }
+         
+             <FooterRes cambiarIdioma={cambiarIdioma} t={t} />
+                <FooterDesk   cambiarIdioma={cambiarIdioma} t={t} />
+         
         </footer >
 
     )
