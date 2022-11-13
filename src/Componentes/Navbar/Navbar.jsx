@@ -1,14 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from '../../images/diseño/logo peq sin texto.svg';
 import logoMusa from '../../images/diseño/Musa.svg';
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import ResponsiveNavbar from "./ResponsiveNavBar";
-import { useEffect } from "react";
+import { useNavbarContext } from "../../context/NavbarContext";
 
 
 const Navbar = () => {
     const [t] = useTranslation("global")
+    const {
+        initial,
+        animationUpDown,
+        animationFadeInOut,
+    } = useNavbarContext();
+
     const links = [
         { to: '/', nombre: t("navBar.portada") },
         { to: '/galeria/todos', nombre: t("navBar.galeria") },
@@ -17,29 +23,6 @@ const Navbar = () => {
         { to: '/sobreMi', nombre: t("navBar.sobreMi") },
         { to: '/contacto', nombre: t("navBar.contacto") },
     ]
-    const [initial, setInitial] = useState();
-    const [animationUpDown, setAnimationUpDown] = useState();
-    const [animationFadeInOut, setAnimationFadeInOut] = useState();
-
-
-    useEffect(() => {
-        setAnimationUpDown('')
-        setAnimationFadeInOut('')
-        setInitial(true)
-    }, [])
-    const changeBrand = () => {
-        if (window.scrollY > 100 && window.innerWidth >= 768) {
-            setInitial(false)
-            setAnimationUpDown('animation-Up')
-            setAnimationFadeInOut(' animate__animated animate__fadeOut ')
-        } else if (window.scrollY === 0) {
-            setInitial(true)
-            setAnimationUpDown('animation-down')
-            setAnimationFadeInOut(' animate__animated animate__fadeIn ')
-        }
-
-    }
-    window.addEventListener('scroll', changeBrand);
 
     return (
         <nav className={initial

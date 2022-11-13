@@ -1,3 +1,5 @@
+@import url('/node_modules/sweetalert2/src/scss/_toasts-animations.scss');
+
 .gallery-card {
   width: 32%;
   img {
@@ -25,11 +27,8 @@
     height: 90px;
     padding: 20px 0px;
     width: 90%;
-    span {
-      position: absolute;
-      font-size: 30px;
-      right: 10px;
-      bottom: 5px;
+    p {
+      margin: 0;
       color: white;
     }
   }
@@ -45,6 +44,7 @@
     justify-content: center;
     text-transform: capitalize;
     min-width: 110px;
+    margin-bottom: 15px;
     &:hover {
       background-color: #cfab82;
       color: #ffffff;
@@ -53,6 +53,9 @@
       background-color: #cfab82;
       color: #ffffff;
     }
+  }
+  .botonera {
+    overflow-x: scroll;
   }
 }
 @media (min-width: 768px) {
@@ -70,21 +73,17 @@
     padding: 0px px;
   }
 }
-
+@media (min-width: 992px) {
+  .botonera {
+    overflow-x: auto;
+  }
+}
 @media (min-width: 1024px) {
   .gallery-card {
     width: 32%;
     padding: 0%;
-    img{
+    img {
       width: 100%;
-    }
-  }
-  .gallery-card-description {
-    span{
-      font-size: 20px;
-    }
-    p{
-      font-size: 14px;
     }
   }
 }
@@ -94,12 +93,38 @@
     width: 32.3%;
     padding: 0%;
   }
-  .gallery-card-description {
-    span{
-      font-size: 30px;
-    }
-    p{
-      font-size: 18px;
-    }
+}
+.swal2-title{
+  background: linear-gradient(
+      180deg,
+      rgba(58, 44, 40, 0) 5.15%,
+      #1d1d1d 81.96%
+    );
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    font-family: "Montserrat", sans-serif ;
+    font-weight: 300 !important;
+}
+.swal2-popup {
+  top: 40px;
+  padding: 0px;
+  width: 700px !important ;
+  z-index: 50000 !important;
+}
+.swal2-modal {
+  padding: 0px !important;
+}
+.swal2-image {
+  margin: 0px !important;
+  border: 1px solid #cfab82;
+  width: 100% !important;
+}
+.swal2-close {
+  color: #404040 !important;
+  &:focus {
+    box-shadow: none !important;
   }
 }
+

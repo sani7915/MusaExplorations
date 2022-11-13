@@ -3,7 +3,6 @@ import logo from '../../images/diseño/logo peq sin texto.svg';
 import hamburguesa from '../../images/diseño/hamburguesa.png';
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { useEffect } from "react";
 
 const ResponsiveNavbar = () => {
     const [t] = useTranslation("global")
@@ -14,15 +13,10 @@ const ResponsiveNavbar = () => {
         { to: '/apuntate', nombre: t("navBar.apuntate") },
         { to: '/sobreMi', nombre: t("navBar.sobreMi") },
         { to: '/contacto', nombre: t("navBar.contacto") },
-    ]
+    ];
+    
     const [collapse, setCollapse] = useState();
     const [noCollapse, setNoCollapse] = useState('d-none')
-
-    useEffect(() => {
-        setTimeout(() => {
-            setNoCollapse('d-none')
-        }, 5000);
-    }, [collapse])
 
     const chanageBrand = () => {
         if (window.scrollY && window.innerWidth >= 768) {
@@ -43,7 +37,7 @@ const ResponsiveNavbar = () => {
                     setCollapse(!collapse)
                     setNoCollapse('')
                 }}>
-                    <img src={hamburguesa} alt="" width={45} className='ps-2' />
+                    <img src={hamburguesa} alt={hamburguesa} width={45} className='ps-2' />
                 </div>
                 <Link to={'/'} className='m-auto' >
                     <img src={logo} alt="logo" width={45} />
