@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from '../../images/diseño/logo peq sin texto.svg';
 import hamburguesa from '../../images/diseño/hamburguesa.png';
 import { Link } from 'react-router-dom'
@@ -13,10 +13,15 @@ const ResponsiveNavbar = () => {
         { to: '/apuntate', nombre: t("navBar.apuntate") },
         { to: '/sobreMi', nombre: t("navBar.sobreMi") },
         { to: '/contacto', nombre: t("navBar.contacto") },
-    ];
-    
+    ]
     const [collapse, setCollapse] = useState();
     const [noCollapse, setNoCollapse] = useState('d-none')
+
+    useEffect(() => {
+        setTimeout(() => {
+            setNoCollapse('d-none')
+        }, 1000);
+    }, [collapse])
 
     const chanageBrand = () => {
         if (window.scrollY && window.innerWidth >= 768) {
