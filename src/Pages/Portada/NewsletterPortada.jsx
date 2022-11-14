@@ -1,27 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from 'react-i18next';
 import NewsletterForm from "../../Componentes/newsletterForm/NewsletterForm";
-import PopUp from '../../Componentes/PopUp/PopUp';
 
 
 
 function NewsletterPortada() {
     const [t] = useTranslation("global")
-    const [showHidePopUp, setshowHidePopUp] = useState()
-    const [resolveReject, setResolveReject] = useState()
 
-
-    const closePopUp = () => {
-        setshowHidePopUp(false)
-    }
-
-    const showPopUp = () => {
-        setshowHidePopUp(true)
-    }
-
-    const resolveRej = (boolean) => {
-        setResolveReject(boolean)
-    }
+   
 
     return (
         <section className="d-flex justify-content-center align-items-center newsletter-portada ">
@@ -34,23 +20,9 @@ function NewsletterPortada() {
                     {t("newsletterPortada.p2")}
                 </p>
                 <div className="col-11">
-                    <NewsletterForm showPopUp={showPopUp} resolveRej={resolveRej} />
+                    <NewsletterForm/>
                 </div>
             </div>
-            {
-                showHidePopUp && <div className="div-negro"></div>
-            }
-            {showHidePopUp
-                ? 
-                    <PopUp showHidePopUp={showHidePopUp}
-                        closePopUp={closePopUp}
-                        resolveReject={resolveReject} 
-                        textOk={t("popUpText.newsOk")} 
-                        textWrong={t("popUpText.error")}
-                        buttonText={t("popUpText.button")}/>
-                : ''
-            }
-
         </section>
     )
 }

@@ -3,10 +3,13 @@ import Input from "../FormComponent/Input";
 import emailjs from '@emailjs/browser'
 import { useTranslation } from 'react-i18next'
 import FormButton from "../FormComponent/FormButton";
+import { useSwalContext } from '../../context/swalCotext'
+import broken_pot from '../../images/diseño/broken pot.svg'
 
 
 
-function NewsletterForm({ showPopUp, resolveRej }) {
+function NewsletterForm() {
+    const { popUpForm } = useSwalContext()
     const [t] = useTranslation("global");
     const form = useRef();
     const [name, setName] = useState();
@@ -40,28 +43,26 @@ function NewsletterForm({ showPopUp, resolveRej }) {
         }
         else {
             setChangeBtnValue(false)
-            emailjs.sendForm('form_newsletter', 'template_e72zduq', form.current, '4arb9l-QtOeeHFACD')
+            emailjs.sendForm('form_newsletter', 'template_e72zduq', form.current, '4arb9l-QtOeeHFAC') //D
                 .then(() => {
                     setChangeBtnValue(true)
                     setName(!name);
                     setEmail(!email);
-                    resolveRej(true)
-                    showPopUp()
+                    popUpForm(t("popUpText.newsOk"),t("popUpText.button"))
                     form.current.reset();
 
                 }, () => {
                     setChangeBtnValue(true)
                     setName(!name);
                     setEmail(!email);
-                    showPopUp()
-                    resolveRej(false)
+                    popUpForm(t("popUpText.error"),t("popUpText.button"),broken_pot)
                     form.current.reset();
                 });
         }
     }
 
     return (
-        <form ref={form} onSubmit={validarCampos} className="d-flex flex-column flex-md-row justify-content-center gap-4 "> 
+        <form ref={form} onSubmit={validarCampos} className="d-flex flex-column flex-md-row justify-content-center gap-4 ">
             <div className="col-md-4">
                 <Input campoInvalido={invalidName} valorInput={getNombre} name={'nombre'} type={'text'} label={t("input.LabelNombre")} />
             </div>
