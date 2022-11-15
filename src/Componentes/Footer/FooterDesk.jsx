@@ -3,7 +3,7 @@ import logoHorizontal from '../../images/diseño/logo horizontal.svg';
 import { Link } from 'react-router-dom'
 
 
-function FooterDesk({ cambiarIdioma, t}) {
+function FooterDesk({ cambiarIdioma, t }) {
 
     return (
         <div className='d-none d-lg-flex flex-column align-items-center'>
@@ -22,33 +22,33 @@ function FooterDesk({ cambiarIdioma, t}) {
                             <div>
                                 <ul>
                                     <li>
-                                        <Link to={'/tienda'} className="nav-link">
-                                            {t("footer.ul1.tienda")}
-                                        </Link>
+                                        <a href={'https://www.etsy.com/shop/musadeacuarela'} target={"_blank"} rel="noreferrer" className="nav-link">
+                                            {t("navBar.tienda")}
+                                        </a>
                                     </li>
-                                    <Link to={'/galeria/todos'} className='nav-link'>
+                                    <Link to={'/gallery/all'} className='nav-link'>
                                         <li> {t("footer.ul1.galeria")}</li>
                                     </Link>
-                                    <Link to={'/contacto'} className='nav-link'>
+                                    <Link to={'/contact'} className='nav-link'>
                                         <li>{t("footer.ul1.pedidos")}</li>
                                     </Link>
-                                    <Link to={'/'} className='nav-link'>
-                                        <li>{t("footer.ul1.prints")}</li>
+                                    <Link to={'/gallery/botany'} className='nav-link'>
+                                        <li>{t("footer.ul1.acuarelaBotanica")}</li>
                                     </Link>
                                 </ul>
                             </div>
                             <div className=" text-end " >
                                 <ul>
-                                    <Link to={'/'} className='nav-link'>
-                                        <li>{t("footer.ul2.acuarelas")}</li>
+                                    <Link to={'/signUp'} className='nav-link'>
+                                        <li>{t("footer.ul2.apuntate")}</li>
                                     </Link>
-                                    <Link to={'/'} className='nav-link'>
+                                    <Link to={'/gallery/patterns'} className='nav-link'>
                                         <li>{t("footer.ul2.patterns")}</li>
                                     </Link>
-                                    <Link to={'/sobreMi'} className='nav-link'>
+                                    <Link to={'/aboutMe'} className='nav-link'>
                                         <li>{t("footer.ul2.SobreMi")}</li>
                                     </Link>
-                                    <Link to={'/contacto'} className='nav-link'>
+                                    <Link to={'/contact'} className='nav-link'>
                                         <li>{t("footer.ul2.contacto")}</li>
                                     </Link>
                                 </ul>

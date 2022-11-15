@@ -1,14 +1,12 @@
 export const laminas = [
   {
     id: 101,
-    categoria: "abstracto",
-    categoria2: "patterns",
+    categoriaES: "abstracto",
+    categoriaEN: "abstract",
     nombre: "jarron",
     descripción: "",
     técnica_soporte: "",
-    tienda: [
-      { etsy: false },
-      { spoon: true }],
+    tienda: [{ etsy: false }, { spoon: true }],
     etsy: "https://www.etsy.com/shop/musadeacuarela",
     spoon: "https://www.spoonflower.com/profiles/musadeacuarela",
     society: "",
@@ -17,7 +15,8 @@ export const laminas = [
   },
   {
     id: 102,
-    categoria: "abstracto",
+    categoriaES: "abstracto",
+    categoriaEN: "abstract",
     nombre: "bayas",
     descripción: "",
     técnica_soporte: "",
@@ -30,7 +29,8 @@ export const laminas = [
   },
   {
     id: 103,
-    categoria: "abstracto",
+    categoriaES: "abstracto",
+    categoriaEN: "abstract",
     nombre: "aparador",
     descripción: "",
     técnica_soporte: "",
@@ -43,7 +43,8 @@ export const laminas = [
   },
   {
     id: 104,
-    categoria: "botánica",
+    categoriaES: "botánica",
+    categoriaEN: "botany",
     nombre: "fruta de la pasion",
     descripción: "",
     técnica_soporte: "",
@@ -56,7 +57,8 @@ export const laminas = [
   },
   {
     id: 105,
-    categoria: "abstracto",
+    categoriaES: "abstracto",
+    categoriaEN: "abstract",
     nombre: "gema rosa",
     descripción: "",
     técnica_soporte: "",
@@ -69,7 +71,8 @@ export const laminas = [
   },
   {
     id: 106,
-    categoria: "botánica",
+    categoriaES: "botánica",
+    categoriaEN: "botany",
     nombre: "totem piedra",
     descripción: "",
     técnica_soporte: "",
@@ -82,12 +85,12 @@ export const laminas = [
   },
   {
     id: 107,
-    categoria: "mujer",
+    categoriaES: "mujer",
+    categoriaEN: "woman",
     nombre: "geranio",
     descripción: "",
     técnica_soporte: "",
     tienda: [{ etsy: true }, { spoon: false }],
-
     etsy: "https://www.etsy.com/shop/musadeacuarela",
     spoon: "https://www.spoonflower.com/profiles/musadeacuarela",
     society: "",
@@ -96,12 +99,12 @@ export const laminas = [
   },
   {
     id: 108,
-    categoria: "estampados",
+    categoriaES: "estampados",
+    categoriaEN: "patterns",
     nombre: "jarron flores",
     descripción: "",
     técnica_soporte: "",
     tienda: [{ etsy: true }, { spoon: false }],
-
     etsy: "https://www.etsy.com/shop/musadeacuarela",
     spoon: "https://www.spoonflower.com/profiles/musadeacuarela",
     society: "",
@@ -110,7 +113,8 @@ export const laminas = [
   },
   {
     id: 109,
-    categoria: "estampados",
+    categoriaES: "estampados",
+    categoriaEN: "patterns",
     nombre: "margaritas",
     descripción: "",
     técnica_soporte: "",
@@ -123,7 +127,8 @@ export const laminas = [
   },
   {
     id: 110,
-    categoria: "naturaleza",
+    categoriaES: "naturaleza",
+    categoriaEN: "nature",
     nombre: "mujer desnuda",
     descripción: "",
     técnica_soporte: "",
@@ -136,7 +141,8 @@ export const laminas = [
   },
   {
     id: 111,
-    categoria: "naturaleza",
+    categoriaES: "naturaleza",
+    categoriaEN: "nature",
     nombre: "paisaje conejo",
     descripción: "",
     técnica_soporte: "",
@@ -149,8 +155,9 @@ export const laminas = [
   },
   {
     id: 112,
-    categoria: "mujer",
-    nombre: "ramitas rosa menta y dorado",
+    categoriaES: "mujer",
+    categoriaEN: "woman",
+    nombre: "ramitas",
     descripción: "",
     técnica_soporte: "",
     tienda: [{ etsy: true }, { spoon: false }],

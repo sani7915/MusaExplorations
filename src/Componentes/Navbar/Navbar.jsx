@@ -16,12 +16,11 @@ const Navbar = () => {
     } = useNavbarContext();
 
     const links = [
-        { to: '/', nombre: t("navBar.portada") },
-        { to: '/galeria/todos', nombre: t("navBar.galeria") },
-        { to: '/tienda', nombre: t("navBar.tienda") },
-        { to: '/apuntate', nombre: t("navBar.apuntate") },
-        { to: '/sobreMi', nombre: t("navBar.sobreMi") },
-        { to: '/contacto', nombre: t("navBar.contacto") },
+        { to: '/', nombre: t("navBar.portada"), href: '#' },
+        { to: '/gallery/all', nombre: t("navBar.galeria"), href: '#' },
+        { to: '/signUp', nombre: t("navBar.apuntate"), href: '#' },
+        { to: '/aboutMe', nombre: t("navBar.sobreMi"), href: '#' },
+        { to: '/contact', nombre: t("navBar.contacto"), href: '#' },
     ]
 
     return (
@@ -56,7 +55,7 @@ const Navbar = () => {
                             {
                                 links.map(link => {
                                     return (
-                                        <li key={link.nombre} className='' >
+                                        <li key={link.nombre}>
                                             <Link to={link.to} className='nav-link nav-item '>
                                                 {link.nombre}
                                             </Link>
@@ -64,6 +63,11 @@ const Navbar = () => {
                                     )
                                 })
                             }
+                            <li>
+                                <a href={'https://www.etsy.com/shop/musadeacuarela'} target={"_blank"} rel="noreferrer" className="nav-link">
+                                    {t("navBar.tienda")}
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -26,8 +26,20 @@
       "p2": "Orders"
     }
   },
+  "galeriaTitle" : {
+    "h1" : "WORK GALLERY" 
+  },
+  "galeriaBtnValue": {
+    "todos": "all",
+    "botanica": "botany",
+    "estampados": "patterns",
+    "naturaleza": "nature",
+    "mujer": "woman",
+    "abstracto": "abstract"
+  },
   "popUpText" :{
     "newsOk":  "You signed up correctly!",
+    "contactOk" : "Your message was sent successfully!",
     "error": "Oops! something went wrong!",
     "contactoOk" : "Your message was sent successfully!",
     "button": "CLOSE"
@@ -94,10 +106,10 @@
       "tienda": "Store",
       "galeria": "Work Gallery",
       "pedidos": "Custom orders",
-      "prints": "Prints And Cards"
+      "acuarelaBotanica": "Patterns"
     },
     "ul2": {
-      "acuarelas": "Original watercolors",
+      "apuntate": "Sign up",
       "patterns": "Patterns",
       "SobreMi": "About me",
       "contacto": "Contact"

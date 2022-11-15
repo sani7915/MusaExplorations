@@ -1,84 +1,83 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import naranjas from '../../images/diseño/naranjas_mod.jpg'
 import emailjs from '@emailjs/browser';
-import PopUp from '../../Componentes/PopUp/PopUp';
 import Input from '../../Componentes/FormComponent/Input';
-
 import Textarea from '../../Componentes/FormComponent/Textarea';
-import { useTranslation } from 'react-i18next';
 import FormButton from '../../Componentes/FormComponent/FormButton';
+import { useSwalContext } from '../../context/swalCotext';
+import broken_pot from '../../images/diseño/broken pot.svg'
 
 const Contacto = () => {
+    const { popUpForm } = useSwalContext();
     const [t] = useTranslation("global");
     const form = useRef();
-    const [name, setName] = useState();
     const [invalidName, setInvalidName] = useState(true);
-    const [email, setEmail] = useState();
-    const [invalidEmail, setInvalidEmail] = useState(true);
-    const [message, setMensaje] = useState();
     const [messageInvalid, setInvalidMessage] = useState(true);
-    const [showHidePopUp, setShowHidePopUp] = useState(false);
     const [changeBtnValue, setChangeBtnValuue] = useState(true);
-    const [resolveRejectPopUp, setResolveRejectPopUp] = useState()
+    const [invalidEmail, setInvalidEmail] = useState(true);
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [message, setMensaje] = useState();
 
 
     const getNombre = (e) => {
-        setName(e.target.value)
+        setName(e.target.value);;
     }
     const getEmail = (e) => {
-        setEmail(e.target.value)
+        setEmail(e.target.value);
     }
     const getMensaje = (e) => {
-        setMensaje(e.target.value)
-    }
-    const closePopUp = () => {
-        setShowHidePopUp(false)
+        setMensaje(e.target.value);
     }
 
     useEffect(() => {
         if (name !== undefined && name.length === 0) {
-            setInvalidName(false)
-        } else { setInvalidName(true) }
+            setInvalidName(false);
+        } else {
+            setInvalidName(true);
+        }
 
         if (email !== undefined && email.length === 0) {
-            setInvalidEmail(false)
-        } else { setInvalidEmail(true) }
+            setInvalidEmail(false);
+        } else {
+            setInvalidEmail(true);
+        }
 
         if (message !== undefined && message.length === 0) {
-            setInvalidMessage(false)
-        } else { setInvalidMessage(true) }
+            setInvalidMessage(false);
+        } else {
+            setInvalidMessage(true);
+        }
 
-    }, [name, email, message])
+    }, [name, email, message]);
 
     const validarCampos = (e) => {
         e.preventDefault();
         if (!name) {
-            setInvalidName(false)
+            setInvalidName(false);
         } else if (!email) {
-            setInvalidEmail(false)
+            setInvalidEmail(false);
         } else if (!message) {
-            setInvalidMessage(false)
+            setInvalidMessage(false);
         }
         else {
-            setChangeBtnValuue(false)
-            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQB')//B
+            setChangeBtnValuue(false);
+            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQ')//B
                 .then(() => {
-                    form.current.reset()
-                    setName(!name)
-                    setEmail(!email)
-                    setMensaje(!message)
-                    setShowHidePopUp(true)
-                    setChangeBtnValuue(true)
-                    setResolveRejectPopUp(true)
+                    form.current.reset();
+                    setName(!name);
+                    setEmail(!email);
+                    setMensaje(!message);
+                    setChangeBtnValuue(true);
                 }, () => {
-
-                    form.current.reset()
-                    setName(!name)
-                    setEmail(!email)
-                    setMensaje(!message)
-                    setShowHidePopUp(true)
-                    setChangeBtnValuue(true)
-                    setResolveRejectPopUp(false)
+                    popUpForm(t("popUpText.contactOk"), t("popUpText.button"))
+                    form.current.reset();
+                    setName(!name);
+                    setEmail(!email);
+                    setMensaje(!message);
+                    setChangeBtnValuue(true);
+                    popUpForm(t("popUpText.error"), t("popUpText.button"), broken_pot);
                 });
         }
     }
@@ -87,14 +86,19 @@ const Contacto = () => {
     return (
         <div className='d-flex flex-column align-items-center justify-content-center p-0' >
             <div className="d-none d-lg-block col-11 col-md-11 col-lg-10 col-xl-8 col-xxl-7 m-auto mt-5 ">
-                <h1 className="fs-3 arvo lh-sm ps-md-2">{t("contacto.titulo")}</h1>
+                <h1 className="fs-3 arvo lh-sm ps-md-2">
+                    {t("contacto.titulo")}
+
+                </h1>
             </div>
             <div className='container-fluid px-0 '>
                 <img src={naranjas} alt={naranjas} className='w-100 naranjas img-fluid' />
             </div>
             <div className="form_contacto d-flex flex-column col-11 col-lg-10 col-xl-8 col-xxl-7">
                 <div className='d-flex flex-column align-items-center'>
-                    <h1 className="fs-3 arvo lh-sm pt-3 d-lg-none">CONTACTO</h1>
+                    <h1 className="fs-3 arvo lh-sm pt-3 d-lg-none">
+                        {t("contacto.titulo")}
+                    </h1>
                     <p className="text-center text-md-start px-3 p-md-0 m-0 col-md-10 col-lg-11 col-xl-9 mt-lg-5 fw-bold ">
                         {t("contacto.p1")}
                     </p>
@@ -129,23 +133,6 @@ const Contacto = () => {
                     </form>
                 </div>
 
-            </div>
-            <div className='position-absolute d-flex justify-content-center col-12'>
-            {showHidePopUp
-              &&
-                    <PopUp showHidePopUp={showHidePopUp}
-                        closePopUp={closePopUp}
-                        resolveReject={resolveRejectPopUp} 
-                        textOk={t("popUpText.newsOk")} 
-                        textWrong={t("popUpText.error")}
-                        buttonText={t("popUpText.button")}/>
-                
-            }
-            </div>
-            <div className={showHidePopUp
-                ? "div-negro"
-                : 'd-none'
-            }>
             </div>
         </div>
     )

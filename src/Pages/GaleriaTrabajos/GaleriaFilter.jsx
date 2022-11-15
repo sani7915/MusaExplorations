@@ -2,19 +2,35 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSwalContext } from '../../context/swalCotext';
 import GaleriaItem from './GaleriaItem';
+import { useI18nextContext } from '../../context/I18NextContext';
+
 
 const GaleriaFilter = ({ respuesta }) => {
-    const [render, setRender] = useState(respuesta);
+    const { langBoolean } = useI18nextContext()
+    const [render, setRender] = useState([]);
     const { category } = useParams();
-    const {popUpImgGaleria} = useSwalContext()
+    const { popUpImgGaleria } = useSwalContext();
+    const [categoryItem, setCategoryItem] = useState();
 
     useEffect(() => {
-        if (category === 'todos') {
+        if (category === 'all') {
             setRender(respuesta);
-        } else {
-            setRender(respuesta.filter((element) => element.categoria === category))
+            if (langBoolean) {
+                setCategoryItem(true)
+            } else {
+                setCategoryItem(false)
+            }
         }
-    }, [category, respuesta]);
+        else {
+            if (langBoolean) {
+                setRender(respuesta.filter((element) => element.categoriaEN === category))
+                setCategoryItem(true)
+            } else {
+                setRender(respuesta.filter((element) => element.categoriaEN === category))
+                setCategoryItem(false)
+            }
+        }
+    }, [category, respuesta, langBoolean]);
 
 
     return (
@@ -24,11 +40,10 @@ const GaleriaFilter = ({ respuesta }) => {
                     <GaleriaItem
                         key={data.id}
                         imagen={data.imagen}
-                        spoon={data.spoon}
-                        etsy={data.etsy}
                         nombre={data.nombre}
-                        categoria={data.categoria}
-                        tienda={data.tienda}
+                        categoria={categoryItem
+                            ? data.categoriaES
+                            : data.categoriaEN}
                         popUp={popUpImgGaleria}
                     />
                 )

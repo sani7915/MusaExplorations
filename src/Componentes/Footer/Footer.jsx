@@ -1,31 +1,14 @@
-import React, { useState } from "react";
-import { useTranslation } from 'react-i18next'
+import React from "react";
 import FooterRes from "./FooterRes";
 import FooterDesk from "./FooterDesk";
-
+import { useI18nextContext } from "../../context/I18NextContext";
 const Footer = () => {
-    const [t, i18n] = useTranslation("global");
-    const [lenguaje, setLenguaje] = useState('es');
-
-
-    const cambiarIdioma = () => {
-        if (lenguaje === 'es') {
-            setLenguaje('en');
-            i18n.changeLanguage('en')
-        }
-        else {
-            setLenguaje('es')
-            i18n.changeLanguage('es')
-        }
-    }
-
+const {cambiarIdioma,t}= useI18nextContext();
 
     return (
         <footer className="container-fluid p-0 footer">
-         
-             <FooterRes cambiarIdioma={cambiarIdioma} t={t} />
-                <FooterDesk   cambiarIdioma={cambiarIdioma} t={t} />
-         
+            <FooterRes cambiarIdioma={cambiarIdioma} t={t} />
+            <FooterDesk cambiarIdioma={cambiarIdioma} t={t} />
         </footer >
 
     )

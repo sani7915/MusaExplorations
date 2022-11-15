@@ -9,7 +9,7 @@ const GaleriaContenedor = () => {
     return (
         <div>
             <GaleriaBotones />
-            <GaleriaFilter respuesta={laminas }/>
+            <GaleriaFilter respuesta={laminas}/>
         </div>
     )
 }

@@ -10,27 +10,30 @@ import Contacto from "../src/Pages/Contacto/Contacto";
 import Tienda from "./Pages/Tienda/Tienda";
 import NavbarProvider from "./context/NavbarContext";
 import SwalProvider from "./context/swalCotext";
+import I18NextProvider from "./context/I18NextContext";
 function App() {
   return (
     <BrowserRouter>
-      <NavbarProvider>
-        <SwalProvider>
-          <Navbar />
-          <Routes>
-            <Route exact path="/" element={<PortadaContenedor />} />
-            <Route
-              exact
-              path="/galeria/:category"
-              element={<GaleriaContenedor />}
-            />
-            <Route exact path="/apuntate" element={<Apuntate />} />
-            <Route exact path="/sobreMi" element={<SobreMi />} />
-            <Route exact path="/contacto" element={<Contacto />} />
-            <Route exact path="/tienda" element={<Tienda />} />
-          </Routes>
-          <Footer />
-        </SwalProvider>
-      </NavbarProvider>
+      <I18NextProvider>
+        <NavbarProvider>
+          <SwalProvider>
+            <Navbar />
+            <Routes>
+              <Route exact path="/" element={<PortadaContenedor />} />
+              <Route
+                exact
+                path="/gallery/:category"
+                element={<GaleriaContenedor />}
+              />
+              <Route exact path="/signUp" element={<Apuntate />} />
+              <Route exact path="/aboutMe" element={<SobreMi />} />
+              <Route exact path="/contact" element={<Contacto />} />
+              <Route exact path="/store" element={<Tienda />} />
+            </Routes>
+            <Footer />
+          </SwalProvider>
+        </NavbarProvider>
+      </I18NextProvider>
     </BrowserRouter>
   );
 }

@@ -6,8 +6,8 @@ const CardsPortada = () => {
     const [t] = useTranslation("global")
 
     const cardCategory = [
-        { p1: t("cardPortada.arte.p1"), p2: t("cardPortada.arte.p2"), bg: 'color1', url:'/galeria/botánica'},
-        { p1: t("cardPortada.colecciones.p1"), p2: t("cardPortada.colecciones.p2"), bg: 'color2' ,url:'/galeria/estampados'},
+        { p1: t("cardPortada.arte.p1"), p2: t("cardPortada.arte.p2"), bg: 'color1', url: '/galeria/botany' },
+        { p1: t("cardPortada.colecciones.p1"), p2: t("cardPortada.colecciones.p2"), bg: 'color2', url: '/galeria/patterns' },
         { p1: t("cardPortada.pedidos.p1"), p2: t("cardPortada.pedidos.p2"), bg: 'color3', url: 'contacto' },
     ]
     return (
@@ -23,7 +23,7 @@ const CardsPortada = () => {
                         </h3>
                     </div>
                     <div className="d-flex justify-content-center align-items-center portada_card-arrow">
-                       <img src={arrow} alt="" />
+                        <img src={arrow} alt="" />
                     </div>
                 </Link>
             )

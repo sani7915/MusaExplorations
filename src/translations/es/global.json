@@ -21,25 +21,36 @@
     },
     "colecciones": {
       "p1": "Colecciones",
-      "p2": "& Patterns"
+      "p2": "& Estampados"
     },
     "pedidos": {
       "p1": "Pedidos",
       "p2": "Personalizados"
     }
   },
-  "popUpText" :{
-  "newsOk":  "¡Te apuntaste correctamente!",
-  "error": "¡Ups! Algo salio mal",
-  "contactoOk" : "¡Tu mensaje fue enviado correctamente!",
-  "button": "CERRAR"
+  "galeriaTitle" : {
+    "h1" : "GALERIA DE TRABAJOS" 
   },
-    
+  "galeriaBtnValue": {
+    "todos": "todos",
+    "botanica": "botánica",
+    "estampados": "estampados",
+    "naturaleza": "naturaleza",
+    "mujer": "mujer",
+    "abstracto": "abstracto"
+  },
+  "popUpText": {
+    "newsOk": "¡Te apuntaste correctamente!",
+    "contactOk" : "¡Tu mensaje fue enviado correctamente!",
+    "error": "¡Ups! Algo salio mal",
+    "contactoOk": "¡Tu mensaje fue enviado correctamente!",
+    "button": "CERRAR"
+  },
+
   "newsletterPortada": {
     "titulo": "¡APÚNTATE!",
     "p1": "Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para",
     "p2": "mejorar tu técnica, novedades y descuentos exclusivos en la tienda..."
-   
   },
   "tienda": {
     "titulo": "TIENDA",
@@ -98,10 +109,10 @@
       "tienda": "Tienda",
       "galeria": "Galeria de trabajos",
       "pedidos": "Pedidos personalizados",
-      "prints": "Prints y Tarjetas"
+      "acuarelaBotanica": "Acuarela Botánica"
     },
     "ul2": {
-      "acuarelas": "Acuarelas originales",
+      "apuntate": "Apúntate",
       "patterns": "Patterns",
       "SobreMi": "Sobre mí",
       "contacto": "Contacto"
@@ -111,6 +122,5 @@
       "p": "Change language: ",
       "span": "ENG"
     }
-    
   }
 }
