@@ -1,80 +1,87 @@
 @media (min-width: 320px) {
-  .text-box,
+  .text-box-right,
   .text-box-left {
-    margin-top: -90px;
-    border: 1px solid #e0c2b6;
+    margin-top: -30px;
     background-color: #ffffff;
     z-index: 1010;
-  }
-}
-
-@media (min-width: 1024px) {
-  .text-box {
-    margin-right: -150px;
-    margin-top: 0;
-    p {
-      font-size: 14px;
+    padding: 20px 10px;
+    h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
     }
-  }
-  .text-box-left {
-    margin-top: 0;
-    margin-left: -130px;
-    p {
-      font-size: 14px;
-    }
-  }
-}
-
-@media (min-width: 1280px) {
-  .text-box {
-    margin-right: -195px;
-    max-height: 385px;
-    p {
-      font-size: 17px;
-    }
-  }
-  .text-box-left {
-    margin-left: -250px;
-    max-width: 450px;
-    p {
-      font-size: 17px;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .text-box {
-    margin-left: -325px;
-    min-width: 450px;
-    min-height: 350px;
-    p {
+    h6 {
+      font-family: "Montserrat";
+      font-weight: 700;
       font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 10px;
+      color: #404040;
     }
-  }
-
-  .text-box-left {
-    margin-left: -460px;
-    min-height: 430px;
     p {
+      font-weight: 500;
       font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 10px;
     }
   }
   .bouquet-img {
-    max-height: 580px;
-    max-width: 800px;
+    max-height: 350px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-box-left,
+  .text-box-right {
+    border: 1px solid #e0c2b6;
+    margin-bottom: 25px;
+  }
+  .bouquet-img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-box-right {
+    margin: 0px -95% 0px 0px;
+  }
+  .text-box-left {
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: -94%;
+  }
+  .bouquet-img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-box-right {
+    margin-right: -78%;
+  }
+  .text-box-left {
+    margin-left: -86%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .text-box-right {
+    margin-right: -79%;
+  }
+  .text-box-left {
+    margin-left: -87%;
+  }
+  .girasoles-img {
+    max-height: 500px;
+    object-fit: cover;
   }
 }
 
 @media (min-width: 1920px) {
-  .text-box {
-    margin-right: -300px;
-  }
-  .text-box-left {
-    max-width: 450px;
-    margin-left: -700px;
-  }
-  .bouquet-img {
-    max-height: 660px;
-    max-width: 1000px;
+  .girasoles-img {
+    max-height: 500px;
+    object-fit: cover;
   }
 }

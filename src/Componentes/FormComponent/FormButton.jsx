@@ -1,14 +1,12 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
 
-const FormButton = ({ changeBtnValue }) => {
-    const [t] = useTranslation("global");
+const FormButton = ({ changeBtnValue,initialValue,sendingValue}) => {
     return (
         <div>
             <button type="submit" disabled={!changeBtnValue}  className='form_button'>
                 {changeBtnValue
-                    ? t("newsletterFormBtnValue.Static")
-                    : t("newsletterFormBtnValue.Send")
+                    ? initialValue
+                    : sendingValue
                 }
             </button>
         </div>

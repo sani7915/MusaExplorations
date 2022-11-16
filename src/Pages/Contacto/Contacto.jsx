@@ -84,26 +84,25 @@ const Contacto = () => {
 
 
     return (
-        <div className='d-flex flex-column align-items-center justify-content-center p-0' >
-            <div className="d-none d-lg-block col-11 col-md-11 col-lg-10 col-xl-8 col-xxl-7 m-auto mt-5 ">
-                <h1 className="fs-3 arvo lh-sm ps-md-2">
+        <div className='d-flex flex-column align-items-center justify-content-center' >
+            <div className="d-none d-lg-block col-md-11 col-lg-10 col-xl-9 col-xxl-8">
+                <h1 className="fs-3 mt-5 mb-3 ">
                     {t("contacto.titulo")}
-
                 </h1>
             </div>
-            <div className='container-fluid px-0 '>
-                <img src={naranjas} alt={naranjas} className='w-100 naranjas img-fluid' />
+            <div className='container-fluid p-0 '>
+                <img src={naranjas} alt={naranjas} className='w-100 naranjas'/>
             </div>
-            <div className="form_contacto d-flex flex-column col-11 col-lg-10 col-xl-8 col-xxl-7">
-                <div className='d-flex flex-column align-items-center'>
-                    <h1 className="fs-3 arvo lh-sm pt-3 d-lg-none">
+            <div className="d-flex flex-column col-11 col-md-10 col-lg-10 col-xl-9 col-xxl-8 contacto">
+                <div className='d-flex flex-column'>
+                    <h1 className="d-lg-none">
                         {t("contacto.titulo")}
                     </h1>
-                    <p className="text-center text-md-start px-3 p-md-0 m-0 col-md-10 col-lg-11 col-xl-9 mt-lg-5 fw-bold ">
+                    <p>
                         {t("contacto.p1")}
                     </p>
                 </div>
-                <div className="bg_form_contacto col-11 col-xl-9 m-auto p-4 p-lg-0 mt-3 mt-md-0 mb-4 mb-md-5 mt-lg-4">
+                <div className="form_contacto col-12 ">
                     <form ref={form} onSubmit={validarCampos} className="d-flex flex-column gap-4">
                         <Input
                             campoInvalido={invalidName}
@@ -127,8 +126,8 @@ const Contacto = () => {
                             name={'mensaje'}
                             type={'textarea'}
                             label={t("input.LabelMensaje")} />
-                        <div className='col-md-5'>
-                            <FormButton changeBtnValue={changeBtnValue} />
+                        <div className='col-lg-5'>
+                            <FormButton changeBtnValue={changeBtnValue} initialValue={t("contactBtnValue.static")}  sendingValue={t("contactBtnValue.send")}/>
                         </div>
                     </form>
                 </div>

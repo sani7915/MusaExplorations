@@ -90,9 +90,13 @@
     "titulo": "CONTACT",
     "p1": "You can send me your query through the form or write to me at hola@musadeacuarela.com"
   },
-  "newsletterFormBtnValue": {
-    "Static": "I'M IN",
-    "Send": "SENDING..."
+  "newsletterBtnValue": {
+    "static": "I'M IN",
+    "send": "SENDING..."
+  },
+  "contactBtnValue": {
+    "static": "SEND",
+    "send": "SENDING..."
   },
   "input": {
     "AlertText": "* This field is required",

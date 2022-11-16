@@ -62,7 +62,7 @@ function NewsletterForm() {
     }
 
     return (
-        <form ref={form} onSubmit={validarCampos} className="d-flex flex-column flex-md-row justify-content-center gap-4 ">
+        <form ref={form} onSubmit={validarCampos} className="d-flex flex-column flex-md-row justify-content-between gap-4 ">
             <div className="col-md-4">
                 <Input campoInvalido={invalidName} valorInput={getNombre} name={'nombre'} type={'text'} label={t("input.LabelNombre")} />
             </div>
@@ -70,7 +70,7 @@ function NewsletterForm() {
                 <Input campoInvalido={invalidEmail} valorInput={getEmail} name={'email'} type={'email'} label={t("input.LabelEmail")} />
             </div>
             <div className="col-md-3">
-                <FormButton changeBtnValue={changeBtnValue} />
+                <FormButton changeBtnValue={changeBtnValue} initialValue = {t("newsletterBtnValue.static")} sendingValue ={t("newletterBtnValue.send")} />
             </div>
         </form>
     )

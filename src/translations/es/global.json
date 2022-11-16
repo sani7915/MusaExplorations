@@ -92,9 +92,13 @@
     "titulo": "CONTACTO",
     "p1": "Puedes enviarme tu consulta a través del formulario o escribirme a hola@musadeacuarela.com"
   },
-  "newsletterFormBtnValue": {
-    "Static": "¡ME APUNTO!",
-    "Send": "ENVIANDO..."
+  "newsletterBtnValue": {
+    "static": "¡ME APUNTO!",
+    "send": "ENVIANDO..."
+  },
+  "contactBtnValue": {
+    "static": "ENVIAR",
+    "send": "ENVIANDO..."
   },
   "input": {
     "AlertText": "* Este campo es obligatorio",

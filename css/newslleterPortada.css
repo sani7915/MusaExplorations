@@ -38,13 +38,9 @@
     height: 520px;
   }
   .newsletter-portada p {
-    margin: 0px 50px 30px 50px;
+    margin: 0px 40px 30px 40px;
   }
   .newsletter-portada button {
     margin-bottom: 50px;
   }
-}
-.bg-newsletter-apuntate {
-  background: #f3f3f3;
-  padding: 20px 0px;
 }/*# sourceMappingURL=newslleterPortada.css.map */
