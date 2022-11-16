@@ -19,4 +19,12 @@
   .insta-card img {
     object-fit: cover;
   }
+}
+.referral {
+  font-size: 1px !important;
+  margin: 0px !important;
+}
+
+.j-message p {
+  color: white !important;
 }/*# sourceMappingURL=instagram.css.map */

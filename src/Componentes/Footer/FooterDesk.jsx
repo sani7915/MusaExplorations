@@ -7,7 +7,7 @@ function FooterDesk({ cambiarIdioma, t }) {
 
     return (
         <div className='d-none d-lg-flex flex-column align-items-center'>
-            <div className='col-lg-10 col-xl-9 col-xxl-8  '>
+            <div className='col-lg-10 col-xl-9 col-xxl-8'>
                 <div className="d-flex justify-content-between cont-1">
                     <div className="col-lg-5">
                         <div className='footer_logo-horizontal'>
@@ -19,7 +19,7 @@ function FooterDesk({ cambiarIdioma, t }) {
                     </div>
                     <div className="col-6 d-flex justify-content-end">
                         <div className="d-flex justify-content-between col-11 footer-ul">
-                            <div>
+                            <div className='text-end'>
                                 <ul>
                                     <li>
                                         <a href={'https://www.etsy.com/shop/musadeacuarela'} target={"_blank"} rel="noreferrer" className="nav-link">

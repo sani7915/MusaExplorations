@@ -52,6 +52,7 @@
     "p1": "Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para",
     "p2": "mejorar tu técnica, novedades y descuentos exclusivos en la tienda..."
   },
+  "instagram" : "LO ÚLTIMO EN INSTAGRAM",
   "tienda": {
     "titulo": "TIENDA",
     "subtitulo": "Puedes encontrar algunos de mis artículos en mi tienda de Etsy o Spoonflower :",
@@ -113,7 +114,7 @@
     },
     "ul2": {
       "apuntate": "Apúntate",
-      "patterns": "Patterns",
+      "patterns": "Estampados",
       "SobreMi": "Sobre mí",
       "contacto": "Contacto"
     },

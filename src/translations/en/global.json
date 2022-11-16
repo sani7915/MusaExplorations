@@ -26,8 +26,8 @@
       "p2": "Orders"
     }
   },
-  "galeriaTitle" : {
-    "h1" : "WORK GALLERY" 
+  "galeriaTitle": {
+    "h1": "WORK GALLERY"
   },
   "galeriaBtnValue": {
     "todos": "all",
@@ -37,18 +37,19 @@
     "mujer": "woman",
     "abstracto": "abstract"
   },
-  "popUpText" :{
-    "newsOk":  "You signed up correctly!",
-    "contactOk" : "Your message was sent successfully!",
+  "popUpText": {
+    "newsOk": "You signed up correctly!",
+    "contactOk": "Your message was sent successfully!",
     "error": "Oops! something went wrong!",
-    "contactoOk" : "Your message was sent successfully!",
+    "contactoOk": "Your message was sent successfully!",
     "button": "CLOSE"
-    },
+  },
+  "instagram": "THE LATEST ON INSTAGRAM",
   "newsletterPortada": {
     "titulo": "SIGN UP!",
     "p1": " Sign up for free and periodically receive sheets to download and paint, tips for ",
     "p2": "improve your technique, news and exclusive discounts in the store...",
-    "modalForm" : "You signed up correctly"
+    "modalForm": "You signed up correctly"
   },
   "tienda": {
     "titulo": "STORE",
@@ -85,8 +86,8 @@
     "h64": "What I enjoy most about watercolor",
     "p4": "Taking the paint, moistening the watercolor, melting the brush in the mixture, seeing how the water settles on the paper, how the watercolor pigment expands in the water... each step of the process is a joy for me. I apply this art to both original works and reproductions that can be used for a print, to stamp a fabric, to decorate beautiful tableware... Sharing my knowledge with people who enjoy and are enriched by their creativity is another facet that also fills me."
   },
-  "contacto" : {
-    "titulo" : "CONTACT",
+  "contacto": {
+    "titulo": "CONTACT",
     "p1": "You can send me your query through the form or write to me at hola@musadeacuarela.com"
   },
   "newsletterFormBtnValue": {
@@ -106,7 +107,7 @@
       "tienda": "Store",
       "galeria": "Work Gallery",
       "pedidos": "Custom orders",
-      "acuarelaBotanica": "Patterns"
+      "acuarelaBotanica": "Botanical Watercolor"
     },
     "ul2": {
       "apuntate": "Sign up",
