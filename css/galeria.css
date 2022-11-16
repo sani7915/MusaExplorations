@@ -24,9 +24,12 @@
     padding: 20px 0px;
     width: 90%;
   }
-  .gallery-card-description p {
+  .gallery-card-description span {
     margin: 0;
     color: white;
+  }
+  .gallery-card-description span::first-letter {
+    text-transform: uppercase;
   }
   .btn-galeria {
     background: #ffffff;

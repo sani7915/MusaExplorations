@@ -44,7 +44,7 @@ export const laminas = [
   {
     id: 104,
     categoriaES: "botánica",
-    categoriaEN: "botany",
+    categoriaEN: "botanical",
     nombre: "fruta de la pasion",
     descripción: "",
     técnica_soporte: "",
@@ -72,7 +72,7 @@ export const laminas = [
   {
     id: 106,
     categoriaES: "botánica",
-    categoriaEN: "botany",
+    categoriaEN: "botanical",
     nombre: "totem piedra",
     descripción: "",
     técnica_soporte: "",

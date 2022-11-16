@@ -44,11 +44,11 @@ const ResponsiveNavbar = () => {
                     <img src={logo} alt="logo" width={45} />
                 </Link>
             </div>
-            <ul onClick={() => { setCollapse(!collapse) }} className={collapse ? ` modall animate__animated  animate__fadeIn d-md-none ` : ` modall animate__animated  animate__fadeOut ${noCollapse} d-md-none`}>
+            <ul onClick={() => { setCollapse(!collapse) }} className={collapse ? ` modall animate__animated animate__fadeIn animate__faster d-md-none ` : ` modall animate__animated  animate__fadeOut animate__faster ${noCollapse} d-md-none`}>
                 {
                     links.map(link => {
                         return (
-                            <li key={link.nombre}>
+                            <li key={link.nombre} className='pb-2'>
                                 <Link to={link.to} className='nav-link nav-item '>
                                     {link.nombre}
                                 </Link>

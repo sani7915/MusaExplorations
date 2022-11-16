@@ -57,7 +57,7 @@ function FooterDesk({ cambiarIdioma, t }) {
                     </div>
                 </div>
                 <div className='d-flex justify-content-between cont-2'>
-                    <ul className="d-flex col-4 justify-content-between redes">
+                    <ul className="d-flex col-3 justify-content-between redes">
                         <li>
                             <a href="https://www.instagram.com/musadeacuarela" target='_blank' rel="noreferrer" >
                                 <i className="fa-brands fa-square-instagram "></i>

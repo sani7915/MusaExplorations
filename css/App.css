@@ -13,7 +13,7 @@
 @import url("../Pages/Portada/newslleterPortada.scss");
 .modall {
   list-style: none;
-  padding-left: 15px;
+  padding-left: 20px;
   z-index: 1200;
   position: absolute;
   background-color: white;

@@ -1,7 +1,7 @@
 {
   "navBar": {
     "portada": "Portada",
-    "galeria": "Galeria de trabajos",
+    "galeria": "Galeria",
     "tienda": "Tienda",
     "apuntate": "Apúntate",
     "sobreMi": "Sobre mí",
@@ -29,7 +29,7 @@
     }
   },
   "galeriaTitle" : {
-    "h1" : "GALERIA DE TRABAJOS" 
+    "h1" : "GALERÍA" 
   },
   "galeriaBtnValue": {
     "todos": "todos",
@@ -49,8 +49,8 @@
 
   "newsletterPortada": {
     "titulo": "¡APÚNTATE!",
-    "p1": "Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para",
-    "p2": "mejorar tu técnica, novedades y descuentos exclusivos en la tienda..."
+    "p1": "Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para ",
+    "p2": "mejorar tu técnica, novedades y descuentos exclusivos en la tienda."
   },
   "instagram" : "LO ÚLTIMO EN INSTAGRAM",
   "tienda": {
@@ -112,7 +112,7 @@
     "lirica": "Coger el pincel, humedecer la acuarela, fundir el pincel en la mezcla, ver como el agua se posa en el papel, como el pigmento de la acuarela se expande en el agua… disfrutar de cada paso.",
     "ul1": {
       "tienda": "Tienda",
-      "galeria": "Galeria de trabajos",
+      "galeria": "Galeria",
       "pedidos": "Pedidos personalizados",
       "acuarelaBotanica": "Acuarela Botánica"
     },
@@ -122,7 +122,7 @@
       "SobreMi": "Sobre mí",
       "contacto": "Contacto"
     },
-    "copy": "Copoyright 2022. Todos los derechos reservados. Desarrollado por Daniel Lorenzo",
+    "copy": "Copyright 2022. Todos los derechos reservados. Desarrollado por Daniel Lorenzo",
     "language": {
       "p": "Change language: ",
       "span": "ENG"

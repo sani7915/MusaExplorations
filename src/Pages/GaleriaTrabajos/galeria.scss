@@ -28,9 +28,12 @@
     height: 90px;
     padding: 20px 0px;
     width: 90%;
-    p {
+    span {
       margin: 0;
       color: white;
+      &::first-letter{
+        text-transform: uppercase;
+      }
     }
   }
   .btn-galeria {

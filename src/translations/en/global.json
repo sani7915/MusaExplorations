@@ -1,20 +1,20 @@
 {
   "navBar": {
     "portada": "Home",
-    "galeria": "Work Gallery",
+    "galeria": "Gallery",
     "tienda": "Store",
-    "apuntate": "Sign up",
+    "apuntate": "Join us",
     "sobreMi": "About me",
     "contacto": "Contact"
   },
   "inicio": {
-    "h1": "WATER COLOR ART",
+    "h1": "WATERCOLOR ART",
     "p1": "Creation of beautiful and unique pieces, with organic and delicate lines, that will make you ",
     "p2": " smile every day when contemplating it, and that helps you to be happier today than yesterday"
   },
   "cardPortada": {
     "arte": {
-      "p1": "Botanical themed",
+      "p1": "Botanical",
       "p2": "Designs"
     },
     "colecciones": {
@@ -27,11 +27,11 @@
     }
   },
   "galeriaTitle": {
-    "h1": "WORK GALLERY"
+    "h1": "GALLERY"
   },
   "galeriaBtnValue": {
     "todos": "all",
-    "botanica": "botany",
+    "botanica": "botanical",
     "estampados": "patterns",
     "naturaleza": "nature",
     "mujer": "woman",
@@ -44,9 +44,9 @@
     "contactoOk": "Your message was sent successfully!",
     "button": "CLOSE"
   },
-  "instagram": "THE LATEST ON INSTAGRAM",
+  "instagram": "LATEST ON INSTAGRAM",
   "newsletterPortada": {
-    "titulo": "SIGN UP!",
+    "titulo": "JOIN US!",
     "p1": " Sign up for free and periodically receive sheets to download and paint, tips for ",
     "p2": "improve your technique, news and exclusive discounts in the store...",
     "modalForm": "You signed up correctly"
@@ -64,7 +64,7 @@
     }
   },
   "apuntate": {
-    "titulo": "SIGN UP",
+    "titulo": "JOIN US!",
     "li1": "Receive beautiful sheets to be able to download them and paint them with your favorite technique",
     "li2": "Discover easy-to-implement tips to enter and improve in the world of watercolor",
     "li3": "Being part of a group that shares your passion for the natural, organic, delicate...",
@@ -91,7 +91,7 @@
     "p1": "You can send me your query through the form or write to me at hola@musadeacuarela.com"
   },
   "newsletterBtnValue": {
-    "static": "I'M IN",
+    "static": "JOIN",
     "send": "SENDING..."
   },
   "contactBtnValue": {
@@ -109,12 +109,12 @@
     "lirica": "Take the brush, moisten the watercolor, melt the brush in the mixture, see how the water settles on the paper, how the watercolor pigment expands in the water... enjoy every step.",
     "ul1": {
       "tienda": "Store",
-      "galeria": "Work Gallery",
+      "galeria": "Gallery",
       "pedidos": "Custom orders",
       "acuarelaBotanica": "Botanical Watercolor"
     },
     "ul2": {
-      "apuntate": "Sign up",
+      "apuntate": "Join us",
       "patterns": "Patterns",
       "SobreMi": "About me",
       "contacto": "Contact"

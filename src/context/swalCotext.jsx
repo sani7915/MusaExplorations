@@ -41,16 +41,16 @@ function SwalProvider({ children }) {
         });
     };
 
-    const popUpForm = (text,btnValue,img) => {
+    const popUpForm = (text, btnValue, img) => {
         MySwal.fire({
             title: text,
             color: '#404040',
-            imageUrl:img,
-            allowOutsideClick:false,
+            imageUrl: img,
+            allowOutsideClick: false,
             showConfirmButton: true,
-            confirmButtonText:btnValue,
-            confirmButtonColor:'#c89e6f',
-            focusConfirm:false,
+            confirmButtonText: btnValue,
+            confirmButtonColor: '#c89e6f',
+            focusConfirm: false,
             showCloseButton: true,
             position: 'center',
             showClass: {
@@ -71,7 +71,7 @@ function SwalProvider({ children }) {
 
 
     return (
-        <SwalContext.Provider value={{ popUpImgGaleria, popUpForm}} >
+        <SwalContext.Provider value={{ popUpImgGaleria, popUpForm }} >
             {children}
         </SwalContext.Provider>
     )
