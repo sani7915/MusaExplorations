@@ -6,7 +6,7 @@ const CardsPortada = () => {
     const [t] = useTranslation("global")
 
     const cardCategory = [
-        { p1: t("cardPortada.arte.p1"), p2: t("cardPortada.arte.p2"), bg: 'color1', url: '/gallery/botany' },
+        { p1: t("cardPortada.arte.p1"), p2: t("cardPortada.arte.p2"), bg: 'color1', url: '/gallery/botanical' },
         { p1: t("cardPortada.colecciones.p1"), p2: t("cardPortada.colecciones.p2"), bg: 'color2', url: '/gallery/patterns' },
         { p1: t("cardPortada.pedidos.p1"), p2: t("cardPortada.pedidos.p2"), bg: 'color3', url: 'contact' },
     ]
