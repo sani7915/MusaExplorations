@@ -1,5 +1,5 @@
 import React from "react";
-import campoDeGirasoles from '../../images/diseño/girasoles.jpg';
+import campoDeGirasoles from '../../images/diseño/campo de girasoles.jpg';
 import pintandoBouquet from '../../images/diseño/pintando bouquet de flores acuarela_mod.jpg'
 import { useTranslation } from "react-i18next";
 
@@ -13,11 +13,11 @@ const SobreMi = () => {
                 {t("sobreMi.titulo")}
             </h1>
             <section className="d-flex flex-column flex-lg-row-reverse justify-content-start  mb-lg-5">
-                <div className="col-lg-8 col-xl-7">
-                    <img src={campoDeGirasoles} alt="campo de girasoles" className="w-100 girasoles-img" />
+                <div className="col-lg-7 d-flex justify-content-end">
+                    <img src={campoDeGirasoles} alt="campo de girasoles" className="girasoles-img" />
                 </div>
-                <div className="d-flex justify-content-center  align-items-center col-lg-11 ">
-                    <div className="col-11 col-lg-6 col-xl-5 col-xxl-4 text-box-right">
+                <div className="d-flex justify-content-center align-items-center col-lg-11 ">
+                    <div className=" d-flex flex-column justify-content-center col-11 col-lg-6 col-xl-5 col-xxl-4 text-box-right">
                         <h1 className="d-md-none">
                             {t("sobreMi.titulo")}
                         </h1>
@@ -37,11 +37,11 @@ const SobreMi = () => {
                 </div>
             </section>
             <section className="d-flex flex-column flex-lg-row justify-content-start">
-                <div className="col-lg-7">
+                <div className="col-lg-6 col-xxl-6">
                     <img src={pintandoBouquet} alt="campo de girasoles" className="w-100 bouquet-img" />
                 </div>
                 <div className="d-flex justify-content-center align-items-center col-lg-11 ">
-                    <div className="col-11 col-lg-8 col-xl-6 col-xxl-5 text-box-left ">
+                    <div className="d-flex flex-column justify-content-center col-11 col-lg-7 col-xl-5 col-xxl-5 text-box-left ">
                         <h6 >
                             {t("sobreMi.h63")}
                         </h6>

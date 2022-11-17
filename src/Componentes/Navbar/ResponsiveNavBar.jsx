@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import logo from '../../images/diseño/logo peq sin texto.svg';
 import hamburguesa from '../../images/diseño/hamburguesa.png';
 import { Link } from 'react-router-dom'
@@ -14,13 +14,6 @@ const ResponsiveNavbar = () => {
         { to: '/contact', nombre: t("navBar.contacto") },
     ]
     const [collapse, setCollapse] = useState();
-    const [noCollapse, setNoCollapse] = useState('d-none')
-
-    useEffect(() => {
-        setTimeout(() => {
-            setNoCollapse('d-none')
-        }, 1000);
-    }, [collapse])
 
     const chanageBrand = () => {
         if (window.scrollY && window.innerWidth >= 768) {
@@ -36,7 +29,6 @@ const ResponsiveNavbar = () => {
             <div className='container-fluid d-flex align-items-center d-md-none py-3 sticky-top'>
                 <div className="position-absolute" onClick={() => {
                     setCollapse(!collapse)
-                    setNoCollapse('')
                 }}>
                     <img src={hamburguesa} alt={hamburguesa} width={45} className='ps-2' />
                 </div>
@@ -44,7 +36,7 @@ const ResponsiveNavbar = () => {
                     <img src={logo} alt="logo" width={45} />
                 </Link>
             </div>
-            <ul onClick={() => { setCollapse(!collapse) }} className={collapse ? ` modall animate__animated animate__fadeIn animate__faster d-md-none ` : ` modall animate__animated  animate__fadeOut animate__faster ${noCollapse} d-md-none`}>
+            <ul onClick={() => { setCollapse(!collapse) }} className={collapse ? ` modall  d-md-none ` : ` modall d-none d-md-none`}>
                 {
                     links.map(link => {
                         return (

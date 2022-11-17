@@ -14,7 +14,7 @@ const Apuntate = () => {
             </h1>
             <div className="d-flex flex-column align-items-center flex-lg-row-reverse ">
                 <div className="col-lg-7 col-xxl-6 ">
-                    <img src={probandoPaleta} alt="campo de girasoles" className="w-100 girasoles-img" />
+                    <img src={probandoPaleta} alt={probandoPaleta} className="w-100" />
                 </div>
                 <div className="d-flex justify-content-center col-12 col-lg-7 col-xl-5 ">
                     <ul className=" d-flex flex-column justify-content-evenly p-0 col-11 col-md-11 text-box-apuntate" >
