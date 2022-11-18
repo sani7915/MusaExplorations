@@ -70,7 +70,7 @@ function NewsletterForm() {
                 <Input campoInvalido={invalidEmail} valorInput={getEmail} name={'email'} type={'email'} label={t("input.LabelEmail")} />
             </div>
             <div className="col-md-3">
-                <FormButton changeBtnValue={changeBtnValue} initialValue = {t("newsletterBtnValue.static")} sendingValue ={t("newletterBtnValue.send")} />
+                <FormButton changeBtnValue={changeBtnValue} initialValue = {t("newsletterBtnValue.static")} sendingValue ={t("newsletterBtnValue.send")} />
             </div>
         </form>
     )

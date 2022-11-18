@@ -11,6 +11,7 @@
 @import url("../Componentes/FormComponent/input.scss");
 @import url("../Componentes/FormComponent/formButton.scss");
 @import url("../Pages/Portada/newslleterPortada.scss");
+@import url("../Pages/ERROR404/error404.scss");
 .modall {
   list-style: none;
   padding-left: 20px;
@@ -54,7 +55,7 @@
   position: absolute;
   height: 2px;
   width: 0px;
-  bottom: -8px;
+  bottom: -9px;
   left: 0px;
   right: 0px;
   transition: 0.5s;
@@ -92,6 +93,10 @@
 }
 body {
   margin: auto;
+}
+
+.clase {
+  height: 80vh;
 }
 
 p {

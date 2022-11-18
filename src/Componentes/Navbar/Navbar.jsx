@@ -32,17 +32,16 @@ const Navbar = () => {
                 <Link to={'/'} className={initial
                     ? ` d-none d-md-flex flex-md-column align-items-md-center my-3 gap-2 ${animationFadeInOut}`
                     : `d-none d-md-flex flex-md-column align-items-md-center mt-2 gap-2 ${animationFadeInOut}`}  >
-                    <img src={logo} alt={logo} width={63} />
+                    <img src={logo} alt={logo} width={65} />
                     <img src={logoMusa} alt={logoMusa} />
                 </Link>
             </div>
 
-            <div className="container-fluid d-none col-md-11 col-lg-10 col-xl-9 col-xxl-8 d-md-flex flex-md-column align-items-center px-0 py-2" >
+            <div className="container-fluid d-none col-md-11 col-lg-10 col-xl-9 col-xxl-8 d-md-flex flex-md-column align-items-center p-0" >
                 <div className='container-fluid d-flex justify-content-center p-0 '>
                     <div className="navbar-collapse">
-                        <ul className={initial
-                            ? "d-flex justify-content-between align-items-center list-unstyled m-0"
-                            : 'd-flex justify-content-between align-items-md-center list-unstyled m-0'} >
+                        <ul className='d-flex justify-content-between align-items-end list-unstyled m-0 py-2'
+                         >
                             <li className=
                                 {!initial
                                     ? 'animate__animated animate__fadeIn'

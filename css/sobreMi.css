@@ -1,4 +1,11 @@
+@charset "UTF-8";
 @media (min-width: 320px) {
+  .img {
+    background-image: url("../../images/diseño/campo de girasoles.jpg");
+    height: 300px;
+    width: 100%;
+    background-position: top;
+  }
   .text-box-right,
 .text-box-left {
     margin-top: -30px;
@@ -58,8 +65,12 @@
   }
 }
 @media (min-width: 992px) {
+  .img {
+    width: 53%;
+    height: 380px;
+  }
   .text-box-right {
-    margin: 0px -77% 0px 0px;
+    margin: 0px -65.5% 0px 0px;
     padding: 20px 30px;
   }
   .text-box-right p {
@@ -68,7 +79,7 @@
   .text-box-left {
     margin-top: 0;
     margin-bottom: 0px;
-    margin-left: -68%;
+    margin-left: -67.5%;
   }
   .text-box-left p {
     font-size: 16px;
@@ -82,7 +93,7 @@
 }
 @media (min-width: 1200px) {
   .text-box-right {
-    margin-right: -78%;
+    margin-right: -66.5%;
   }
   .text-box-right p {
     font-size: 18px;
@@ -94,20 +105,23 @@
   .bouquet-img {
     min-height: 540px;
   }
+  .img {
+    height: 420px;
+  }
   .girasoles-img {
     max-height: 420px;
   }
 }
 @media (min-width: 1400px) {
   .text-box-right {
-    margin-right: -79%;
-    width: 33%;
+    margin-right: -75%;
+    width: 37%;
   }
   .text-box-right p {
     font-size: 20px;
   }
   .text-box-left {
-    margin-left: -61%;
+    margin-left: -70.5%;
     height: 541px;
     width: 43%;
   }
@@ -118,6 +132,10 @@
   .bouquet-img {
     min-height: 611px;
     width: 96%;
+  }
+  .img {
+    height: 450px;
+    width: 55%;
   }
   .girasoles-img {
     width: 96%;
@@ -132,5 +150,12 @@
   .text-box-right p,
 .text-box-left p {
     line-height: 35px;
+  }
+  .img {
+    height: 550px;
+  }
+  .bouquet-img {
+    min-height: 700px;
+    width: 96%;
   }
 }/*# sourceMappingURL=sobreMi.css.map */

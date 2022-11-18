@@ -13,10 +13,13 @@
 @import url("../Componentes/FormComponent/input.scss");
 @import url("../Componentes/FormComponent/formButton.scss");
 @import url("../Pages/Portada/newslleterPortada.scss");
-
+@import url("../Pages/ERROR404/error404.scss");
 
 body {
   margin: auto;
+}
+.clase{
+  height: 80vh;
 }
 p {
   font-family: "Montserrat", sans-serif;

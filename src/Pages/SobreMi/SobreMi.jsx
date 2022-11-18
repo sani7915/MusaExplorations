@@ -1,5 +1,4 @@
 import React from "react";
-import campoDeGirasoles from '../../images/diseño/campo de girasoles.jpg';
 import pintandoBouquet from '../../images/diseño/pintando bouquet de flores acuarela_mod.jpg'
 import { useTranslation } from "react-i18next";
 
@@ -13,8 +12,7 @@ const SobreMi = () => {
                 {t("sobreMi.titulo")}
             </h1>
             <section className="d-flex flex-column flex-lg-row-reverse justify-content-start  mb-lg-5">
-                <div className="col-lg-7 d-flex justify-content-end">
-                    <img src={campoDeGirasoles} alt="campo de girasoles" className="girasoles-img" />
+                <div className="col-lg-1 img">
                 </div>
                 <div className="d-flex justify-content-center align-items-center col-lg-11 ">
                     <div className=" d-flex flex-column justify-content-center col-11 col-lg-6 col-xl-5 col-xxl-4 text-box-right">
