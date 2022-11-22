@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import probandoPaleta from '../../images/diseño/probando paleta color acuarela.jpg'
 import NewsletterApuntate from "./NewsletterApuntate";
+import Footer from "../../Componentes/Footer/Footer";
 
 const Apuntate = () => {
     const [t] = useTranslation("global");
@@ -13,8 +14,8 @@ const Apuntate = () => {
                 {t("apuntate.titulo")}
             </h1>
             <div className="d-flex flex-column align-items-center flex-lg-row-reverse ">
-                <div className="col-lg-7 col-xxl-6 ">
-                    <img src={probandoPaleta} alt={probandoPaleta} className="w-100" />
+                <div className="col-lg-7 col-xxl-7 ">
+                    <img src={probandoPaleta} alt={probandoPaleta} className="w-100 probandoPaleta-img" />
                 </div>
                 <div className="d-flex justify-content-center col-12 col-lg-7 col-xl-5 ">
                     <ul className=" d-flex flex-column justify-content-evenly p-0 col-11 col-md-11 text-box-apuntate" >
@@ -49,6 +50,7 @@ const Apuntate = () => {
             <div>
                 <NewsletterApuntate />
             </div>
+            <Footer />
         </div>
     )
 }

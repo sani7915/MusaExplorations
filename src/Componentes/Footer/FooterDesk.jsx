@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 
 function FooterDesk({ cambiarIdioma, t }) {
-
     return (
         <div className='d-none d-lg-flex flex-column align-items-center'>
             <div className='col-lg-10 col-xl-9 col-xxl-8'>
@@ -26,13 +25,13 @@ function FooterDesk({ cambiarIdioma, t }) {
                                             {t("navBar.tienda")}
                                         </a>
                                     </li>
-                                    <Link to={'/gallery/all'} className='nav-link'>
+                                    <Link to={'/gallery/All'} className='nav-link'>
                                         <li> {t("footer.ul1.galeria")}</li>
                                     </Link>
                                     <Link to={'/contact'} className='nav-link'>
                                         <li>{t("footer.ul1.pedidos")}</li>
                                     </Link>
-                                    <Link to={'/gallery/botany'} className='nav-link'>
+                                    <Link to={'/gallery/Botanical'} className='nav-link'>
                                         <li>{t("footer.ul1.acuarelaBotanica")}</li>
                                     </Link>
                                 </ul>
@@ -42,7 +41,7 @@ function FooterDesk({ cambiarIdioma, t }) {
                                     <Link to={'/signUp'} className='nav-link'>
                                         <li>{t("footer.ul2.apuntate")}</li>
                                     </Link>
-                                    <Link to={'/gallery/patterns'} className='nav-link'>
+                                    <Link to={'/gallery/Patterns'} className='nav-link'>
                                         <li>{t("footer.ul2.patterns")}</li>
                                     </Link>
                                     <Link to={'/aboutMe'} className='nav-link'>

@@ -17,14 +17,15 @@ const Navbar = () => {
 
     const links = [
         { to: '/', nombre: t("navBar.portada"), href: '#' },
-        { to: '/gallery/all', nombre: t("navBar.galeria"), href: '#' },
+        { to: '/gallery/All', nombre: t("navBar.galeria"), href: '#' },
         { to: '/signUp', nombre: t("navBar.apuntate"), href: '#' },
         { to: '/aboutMe', nombre: t("navBar.sobreMi"), href: '#' },
         { to: '/contact', nombre: t("navBar.contacto"), href: '#' },
     ]
 
     return (
-        <nav className={initial
+        <nav className={
+            initial
             ? `montserrat sticky-top shadow-sm nav-bar ${animationUpDown}`
             : `montserrat sticky-top shadow-sm nav-bar ${animationUpDown}`}>
             <ResponsiveNavbar />

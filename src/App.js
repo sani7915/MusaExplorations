@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import "./SCSS/App.scss";
 import PortadaContenedor from "../src/Pages/Portada/PortadaContenedor";
-import Navbar from "../src/Componentes/Navbar/Navbar";
-import Footer from "./Componentes/Footer/Footer";
 import GaleriaContenedor from "./Pages/GaleriaTrabajos/GaleriaContenedor";
 import Apuntate from "../src/Pages/Apuntate/Apuntate";
 import SobreMi from "../src/Pages/SobreMi/SobreMi";
@@ -11,13 +9,14 @@ import Error404 from "./Pages/ERROR404/Error404";
 import NavbarProvider from "./context/NavbarContext";
 import SwalProvider from "./context/swalCotext";
 import I18NextProvider from "./context/I18NextContext";
+import Navbar from "./Componentes/Navbar/Navbar";
 function App() {
   return (
     <BrowserRouter>
       <I18NextProvider>
         <NavbarProvider>
           <SwalProvider>
-            <Navbar />
+            <Navbar/>
             <Routes>
                 <Route exact path="/" element={<PortadaContenedor />} />
                 <Route
@@ -30,7 +29,6 @@ function App() {
                 <Route exact path="/contact" element={<Contacto />} />
                 <Route path="*" element={<Error404 />} />
             </Routes>
-            <Footer />
           </SwalProvider>
         </NavbarProvider>
       </I18NextProvider>

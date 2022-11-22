@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
   .text-box-apuntate {
-    margin-top: -90px;
+    margin-top: -30px;
     background-color: #ffffff;
     z-index: 1010;
     .fa-circle {
@@ -95,12 +95,15 @@
 
 @media (min-width: 1400px) {
   .text-box-apuntate {
-    margin-right: -32%;
+    margin-right: -72%;
     min-height: 350px;
   }
   .flechita {
-    margin-bottom: -30px;
-    margin-top: -70px;
+    margin-bottom: -20px;
+    margin-top: -90px;
+  }
+  .probandoPaleta-img{
+  max-height: 530px;
   }
 }
 

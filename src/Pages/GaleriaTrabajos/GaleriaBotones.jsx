@@ -5,12 +5,12 @@ import { useTranslation } from 'react-i18next';
 const GaleriaBotones = () => {
     const [t] = useTranslation("global");
     const buttons = [
-        { btnValue: t("galeriaBtnValue.todos"), categoria: 'all' },
-        { btnValue: t("galeriaBtnValue.botanica"), categoria: 'botanical' },
-        { btnValue: t("galeriaBtnValue.mujer"), categoria: 'woman' },
-        { btnValue: t("galeriaBtnValue.abstracto"), categoria: 'abstract' },
-        { btnValue: t("galeriaBtnValue.estampados"), categoria: 'patterns' },
-        { btnValue: t("galeriaBtnValue.naturaleza"), categoria: 'nature' }
+        { btnValue: t("galeriaBtnValue.todos"), categoria: 'All' },
+        { btnValue: t("galeriaBtnValue.botanica"), categoria: 'Botanical' },
+        { btnValue: t("galeriaBtnValue.mujer"), categoria: 'Woman' },
+        { btnValue: t("galeriaBtnValue.abstracto"), categoria: 'Abstract' },
+        { btnValue: t("galeriaBtnValue.estampados"), categoria: 'Patterns' },
+        { btnValue: t("galeriaBtnValue.naturaleza"), categoria: 'Nature' }
     ]
 
 

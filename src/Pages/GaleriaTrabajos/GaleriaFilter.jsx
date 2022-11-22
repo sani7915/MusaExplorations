@@ -13,7 +13,7 @@ const GaleriaFilter = ({ respuesta }) => {
     const [categoryItem, setCategoryItem] = useState();
 
     useEffect(() => {
-        if (category === 'all') {
+        if (category === 'All') {
             setRender(respuesta);
             if (langBoolean) {
                 setCategoryItem(true)

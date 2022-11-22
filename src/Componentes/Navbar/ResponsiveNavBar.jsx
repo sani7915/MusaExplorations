@@ -8,7 +8,7 @@ const ResponsiveNavbar = () => {
     const [t] = useTranslation("global")
     const links = [
         { to: '/', nombre: t("navBar.portada") },
-        { to: '/gallery/all', nombre: t("navBar.galeria") },
+        { to: '/gallery/All', nombre: t("navBar.galeria") },
         { to: '/signUp', nombre: t("navBar.apuntate") },
         { to: '/aboutMe', nombre: t("navBar.sobreMi") },
         { to: '/contact', nombre: t("navBar.contacto") },
@@ -41,7 +41,7 @@ const ResponsiveNavbar = () => {
                     links.map(link => {
                         return (
                             <li key={link.nombre} className='pb-2'>
-                                <Link to={link.to} className='nav-link nav-item '>
+                                <Link to={link.to} className='nav-link'>
                                     {link.nombre}
                                 </Link>
                             </li>

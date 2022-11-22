@@ -14,17 +14,11 @@ const Instagram = () => {
             <ul
                 className="juicer-feed"
                 data-feed-id="musadeacuarela"
-                data-gutter="30" //separa
-                data-per="6"
-                data-truncate="500"
-                data-style="slider"
                 data-origin="embed-code"
-                data-pages="1"
+                data-style="slider"
                 data-columns="4"
-                // data-after="updateFilters()"
-                data-overlay="true"
+                // data-overlay="true"
                 data-interval="5000"
-            // data-starting-at="2022-08-01" data-ending-at="2022-10-01"
             >
 
             </ul>

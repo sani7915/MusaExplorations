@@ -42,7 +42,7 @@
   "popUpText": {
     "newsOk": "¡Te apuntaste correctamente!",
     "contactOk" : "¡Tu mensaje fue enviado correctamente!",
-    "error": "¡Ups! Algo salio mal",
+    "error": "¡Ups! Algo ha salido mal!",
     "contactoOk": "¡Tu mensaje fue enviado correctamente!",
     "button": "CERRAR"
   },
@@ -127,5 +127,11 @@
       "p": "Change language: ",
       "span": "ENG"
     }
+  },
+  "error404":{
+    "p1" : "¡Ups! Algo ha salido mal!",
+    "p2" : "ERROR 404",
+    "p3" : "La ruta no existe",
+    "btnValue": "VOLVER"
   }
 }

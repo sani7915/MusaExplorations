@@ -28,7 +28,11 @@
   margin: 0px !important;
 }
 
-
-.j-twitter.share {
+.j-twitter.share,
+.j-pinterest.share,
+.j-youtube.share,
+.j-linkedin.share,
+.j-email.share,
+.j-facebook.share {
   display: none !important;
 }

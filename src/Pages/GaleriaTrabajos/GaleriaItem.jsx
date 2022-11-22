@@ -10,11 +10,8 @@ const GaleriaItem = ({ imagen, nombre, categoria, popUp }) => {
                 <img src={require('../../images/laminas/' + imagen + '.jpg')} alt={nombre} onClick={() => popUp(require('../../images/laminas/' + imagen + '.jpg'), nombre, categoria)} />
             </div>
             <div className={`d-flex align-items-end gallery-card-description ${hover}`} >
-                <span className='me-1'>
-                    {nombre} -
-                </span>
                 <span>
-                    {categoria}
+                    {nombre} - {categoria}
                 </span>
             </div>
         </div>

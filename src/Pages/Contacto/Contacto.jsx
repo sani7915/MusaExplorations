@@ -7,6 +7,7 @@ import Textarea from '../../Componentes/FormComponent/Textarea';
 import FormButton from '../../Componentes/FormComponent/FormButton';
 import { useSwalContext } from '../../context/swalCotext';
 import broken_pot from '../../images/diseño/broken pot.svg'
+import Footer from '../../Componentes/Footer/Footer';
 
 const Contacto = () => {
     const { popUpForm } = useSwalContext();
@@ -84,55 +85,57 @@ const Contacto = () => {
 
 
     return (
-        <div className='d-flex flex-column align-items-center justify-content-center' >
-            <div className="d-none d-lg-block col-md-11 col-lg-10 col-xl-9 col-xxl-8">
-                <h1 className="fs-3 mt-5 mb-3 ">
-                    {t("contacto.titulo")}
-                </h1>
-            </div>
-            <div className='container-fluid p-0 '>
-                <img src={naranjas} alt={naranjas} className='w-100 naranjas'/>
-            </div>
-            <div className="d-flex flex-column col-11 col-md-10 col-lg-10 col-xl-9 col-xxl-8 contacto">
-                <div className='d-flex flex-column'>
-                    <h1 className="d-lg-none">
+        <div>
+            <main className='d-flex flex-column align-items-center justify-content-center' >
+                <div className="d-none d-lg-block col-md-11 col-lg-10 col-xl-9 col-xxl-8">
+                    <h1 className="fs-3 mt-5 mb-3 ">
                         {t("contacto.titulo")}
                     </h1>
-                    <p>
-                        {t("contacto.p1")}
-                    </p>
                 </div>
-                <div className="form_contacto col-12 ">
-                    <form ref={form} onSubmit={validarCampos} className="d-flex flex-column gap-4">
-                        <Input
-                            campoInvalido={invalidName}
-                            valorInput={getNombre}
-                            name={'nombre'} type={'text'}
-                            label={t("input.LabelNombre")} />
-                        <Input
-                            campoInvalido={invalidEmail}
-                            valorInput={getEmail}
-                            name={'email'}
-                            type={'email'}
-                            label={t("input.LabelEmail")} />
-                        <Input
-                            campoInvalido={true}
-                            name={'telefono'}
-                            type={'text'}
-                            label={t("input.LabelTelefono")} />
-                        <Textarea
-                            campoInvalido={messageInvalid}
-                            valorInput={getMensaje}
-                            name={'mensaje'}
-                            type={'textarea'}
-                            label={t("input.LabelMensaje")} />
-                        <div className='col-lg-5'>
-                            <FormButton changeBtnValue={changeBtnValue} initialValue={t("contactBtnValue.static")}  sendingValue={t("contactBtnValue.send")}/>
-                        </div>
-                    </form>
+                <div className='container-fluid p-0 '>
+                    <img src={naranjas} alt={naranjas} className='w-100 naranjas' />
                 </div>
-
-            </div>
+                <div className="d-flex flex-column col-11 col-md-10 col-lg-10 col-xl-9 col-xxl-8 contacto">
+                    <div className='d-flex flex-column'>
+                        <h1 className="d-lg-none">
+                            {t("contacto.titulo")}
+                        </h1>
+                        <p>
+                            {t("contacto.p1")}
+                        </p>
+                    </div>
+                    <div className="form_contacto col-12 ">
+                        <form ref={form} onSubmit={validarCampos} className="d-flex flex-column gap-4">
+                            <Input
+                                campoInvalido={invalidName}
+                                valorInput={getNombre}
+                                name={'nombre'} type={'text'}
+                                label={t("input.LabelNombre")} />
+                            <Input
+                                campoInvalido={invalidEmail}
+                                valorInput={getEmail}
+                                name={'email'}
+                                type={'email'}
+                                label={t("input.LabelEmail")} />
+                            <Input
+                                campoInvalido={true}
+                                name={'telefono'}
+                                type={'text'}
+                                label={t("input.LabelTelefono")} />
+                            <Textarea
+                                campoInvalido={messageInvalid}
+                                valorInput={getMensaje}
+                                name={'mensaje'}
+                                type={'textarea'}
+                                label={t("input.LabelMensaje")} />
+                            <div className='col-lg-5'>
+                                <FormButton changeBtnValue={changeBtnValue} initialValue={t("contactBtnValue.static")} sendingValue={t("contactBtnValue.send")} />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <Footer />
         </div>
     )
 }
