@@ -43,14 +43,13 @@ function NewsletterForm() {
         }
         else {
             setChangeBtnValue(false)
-            emailjs.sendForm('form_newsletter', 'template_e72zduq', form.current, '4arb9l-QtOeeHFAC') //D
+            emailjs.sendForm('form_newsletter', 'template_e72zduq', form.current, '4arb9l-QtOeeHFACD')
                 .then(() => {
                     setChangeBtnValue(true)
                     setName(!name);
                     setEmail(!email);
                     popUpForm(t("popUpText.newsOk"),t("popUpText.button"))
                     form.current.reset();
-
                 }, () => {
                     setChangeBtnValue(true)
                     setName(!name);

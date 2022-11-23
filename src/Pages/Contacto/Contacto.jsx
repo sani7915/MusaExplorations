@@ -64,15 +64,15 @@ const Contacto = () => {
         }
         else {
             setChangeBtnValuue(false);
-            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQ')//B
+            emailjs.sendForm('default_service', 'template_z22mdnp', form.current, 'V0UpoFvwv3OOEjbQB')
                 .then(() => {
                     form.current.reset();
                     setName(!name);
                     setEmail(!email);
                     setMensaje(!message);
                     setChangeBtnValuue(true);
-                }, () => {
                     popUpForm(t("popUpText.contactOk"), t("popUpText.button"))
+                }, () => {
                     form.current.reset();
                     setName(!name);
                     setEmail(!email);
