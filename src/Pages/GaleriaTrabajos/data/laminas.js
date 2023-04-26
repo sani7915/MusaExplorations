@@ -48,7 +48,7 @@ export const laminas = [
     imagen: "NAT111-Aurora",
   },{
     id: "BOT122",
-    categoriaES: "EBotánica",
+    categoriaES: "Botánica",
     categoriaEN: "Botanical",
     nombre: "Pink yellow roses",
     descripción: "",

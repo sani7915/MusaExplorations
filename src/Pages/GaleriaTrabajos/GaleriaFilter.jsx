@@ -45,6 +45,7 @@ const GaleriaFilter = ({ respuesta }) => {
                             ? data.categoriaES
                             : data.categoriaEN}
                         popUp={popUpImgGaleria}
+                        id={data.id}
                     />
                 )
             })
