@@ -1,6 +1,5 @@
 @media (min-width: 320px) {
   .newsletter-portada {
-    background-image: url("../../images/diseño/probando\ paleta\ color\ acuarela.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 610px;
@@ -24,7 +23,7 @@
     input {
       background-color: #e9e7e7;
     }
-  
+
     button {
       margin-bottom: 40px;
     }
@@ -35,16 +34,38 @@
   }
 }
 
-
-@media (min-width: 768px) {
-  .newsletter-portada {
-    height: 520px;
-    p {
-      margin: 0px 40px 30px 40px;
-    }
-    button {
-      margin-bottom: 50px;
-    }
-  }
+.banner {
+  @extend .newsletter-portada;
+  background-image: url("../images/diseño/Banner-ir-a-tienda.jpg");
 }
 
+.btn-galeria {
+  background: #ffffff;
+  border: 1px solid #cfab82;
+  border-radius: 20px;
+  height: 36px;
+  color: #cfab82;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  min-width: 110px;
+  margin-bottom: 15px;
+  &:hover {
+    background-color: #cfab82;
+    color: #ffffff;
+  }
+  &:focus {
+    background-color: #cfab82;
+    color: #ffffff;
+  }
+}
+.botonera {
+  overflow-x: scroll;
+}
+
+.btn-banner-link {
+  @extend .btn-galeria;
+  min-width: 200px;
+}

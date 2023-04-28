@@ -133,5 +133,13 @@
     "p2" : "ERROR 404",
     "p3" : "La ruta no existe",
     "btnValue": "PORTADA"
+  },
+  "ButtonLinKTienda" : {
+    "btnValue": "VISITAR TIENDA"
+  },
+  "bannerAdPortada": {
+    "titulo" :"¡Nueva colección!",
+    "p1":"Ya disponibles en la tienda la nueva colección ",
+    "p2": "de piezas de cerámica pintadas a mano"
   }
 }
