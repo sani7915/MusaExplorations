@@ -10,6 +10,7 @@ import NavbarProvider from "./context/NavbarContext";
 import SwalProvider from "./context/swalCotext";
 import I18NextProvider from "./context/I18NextContext";
 import Navbar from "./Componentes/Navbar/Navbar";
+import PrivacyPolicy from "./Pages/Privacy Policy/PrivacyPolicy";
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ function App() {
                 <Route exact path="/signUp" element={<Apuntate />} />
                 <Route exact path="/aboutMe" element={<SobreMi />} />
                 <Route exact path="/contact" element={<Contacto />} />
+                <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="*" element={<Error404 />} />
             </Routes>
           </SwalProvider>

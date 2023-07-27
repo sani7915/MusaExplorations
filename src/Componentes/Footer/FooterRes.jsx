@@ -1,6 +1,6 @@
 import React from 'react'
 import logoVertical from '../../images/diseño/logo vertical.svg';
-
+import {Link} from 'react-router-dom'
 function FooterRes({cambiarIdioma,t}) {
 
     return (
@@ -44,8 +44,13 @@ function FooterRes({cambiarIdioma,t}) {
                         </u>
                     </span>
                 </div>
+                <Link to={'/privacy-policy'} className='nav-link mt-1'>
+                                        <p>
+                                        {t("footer.privacy-policy")}
+                                        </p>
+                                    </Link>
                 <div className="copy">
-                    <p>
+                    <p >
                         {t("footer.copy")}
                     </p>
                 </div>

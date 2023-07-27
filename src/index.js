@@ -7,8 +7,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import App from "./App";
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
+ // eslint-disable-next-line 
 import {i18nextInit} from './translations/I18next'
-console.log(i18nextInit);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

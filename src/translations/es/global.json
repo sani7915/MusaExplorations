@@ -107,6 +107,7 @@
     "LabelTelefono": "Telefono",
     "LabelMensaje": "Mensaje *"
   },
+  "newsLetterForm" : "Debes aceptar la política de privacidad",
 
   "footer": {
     "lirica": "Coger el pincel, humedecer la acuarela, fundir el pincel en la mezcla, ver como el agua se posa en el papel, como el pigmento de la acuarela se expande en el agua… disfrutar de cada paso.",
@@ -122,11 +123,13 @@
       "SobreMi": "Sobre mí",
       "contacto": "Contacto"
     },
-    "copy": "Copyright 2022. Todos los derechos reservados. Desarrollado por Daniel Lorenzo",
+    "copy": "Copyright 2023. Todos los derechos reservados.",
     "language": {
       "p": "Change language: ",
       "span": "ENG"
-    }
+    },
+    "privacy-policy": "Política de privacidad"
+
   },
   "error404":{
     "p1" : "¡Ups! Algo ha salido mal!",

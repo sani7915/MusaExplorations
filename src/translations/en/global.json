@@ -105,6 +105,7 @@
     "LabelTelefono": "Phone Number",
     "LabelMensaje": "Message *"
   },
+  "newsLetterForm" : "You should accept the privacy policy",
   "footer": {
     "lirica": "Take the brush, moisten the watercolor, melt the brush in the mixture, see how the water settles on the paper, how the watercolor pigment expands in the water... enjoy every step.",
     "ul1": {
@@ -119,11 +120,12 @@
       "SobreMi": "About me",
       "contacto": "Contact"
     },
-    "copy": "Copyright 2022. All rights reserved. Developed by Daniel Lorenzo",
+    "copy": "Copyright 2023. All rights reserved.",
     "language": {
       "p": "Cambiar idioma :",
       "span": "ES"
-    }
+    },
+    "privacy-policy": "Privacy policy"
   },
   "error404":{
     "p1" : "Oops! something went wrong!",
