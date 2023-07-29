@@ -1,0 +1,55 @@
+.banner_button {
+  background-color: #c89e6f;
+  margin-bottom: 0px ;
+  border-radius: 15px;
+  height: 22px;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0px 0px;
+  border: none;
+  width: 60px;
+  color: white;
+  font-family: "Arvo", serif;
+  &:hover {
+    background-color: hsla(32, 45%, 61%, 0.85);
+  }
+}
+
+.banner_button_ghost {
+  background: #ffffff;
+  border: 1px solid #cfab82;
+  border-radius: 10px;
+  font-weight: 700;
+  height: 20px;
+  width: 60px;
+  margin-bottom: 5px  ;
+  margin-bottom: 0px !important;
+  font-size: 12px;
+  padding: 10px 10px;
+  color: #cfab82;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  &:hover {
+    background-color: #cfab82;
+    color: #ffffff;
+  }
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.cookies-banner {
+  display: flex;
+  background-color: white;
+  width: 100vw;
+  z-index: 10000;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px #eceef1;
+}

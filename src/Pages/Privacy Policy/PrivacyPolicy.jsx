@@ -259,7 +259,7 @@ function PrivacyPolicy() {
             su sitio web.
           </p>
         </div>
-        <h3 className="my-3">6.- Política de cookies.</h3>
+        <h3 className="my-3" id="cookies">6.- Política de cookies.</h3>
         <div>
           <p>
             La web que está visitando utiliza cookies para mejorar la navegación

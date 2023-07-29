@@ -17,16 +17,7 @@ function FooterDesk({ cambiarIdioma, t }) {
             <div className="d-flex justify-content-between col-11 footer-ul">
               <div className="text-end">
                 <ul>
-                  <li>
-                    <a
-                      href={"https://www.etsy.com/shop/musadeacuarela"}
-                      target={"_blank"}
-                      rel="noreferrer"
-                      className="nav-link"
-                    >
-                      {t("navBar.tienda")}
-                    </a>
-                  </li>
+                
                   <Link to={"/gallery/All"} className="nav-link">
                     <li> {t("footer.ul1.galeria")}</li>
                   </Link>
@@ -103,8 +94,8 @@ function FooterDesk({ cambiarIdioma, t }) {
                 {t("footer.language.span")}
               </span>
             </p>
-            <Link to={"/privacy-policy"} className="nav-link mt-1">
-              <p>{t("footer.privacy-policy")}</p>
+            <Link to={"/privacy-policy"} className=" mt-1 nav-link fs-14">
+              <p >{t("footer.privacy-policy")}</p>
             </Link>
             <p className="copy col-11  col-xl-12 ">{t("footer.copy")}</p>
           </div>

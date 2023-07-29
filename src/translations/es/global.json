@@ -28,8 +28,8 @@
       "p2": "Personalizados"
     }
   },
-  "galeriaTitle" : {
-    "h1" : "GALERÍA" 
+  "galeriaTitle": {
+    "h1": "GALERÍA"
   },
   "galeriaBtnValue": {
     "todos": "todos",
@@ -41,7 +41,7 @@
   },
   "popUpText": {
     "newsOk": "¡Te apuntaste correctamente!",
-    "contactOk" : "¡Tu mensaje fue enviado correctamente!",
+    "contactOk": "¡Tu mensaje fue enviado correctamente!",
     "error": "¡Ups! Algo ha salido mal!",
     "contactoOk": "¡Tu mensaje fue enviado correctamente!",
     "button": "CERRAR"
@@ -52,7 +52,7 @@
     "p1": "Apúntate gratis y recibe periodicamente láminas para descargar y pintar, tips para ",
     "p2": "mejorar tu técnica, novedades y descuentos exclusivos en la tienda."
   },
-  "instagram" : "LO ÚLTIMO EN INSTAGRAM",
+  "instagram": "LO ÚLTIMO EN INSTAGRAM",
   "tienda": {
     "titulo": "TIENDA",
     "subtitulo": "Puedes encontrar algunos de mis artículos en mi tienda de Etsy o Spoonflower :",
@@ -107,7 +107,11 @@
     "LabelTelefono": "Telefono",
     "LabelMensaje": "Mensaje *"
   },
-  "newsLetterForm" : "Debes aceptar la política de privacidad",
+  "newsLetterForm": {
+    "unacceptPoliticPrivacy": "Debes aceptar la política de privacidad",
+    "acceptedPolitiPrivacy" : "Acepto la ",
+    "politicLink":"politica de privacidad"
+  },
 
   "footer": {
     "lirica": "Coger el pincel, humedecer la acuarela, fundir el pincel en la mezcla, ver como el agua se posa en el papel, como el pigmento de la acuarela se expande en el agua… disfrutar de cada paso.",
@@ -129,20 +133,24 @@
       "span": "ENG"
     },
     "privacy-policy": "Política de privacidad"
-
   },
-  "error404":{
-    "p1" : "¡Ups! Algo ha salido mal!",
-    "p2" : "ERROR 404",
-    "p3" : "La ruta no existe",
+  "error404": {
+    "p1": "¡Ups! Algo ha salido mal!",
+    "p2": "ERROR 404",
+    "p3": "La ruta no existe",
     "btnValue": "PORTADA"
   },
-  "ButtonLinKTienda" : {
+  "ButtonLinKTienda": {
     "btnValue": "VISITAR TIENDA"
   },
   "bannerAdPortada": {
-    "titulo" :"¡Nueva colección!",
-    "p1":"Ya disponibles en la tienda la nueva colección ",
+    "titulo": "¡Nueva colección!",
+    "p1": "Ya disponibles en la tienda la nueva colección ",
     "p2": "de piezas de cerámica pintadas a mano"
+  },
+  "cookiesBanner":{
+    "text":"Empleamos Cookies para brindar la mejor experiencia en nuestro sitio web. Si continúas usando esta página,entenderemos que estas de acuerdo con ello.",
+    "link":"Ver politica de Cookies",
+    "button":"Aceptar"
   }
 }

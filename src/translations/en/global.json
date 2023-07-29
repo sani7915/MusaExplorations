@@ -105,7 +105,11 @@
     "LabelTelefono": "Phone Number",
     "LabelMensaje": "Message *"
   },
-  "newsLetterForm" : "You should accept the privacy policy",
+  "newsLetterForm": {
+    "unacceptPoliticPrivacy": "You should accept the privacy policy",
+    "acceptedPolitiPrivacy": "I accept the",
+    "politicLink":"privacy policy"
+  },
   "footer": {
     "lirica": "Take the brush, moisten the watercolor, melt the brush in the mixture, see how the water settles on the paper, how the watercolor pigment expands in the water... enjoy every step.",
     "ul1": {
@@ -127,18 +131,23 @@
     },
     "privacy-policy": "Privacy policy"
   },
-  "error404":{
-    "p1" : "Oops! something went wrong!",
-    "p2" : "ERROR 404",
-    "p3" : "PAGE NOT FOUND",
+  "error404": {
+    "p1": "Oops! something went wrong!",
+    "p2": "ERROR 404",
+    "p3": "PAGE NOT FOUND",
     "btnValue": "HOME"
   },
-  "ButtonLinKTienda" : {
+  "ButtonLinKTienda": {
     "btnValue": "VISIT STORE"
   },
   "bannerAdPortada": {
-    "titulo" :"New collection!",
-    "p1":"Now available in the store the new collection ",
+    "titulo": "New collection!",
+    "p1": "Now available in the store the new collection ",
     "p2": "of hand-painted caramic pieces"
+  },
+  "cookiesBanner": {
+    "text": "We use Cookies to provide the best experience on our website. If you continue to use this page, we will understand that you agree with it.",
+    "link": "See cookie policy",
+    "button": "Accept"
   }
 }
