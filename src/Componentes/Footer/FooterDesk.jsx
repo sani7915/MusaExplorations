@@ -27,6 +27,10 @@ function FooterDesk({ cambiarIdioma, t }) {
                   <Link to={"/gallery/Botanical"} className="nav-link">
                     <li>{t("footer.ul1.acuarelaBotanica")}</li>
                   </Link>
+                  <a href={"https://musadeacuarela.vhx.tv/"} className="nav-link" target="_blank" rel="noreferrer">
+                    <li>{t("navBar.clases")}</li>
+                  </a>
+
                 </ul>
               </div>
               <div className=" text-end ">

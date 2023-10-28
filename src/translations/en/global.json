@@ -5,7 +5,9 @@
     "tienda": "Store",
     "apuntate": "Join us",
     "sobreMi": "About me",
-    "contacto": "Contact"
+    "contacto": "Contact",
+    "clases" : "Watercolor classes"
+
   },
   "inicio": {
     "h1": "WATERCOLOR ART",
@@ -13,9 +15,9 @@
     "p2": " smile every day when contemplating it, and that helps you to be happier today than yesterday"
   },
   "cardPortada": {
-    "arte": {
-      "p1": "Botanical",
-      "p2": "Designs"
+    "clases": {
+      "p1": "Watercolor",
+      "p2": "Classes"
     },
     "colecciones": {
       "p1": "Collections",

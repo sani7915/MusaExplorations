@@ -5,7 +5,8 @@
     "tienda": "Tienda",
     "apuntate": "Apúntate",
     "sobreMi": "Sobre mí",
-    "contacto": "Contacto"
+    "contacto": "Contacto",
+    "clases" : "Clases de acuarela"
   },
 
   "inicio": {
@@ -15,9 +16,9 @@
   },
 
   "cardPortada": {
-    "arte": {
-      "p1": "Diseños con",
-      "p2": "temática Botánica"
+    "clases": {
+      "p1": "Clases de",
+      "p2": "Acuarela"
     },
     "colecciones": {
       "p1": "Colecciones",

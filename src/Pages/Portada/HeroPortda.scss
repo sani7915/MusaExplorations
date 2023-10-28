@@ -1,11 +1,12 @@
-.bg-jarron {
-  background-image: url("../../images/diseño/jarron\ de\ flores\ acuarela.jpg");
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 @media (min-width: 320px) {
+  .bg-jarron {
+    background-image: url("../../images/diseño/jarron\ de\ flores\ acuarela.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+  }
   .portada_contenedor-card {
     display: flex;
     flex-direction: column;
@@ -63,6 +64,9 @@
 }
 
 @media (min-width: 768px) {
+  .bg-jarron {
+    height: 500px;
+  }
   .portada_presentacion {
     margin-top: 0px;
     h1 {
@@ -91,10 +95,7 @@
     min-height: 350px;
   }
   .bg-jarron {
-    background-image: url("../../images/diseño/jarron\ de\ flores\ acuarela.jpg");
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 600px;
   }
 }
 
@@ -110,6 +111,8 @@
     width: 30%;
   }
   .bg-jarron {
-    height: 600px;
+    height: 700px;
+    background-size: cover;
+    background-position: top;
   }
 }

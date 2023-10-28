@@ -11,11 +11,12 @@ const Navbar = () => {
   const { initial, animationUpDown, animationFadeInOut } = useNavbarContext();
 
   const links = [
-    { to: "/", nombre: t("navBar.portada"), href: "#" },
-    { to: "/gallery/All", nombre: t("navBar.galeria"), href: "#" },
-    { to: "/signUp", nombre: t("navBar.apuntate"), href: "#" },
-    { to: "/aboutMe", nombre: t("navBar.sobreMi"), href: "#" },
-    { to: "/contact", nombre: t("navBar.contacto"), href: "#" },
+    { to: "/", nombre: t("navBar.portada") },
+    { to: "/gallery/All", nombre: t("navBar.galeria") },
+    { to: "/signUp", nombre: t("navBar.apuntate") },
+    { to: "/aboutMe", nombre: t("navBar.sobreMi") },
+    {to: "https://musadeacuarela.vhx.tv/",nombre:t("navBar.clases"),target:'_blank',},
+    { to: "/contact", nombre: t("navBar.contacto") },
   ];
 
   return (
@@ -57,9 +58,24 @@ const Navbar = () => {
               {links.map((link) => {
                 return (
                   <li key={link.nombre}>
-                    <Link to={link.to} className="nav-link nav-item ">
-                      {link.nombre}
-                    </Link>
+                    {link.target !== "_blank" ? (
+                      <Link
+                        to={link.to}
+                        target={link.target}
+                        className="nav-link nav-item "
+                      >
+                        {link.nombre}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.to}
+                        target={'_blank'}
+                        rel="noreferrer"
+                        className="nav-link nav-item "
+                      >
+                        {link.nombre}
+                      </a>
+                    )}
                   </li>
                 );
               })}
