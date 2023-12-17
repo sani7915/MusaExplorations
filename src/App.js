@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import "./SCSS/App.scss";
 import PortadaContenedor from "../src/Pages/Portada/PortadaContenedor";
 import GaleriaContenedor from "./Pages/GaleriaTrabajos/GaleriaContenedor";
@@ -14,7 +14,7 @@ import PrivacyPolicy from "./Pages/Privacy Policy/PrivacyPolicy";
 import CookiesBanner from "./Componentes/Cookies-Banner/CookiesBanner";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <I18NextProvider>
         <NavbarProvider>
       <CookiesBanner/>
@@ -36,7 +36,7 @@ function App() {
           </SwalProvider>
         </NavbarProvider>
       </I18NextProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 export default App;
