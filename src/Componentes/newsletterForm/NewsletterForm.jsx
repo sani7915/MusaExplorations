@@ -115,7 +115,7 @@ function NewsletterForm() {
               <p className="m-0 fs-6">
                 {t("newsLetterForm.acceptedPolitiPrivacy")}
               </p>
-            <Link to={"/privacy-policy"} className="nav-link">
+            <Link to={"/privacy-policy"} className="nav-link" target="_blank">
             <p className="m-0 ms-1 fs-6">
             {t("newsLetterForm.politicLink")}
             </p>
@@ -161,7 +161,7 @@ function NewsletterForm() {
             <p className="m-0 fs-6">
               {t("newsLetterForm.acceptedPolitiPrivacy")}
             </p>
-          <Link to={"/privacy-policy"} className="nav-link">
+          <Link to={"/privacy-policy"} className="nav-link" target="_blank">
           <p className="m-0 fs-6 ms-1">
               {t("newsLetterForm.politicLink")}
             </p>
