@@ -1,4 +1,4 @@
-import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./SCSS/App.scss";
 import PortadaContenedor from "../src/Pages/Portada/PortadaContenedor";
 import GaleriaContenedor from "./Pages/GaleriaTrabajos/GaleriaContenedor";
