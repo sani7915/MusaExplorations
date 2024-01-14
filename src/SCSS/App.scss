@@ -17,9 +17,10 @@
 @import url("../context/swal.scss");
 @import url("../Banner/Banner.scss");
 @import url("../Componentes/Cookies-Banner/cookies_banner.scss");
+@import url("../Pages/Blog/blog.scss");
+@import url("../Pages/Blog/Articulo/articulo.scss");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,14 +28,16 @@
 body {
   margin: auto;
 }
-.clase{
+.clase {
   height: 80vh;
 }
 p {
   font-family: "Montserrat", sans-serif;
   color: #404040;
 }
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-family: "Arvo", serif;
   color: #404040;
 }
@@ -69,10 +72,28 @@ h1,h2,h3{
 }
 
 .fs-14 {
-  font-size:  14px;
+  font-size: 14px;
 }
-
 
 a {
   cursor: pointer;
+}
+
+.arvo-italic {
+  font-family: "Arvo", serif;
+  color: #404040;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.arvo {
+  font-family: "Arvo", serif;
+  color: #404040;
+  font-weight: 100;
+}
+
+.montserrat-italic {
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  
 }

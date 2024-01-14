@@ -58,6 +58,11 @@
       background-color: #cfab82;
       color: #ffffff;
     }
+    &:disabled:hover{
+      background-color: #ffffff;
+      color: #cfab82;
+      ;
+    }
   }
   .botonera {
     overflow-x: scroll;

@@ -1,4 +1,4 @@
-import {HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import "./SCSS/App.scss";
 import PortadaContenedor from "../src/Pages/Portada/PortadaContenedor";
 import GaleriaContenedor from "./Pages/GaleriaTrabajos/GaleriaContenedor";
@@ -12,12 +12,15 @@ import I18NextProvider from "./context/I18NextContext";
 import Navbar from "./Componentes/Navbar/Navbar";
 import PrivacyPolicy from "./Pages/Privacy Policy/PrivacyPolicy";
 import CookiesBanner from "./Componentes/Cookies-Banner/CookiesBanner";
+import Blog from "../src/Pages/Blog/Blog.jsx";
+import Articulo from "./Pages/Blog/Articulo/Articulo.jsx";
+
 function App() {
   return (
     <HashRouter>
       <I18NextProvider>
         <NavbarProvider>
-      <CookiesBanner/>
+          <CookiesBanner />
           <SwalProvider>
             <Navbar />
             <Routes>
@@ -30,6 +33,9 @@ function App() {
               <Route exact path="/signUp" element={<Apuntate />} />
               <Route exact path="/aboutMe" element={<SobreMi />} />
               <Route exact path="/contact" element={<Contacto />} />
+              <Route exact path="/blog" element={<Blog />} />
+              <Route exact path="/blog-article/:title" element={<Articulo />} />
+
               <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="*" element={<Error404 />} />
             </Routes>
