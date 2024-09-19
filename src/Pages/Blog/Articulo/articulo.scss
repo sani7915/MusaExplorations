@@ -1,8 +1,48 @@
-.article-title{
+@media (min-width: 320px) {
+  .article-title {
     color: #cfab82;
-    font-weight: lighter;
+    font-family: "Arvo", serif;
+    font-style: italic;
+  }
+  .article-vertical-img {
+    aspect-ratio: 9 / 16;
+  }
+
+  .line {
+    height: 2px;
+    width: 100%;
+    background-color: #cfab82;
+  }
+
+  .orange-link {
+    color: #cfab82;
+    margin-right: 5px;
+    &:hover {
+      color: #cfab82e0;
+    }
+  }
+  .amz-img {
+    aspect-ratio: 1/1;
+    width: 100%;
+  }
+
+  .yt-iframe {
+    width: 100%;
+    aspect-ratio: 9/5;
+  }
+
+  .btn-share {
+    border: none;
+    background-color: transparent;
+    &:hover {
+      animation:pulse;
+      animation-duration: 2s;
+    }
+  }
 }
-.article-vertical-img{
-    width: 50%;
-    height: 700px;
- ;}
+
+@media (min-width: 768px) {
+  .amz-img {
+    width: 120px;
+  }
+}

@@ -16,7 +16,7 @@ const Navbar = () => {
     { to: "/signUp", nombre: t("navBar.apuntate") },
     { to: "/aboutMe", nombre: t("navBar.sobreMi") },
     {to: "https://musadeacuarela.vhx.tv/",nombre:t("navBar.clases"),target:'_blank',},
-    { to: "/blog", nombre: 'Blog' },
+    // { to: "/blog", nombre: 'Blog' },
     { to: "/contact", nombre: t("navBar.contacto") },
   ];
 

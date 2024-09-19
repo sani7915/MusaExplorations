@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import naranjas from "../../images/diseño/naranjas_mod.jpg";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import Input from "../../Componentes/FormComponent/Input";
 import Textarea from "../../Componentes/FormComponent/Textarea";
 import FormButton from "../../Componentes/FormComponent/FormButton";
@@ -53,7 +53,7 @@ const Contacto = () => {
     }
   }, [name, email, message]);
 
-  const validarCampos = (e) => {
+  const validarCampos = async (e) => {
     e.preventDefault();
     if (!name) {
       setInvalidName(false);
@@ -65,32 +65,21 @@ const Contacto = () => {
       setUnacceptedPolicy(true);
       return;
     } else {
-      setChangeBtnValuue(false);
-      emailjs
-        .sendForm(
-          "default_service",
-          "template_z22mdnp",
-          form.current,
-          "V0UpoFvwv3OOEjbQB"
-        )
-        .then(
-          () => {
-            form.current.reset();
-            setName(!name);
-            setEmail(!email);
-            setMensaje(!message);
-            setChangeBtnValuue(true);
-            popUpForm(t("popUpText.contactOk"), t("popUpText.button"));
-          },
-          () => {
-            form.current.reset();
-            setName(!name);
-            setEmail(!email);
-            setMensaje(!message);
-            setChangeBtnValuue(true);
-            popUpForm(t("popUpText.error"), t("popUpText.button"), broken_pot);
-          }
-        );
+      try {
+        form.current.reset();
+        setName(!name);
+        setEmail(!email);
+        setMensaje(!message);
+        setChangeBtnValuue(true);
+        popUpForm(t("popUpText.error"), t("popUpText.button"), broken_pot);
+      } catch (error) {
+        form.current.reset();
+        setName(!name);
+        setEmail(!email);
+        setMensaje(!message);
+        setChangeBtnValuue(true);
+        popUpForm(t("popUpText.error"), t("popUpText.button"), broken_pot);
+      }
     }
   };
 
@@ -150,14 +139,13 @@ const Contacto = () => {
                     checked={acceptedPolicy}
                     onChange={(e) => setAcceptedPolicy((prev) => !prev)}
                   />
-                    <p className="m-0 fs-6">
-                      {t("newsLetterForm.acceptedPolitiPrivacy")}
-                    </p>
-                  <Link to={"/privacy-policy"} className="nav-link">
-                  <p className="m-0 ms-1 fs-6">
-                  {t("newsLetterForm.politicLink")}
+                  <p className="m-0 fs-6">
+                    {t("newsLetterForm.acceptedPolitiPrivacy")}
                   </p>
-
+                  <Link to={"/privacy-policy"} className="nav-link">
+                    <p className="m-0 ms-1 fs-6">
+                      {t("newsLetterForm.politicLink")}
+                    </p>
                   </Link>
                 </div>
                 {unacceptedPolicy && !acceptedPolicy ? (
